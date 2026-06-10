@@ -13,7 +13,7 @@
   <!-- ===== HEADER / NAV ===== -->
   <header class="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo">Sixth Degree</a>
+      <a href="#" class="nav__logo">Sixth Degree<span class="logo-degree">°</span></a>
       <ul class="nav__links">
         <li><a href="#for-brands">For Brands</a></li>
         <li><a href="#for-creators">For Creators</a></li>
@@ -30,6 +30,23 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero">
+    <svg class="hero__constellation" viewBox="0 0 1200 600" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+      <g class="constellation__lines" stroke="rgba(94,234,212,0.18)" stroke-width="1" fill="none">
+        <path d="M150 120 L340 220" />
+        <path d="M340 220 L520 140" />
+        <path d="M520 140 L760 250" />
+        <path d="M760 250 L950 160" />
+        <path d="M950 160 L1080 300" />
+      </g>
+      <g class="constellation__dots" fill="#5eead4">
+        <circle cx="150" cy="120" r="3" opacity="0.5"/>
+        <circle cx="340" cy="220" r="2.5" opacity="0.4"/>
+        <circle cx="520" cy="140" r="3.5" opacity="0.6"/>
+        <circle cx="760" cy="250" r="2.5" opacity="0.4"/>
+        <circle cx="950" cy="160" r="3" opacity="0.5"/>
+        <circle cx="1080" cy="300" r="2.5" opacity="0.4"/>
+      </g>
+    </svg>
     <div class="container">
       <span class="hero__badge">Launching Soon</span>
       <h1 class="hero__headline">A Creator's World. <em>A Brand's Universe.</em></h1>
@@ -51,7 +68,8 @@
   <!-- ===== PLATFORM OVERVIEW (Tabbed) ===== -->
   <section class="section section--light">
     <div class="container">
-      <div class="section__header">
+      <div class="section__header reveal">
+        <span class="section__number">01°</span>
         <h2 class="section__headline">The all-in-one creator platform</h2>
         <p class="section__sub">Everything brands and creators need, in one place.</p>
       </div>
@@ -69,7 +87,7 @@
 
         <div class="tabs__panels">
           <div class="tabs__panel tabs__panel--1">
-            <div class="tab-card">
+            <div class="tab-card reveal">
               <div class="tab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
               <div>
                 <h3 class="tab-card__title">Discover & Verify</h3>
@@ -85,7 +103,7 @@
           </div>
 
           <div class="tabs__panel tabs__panel--2">
-            <div class="tab-card">
+            <div class="tab-card reveal">
               <div class="tab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg></div>
               <div>
                 <h3 class="tab-card__title">Manage & Collaborate</h3>
@@ -101,7 +119,7 @@
           </div>
 
           <div class="tabs__panel tabs__panel--3">
-            <div class="tab-card">
+            <div class="tab-card reveal">
               <div class="tab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
               <div>
                 <h3 class="tab-card__title">Track & Pay</h3>
@@ -149,8 +167,8 @@
   <!-- ===== BRIDGE CTA ===== -->
   <section class="bridge-cta">
     <div class="container">
-      <h2 class="bridge-cta__headline">Finding the right creators shouldn't feel like a gamble. <em>Start building.</em></h2>
-      <a href="#contact" class="btn btn--primary">Get in Touch</a>
+      <h2 class="bridge-cta__headline reveal">Finding the right creators shouldn't feel like a gamble. <em>Start building.</em></h2>
+      <a href="#contact" class="btn btn--primary reveal">Get in Touch</a>
     </div>
   </section>
 
@@ -183,16 +201,17 @@
   <!-- ===== WHY SIXTH DEGREE ===== -->
   <section id="about" class="section section--dark">
     <div class="container">
-      <div class="section__header">
+      <div class="section__header reveal">
+        <span class="section__number">04°</span>
         <h2 class="section__headline">Why <em>Sixth Degree?</em></h2>
       </div>
-      <div class="cards cards--4">
-        <div class="card">
+      <div class="cards cards--4 reveal-group">
+        <div class="card reveal">
           <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
           <h3 class="card__title">Human-Verified Creators</h3>
           <p class="card__desc">Every creator is vetted. We check real engagement, real audiences, real content quality.</p>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.5 3.5L17 8l-2 3 1 4-4-2-4 2 1-4-2-3 3.5-1.5z"/><line x1="12" y1="22" x2="12" y2="16"/></svg></div>
           <h3 class="card__title">Canadian-First</h3>
           <p class="card__desc">Built for Canadian brands and creators. Local context, local payment rails, local culture.</p>
@@ -214,15 +233,15 @@
   <!-- ===== COMING SOON / CTA ===== -->
   <section id="contact" class="cta-section">
     <div class="container">
-      <h2 class="cta-section__headline">We're building Sixth Degree right now. <em>Want to be part of it?</em></h2>
-      <p class="cta-section__sub">We're talking to brands and creators across Toronto. If you're interested in shaping what this platform becomes, reach out.</p>
+      <h2 class="cta-section__headline reveal">We're building Sixth Degree right now. <em>Want to be part of it?</em></h2>
+      <p class="cta-section__sub reveal">We're talking to brands and creators across Toronto. If you're interested in shaping what this platform becomes, reach out.</p>
 
-      <div class="contact-cards">
-        <div class="contact-card">
+      <div class="contact-cards reveal-group">
+        <div class="contact-card reveal">
           <p class="contact-card__name">Aaryan Juneja</p>
           <a href="mailto:aaryanjuneja@gmail.com" class="contact-card__email">aaryanjuneja@gmail.com</a>
         </div>
-        <div class="contact-card">
+        <div class="contact-card reveal">
           <p class="contact-card__name">Rohan Gandotra</p>
           <a href="mailto:ro.gandotra@gmail.com" class="contact-card__email">ro.gandotra@gmail.com</a>
         </div>
@@ -230,7 +249,7 @@
 
       <!-- Add Calendly embed or waitlist form here later -->
 
-      <p class="cta-section__note">Waitlist and demo booking coming soon.</p>
+      <p class="cta-section__note reveal">Waitlist and demo booking coming soon.</p>
     </div>
   </section>
 
@@ -238,7 +257,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <span class="footer__logo">Sixth Degree</span>
+        <span class="footer__logo">Sixth Degree<span class="logo-degree">°</span></span>
         <div class="footer__info">
           <span>Toronto, Canada</span>
           <a href="mailto:aaryanjuneja@gmail.com">aaryanjuneja@gmail.com</a>
@@ -249,5 +268,6 @@
     </div>
   </footer>
 
+  <script src="animations.js" defer></script>
 </body>
 </html>
