@@ -263,6 +263,7 @@ img {
 .hero__headline em {
   font-style: italic;
   color: #5eead4;
+  display: block;
 }
 
 .hero__sub {
@@ -350,6 +351,11 @@ img {
   transform: translateY(0);
 }
 
+/* Restore the hover lift on buttons that also carry .reveal (equal specificity, later rule wins) */
+.btn.reveal.is-visible:hover {
+  transform: translateY(-2px);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
 }
@@ -376,8 +382,29 @@ img {
   background: #142220;
   padding: 20px 0;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10% 90%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 10% 90%, transparent);
+  position: relative;
+}
+
+/* Edge fades must blend into the strip's own dark color, not expose the page background */
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 12%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(90deg, #142220, transparent);
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(270deg, #142220, transparent);
 }
 
 .marquee__track {
@@ -418,6 +445,7 @@ img {
   margin: 0 auto;
   line-height: 1.7;
   letter-spacing: -0.01em;
+  text-wrap: balance;
 }
 
 /* ===== SECTION SHARED ===== */
@@ -481,6 +509,7 @@ img {
   letter-spacing: -0.02em;
   line-height: 1.15;
   margin-bottom: 20px;
+  text-wrap: balance;
 }
 
 .section__headline em {
@@ -803,6 +832,7 @@ img {
   margin: 0 auto 36px;
   letter-spacing: -0.02em;
   line-height: 1.3;
+  text-wrap: balance;
 }
 
 .bridge-cta__headline em {
@@ -865,6 +895,7 @@ img {
   letter-spacing: -0.02em;
   line-height: 1.15;
   margin-bottom: 24px;
+  text-wrap: balance;
 }
 
 .cta-section__headline em {
