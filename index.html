@@ -65,6 +65,14 @@
     </div>
   </section>
 
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Fashion</span><span>°</span><span>Food</span><span>°</span><span>Fitness</span><span>°</span><span>Beauty</span><span>°</span><span>Travel</span><span>°</span><span>Tech</span><span>°</span><span>Lifestyle</span><span>°</span><span>Gaming</span><span>°</span>
+      <span>Fashion</span><span>°</span><span>Food</span><span>°</span><span>Fitness</span><span>°</span><span>Beauty</span><span>°</span><span>Travel</span><span>°</span><span>Tech</span><span>°</span><span>Lifestyle</span><span>°</span><span>Gaming</span><span>°</span>
+    </div>
+  </div>
+
   <!-- ===== PLATFORM OVERVIEW (Tabbed) ===== -->
   <section class="section section--light">
     <div class="container">
@@ -141,24 +149,35 @@
   <!-- ===== FOR BRANDS ===== -->
   <section id="for-brands" class="section section--gray">
     <div class="container">
-      <div class="section__header">
-        <h2 class="section__headline">Built for brands that want <em>real results.</em></h2>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-          <h3 class="card__title">Verified Creator Discovery</h3>
-          <p class="card__desc">Search creators vetted for authentic engagement. Filter by niche, city, audience demographics.</p>
+      <div class="split">
+        <div class="split__intro reveal">
+          <span class="section__number">02°</span>
+          <h2 class="section__headline">Built for brands that want <em>real results.</em></h2>
+          <p class="split__lead">No more guessing which creators are real. No more DM chaos. No more inflated numbers.</p>
+          <a href="#contact" class="btn btn--primary">Get in Touch<span class="btn__arrow">→</span></a>
         </div>
-        <div class="card">
-          <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><line x1="9" y1="14" x2="15" y2="14"/></svg></div>
-          <h3 class="card__title">Campaign Management</h3>
-          <p class="card__desc">Send briefs, review content, approve posts. All in one place.</p>
-        </div>
-        <div class="card">
-          <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-          <h3 class="card__title">Performance You Can Trust</h3>
-          <p class="card__desc">Track real metrics. No inflated numbers. Know exactly what you're paying for.</p>
+        <div class="split__features reveal-group">
+          <div class="feature-row reveal">
+            <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <div>
+              <h3 class="card__title">Verified Creator Discovery</h3>
+              <p class="card__desc">Search creators vetted for authentic engagement. Filter by niche, city, audience demographics.</p>
+            </div>
+          </div>
+          <div class="feature-row reveal">
+            <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><line x1="9" y1="14" x2="15" y2="14"/></svg></div>
+            <div>
+              <h3 class="card__title">Campaign Management</h3>
+              <p class="card__desc">Send briefs, review content, approve posts. All in one place.</p>
+            </div>
+          </div>
+          <div class="feature-row reveal">
+            <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+            <div>
+              <h3 class="card__title">Performance You Can Trust</h3>
+              <p class="card__desc">Track real metrics. No inflated numbers. Know exactly what you're paying for.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -168,31 +187,42 @@
   <section class="bridge-cta">
     <div class="container">
       <h2 class="bridge-cta__headline reveal">Finding the right creators shouldn't feel like a gamble. <em>Start building.</em></h2>
-      <a href="#contact" class="btn btn--primary reveal">Get in Touch</a>
+      <a href="#contact" class="btn btn--primary reveal">Get in Touch<span class="btn__arrow">→</span></a>
     </div>
   </section>
 
   <!-- ===== FOR CREATORS ===== -->
   <section id="for-creators" class="section section--light">
     <div class="container">
-      <div class="section__header">
-        <h2 class="section__headline">A platform that puts <em>creators first.</em></h2>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-          <h3 class="card__title">Get Discovered</h3>
-          <p class="card__desc">Brands come to you. Build your verified profile and let your work speak for itself.</p>
+      <div class="split split--flip">
+        <div class="split__intro reveal">
+          <span class="section__number">03°</span>
+          <h2 class="section__headline">A platform that puts <em>creators first.</em></h2>
+          <p class="split__lead">Earn fairly on your terms. Build authentic partnerships with brands that matter. Own your relationships.</p>
+          <a href="#contact" class="btn btn--primary">Get in Touch<span class="btn__arrow">→</span></a>
         </div>
-        <div class="card">
-          <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
-          <h3 class="card__title">Creative Freedom</h3>
-          <p class="card__desc">Work with brands that match your values. No algorithmic suppression. You own your content.</p>
-        </div>
-        <div class="card">
-          <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><circle cx="12" cy="12" r="3"/><line x1="1" y1="10" x2="4" y2="10"/><line x1="20" y1="10" x2="23" y2="10"/><line x1="1" y1="14" x2="4" y2="14"/><line x1="20" y1="14" x2="23" y2="14"/></svg></div>
-          <h3 class="card__title">Fair, Fast Payment</h3>
-          <p class="card__desc">Know what you'll earn upfront. Get paid on time, every time.</p>
+        <div class="split__features reveal-group">
+          <div class="feature-row reveal">
+            <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div>
+              <h3 class="card__title">Get Discovered</h3>
+              <p class="card__desc">Brands come to you. Build your verified profile and let your work speak for itself.</p>
+            </div>
+          </div>
+          <div class="feature-row reveal">
+            <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+            <div>
+              <h3 class="card__title">Creative Freedom</h3>
+              <p class="card__desc">Work with brands that match your values. No algorithmic suppression. You own your content.</p>
+            </div>
+          </div>
+          <div class="feature-row reveal">
+            <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><circle cx="12" cy="12" r="3"/><line x1="1" y1="10" x2="4" y2="10"/><line x1="20" y1="10" x2="23" y2="10"/><line x1="1" y1="14" x2="4" y2="14"/><line x1="20" y1="14" x2="23" y2="14"/></svg></div>
+            <div>
+              <h3 class="card__title">Fair, Fast Payment</h3>
+              <p class="card__desc">Know what you'll earn upfront. Get paid on time, every time.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -230,6 +260,17 @@
     </div>
   </section>
 
+  <!-- ===== FOUNDER NOTE ===== -->
+  <section class="founder-note">
+    <div class="container">
+      <div class="founder-note__inner reveal">
+        <span class="section__number">A note from us°</span>
+        <p class="founder-note__text">We started Sixth Degree because we watched Canadian brands settle for US platforms that treated Toronto like a rounding error — and watched real creators lose deals to accounts with purchased followers. We think the people building culture here deserve infrastructure built here. We're early, we're honest about that, and we'd rather show you what we're building than tell you it's finished.</p>
+        <p class="founder-note__sign">— Aaryan &amp; Rohan, Toronto</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== COMING SOON / CTA ===== -->
   <section id="contact" class="cta-section">
     <div class="container">
@@ -256,6 +297,7 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
+      <p class="footer__wordmark" aria-hidden="true">Sixth Degree°</p>
       <div class="footer__inner">
         <span class="footer__logo">Sixth Degree<span class="logo-degree">°</span></span>
         <div class="footer__info">
