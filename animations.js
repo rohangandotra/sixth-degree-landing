@@ -1,6 +1,14 @@
 // Scroll-reveal: elements with .reveal fade+rise in when they enter the viewport.
 // Children of .reveal-group stagger via --d custom property.
 (function () {
+  // Show waitlist confirmation after FormSubmit redirects back with ?joined=1
+  if (new URLSearchParams(location.search).has('joined')) {
+    const thanks = document.getElementById('waitlist-thanks');
+    const form = document.querySelector('.waitlist');
+    if (thanks) thanks.hidden = false;
+    if (form) form.style.display = 'none';
+  }
+
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduced) {
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));

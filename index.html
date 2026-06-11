@@ -288,9 +288,25 @@
         </div>
       </div>
 
-      <!-- Add Calendly embed or waitlist form here later -->
+      <!-- Add Calendly embed here later -->
 
-      <p class="cta-section__note reveal">Waitlist and demo booking coming soon.</p>
+      <form class="waitlist reveal" action="https://formsubmit.co/ro.gandotra@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Sixth Degree waitlist signup">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://rohangandotra.github.io/sixth-degree-landing/?joined=1#contact">
+        <div class="waitlist__fields">
+          <input class="waitlist__input" type="email" name="email" placeholder="you@email.com" required>
+          <select class="waitlist__select" name="role" required>
+            <option value="" disabled selected>I'm a&hellip;</option>
+            <option value="brand">Brand</option>
+            <option value="creator">Creator</option>
+          </select>
+          <button type="submit" class="btn btn--primary">Join the waitlist</button>
+        </div>
+      </form>
+      <p id="waitlist-thanks" class="waitlist__thanks" hidden>You're on the list &mdash; we'll be in touch soon.</p>
+
+      <p class="cta-section__note reveal">Or reach out directly &mdash; we answer everything.</p>
     </div>
   </section>
 
