@@ -9,6 +9,18 @@
     if (form) form.style.display = 'none';
   }
 
+  // Mobile nav: hamburger toggles the menu (must run before the reduced-motion early return)
+  const navToggle = document.querySelector('.nav__toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('.nav__links a').forEach(a =>
+      a.addEventListener('click', () => nav.classList.remove('is-open')));
+  }
+
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduced) {
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
