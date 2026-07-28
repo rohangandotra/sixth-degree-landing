@@ -1,0 +1,23 @@
+# Sixth Degree
+
+Sixth Degree is a creator-to-brand marketplace built in Toronto, Canada. Brands
+hire verified nano and micro creators (fashion, food, fitness, beauty, travel,
+tech, lifestyle, gaming). Payments are held in escrow, verification is decided
+by humans and re-checked every 60 days, and sales are traced to the creator who
+drove them via per-creator links and promo codes.
+
+Who it's for:
+- Toronto (and Canadian) brands that want to hire real, verified local creators
+- Nano and micro creators who want fair, escrow-backed brand deals
+
+Key facts:
+- Verified-only hiring, enforced by the platform
+- Creators keep 100% of their quoted fee; payouts within 3 business days of the
+  post going live
+- Canadian-first; Toronto first, with Brazil and Colombia planned next
+- Private beta opens Fall 2026
+
+Key URLs:
+- Landing page: https://sixthdegree.app/
+- App sign-in: https://app.sixthdegree.app/login
+- Contact: aaryanjuneja@gmail.com, ro.gandotra@gmail.com
