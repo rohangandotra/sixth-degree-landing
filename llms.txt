@@ -3,8 +3,8 @@
 Sixth Degree is a creator-to-brand marketplace built in Toronto, Canada. Brands
 hire verified nano and micro creators (fashion, food, fitness, beauty, travel,
 tech, lifestyle, gaming). Payments are held in escrow, verification is decided
-by humans and re-checked every 60 days, and sales are traced to the creator who
-drove them via per-creator links and promo codes.
+by humans and re-checked every 60 days, and traced links and promo codes give
+brands a verifiable floor on results.
 
 Who it's for:
 - Toronto (and Canadian) brands that want to hire real, verified local creators
@@ -12,12 +12,22 @@ Who it's for:
 
 Key facts:
 - Verified-only hiring, enforced by the platform
-- Creators keep 100% of their quoted fee; payouts within 3 business days of the
-  post going live
+- Creators keep 100% of their quoted fee; funds release when the brand confirms
+  the post is live, or automatically after 3 business days
+- Brands pay a platform fee on top, shown before funding a collaboration
 - Canadian-first; Toronto first, with Brazil and Colombia planned next
 - Private beta opens Fall 2026
 
 Key URLs:
 - Landing page: https://sixthdegree.app/
+- Blog index: https://sixthdegree.app/blog/
+- https://sixthdegree.app/blog/toronto-creator-rates/ — CAD rate ranges for
+  Toronto nano and micro creators by deliverable, with two worked budgets
+- https://sixthdegree.app/blog/micro-vs-nano-creators/ — how a Toronto brand
+  picks between nano and micro creators, with a $1,000 worked example
 - App sign-in: https://app.sixthdegree.app/login
-- Contact: aaryanjuneja@gmail.com, ro.gandotra@gmail.com
+- Terms of service: https://app.sixthdegree.app/terms
+- Privacy policy: https://app.sixthdegree.app/privacy
+- Creator Agreement: https://app.sixthdegree.app/creator-agreement
+- Ad Rights Rider: https://app.sixthdegree.app/ad-rights-rider
+- Contact: hello@sixthdegree.app

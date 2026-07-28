@@ -1,0 +1,21 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.sixthdegree.app" }],
+      "destination": "https://sixthdegree.app/:path*",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    { "source": "/favicon.ico", "destination": "/assets/favicon-48.png" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}

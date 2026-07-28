@@ -1,0 +1,11 @@
+{
+  "name": "sixth-degree-landing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:blog": "node scripts/build-blog.mjs"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
