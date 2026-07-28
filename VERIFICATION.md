@@ -56,7 +56,7 @@
 - [ ] No janky scrolling (IntersectionObserver is non-blocking)
 
 ## Cross-Check
-- [ ] Emails unchanged: aaryanjuneja@gmail.com, ro.gandotra@gmail.com
+- [ ] Contact email is hello@sixthdegree.app everywhere
 - [ ] No 404s in console
 - [ ] No console errors
 - [ ] animations.js loads (check Network tab)

@@ -555,7 +555,7 @@ Above the existing footer row, add an oversized serif wordmark — a quiet, conf
 7. Tabs still work (CSS-only mechanism untouched).
 8. Lighthouse performance ≥ 90 on mobile (animations are transform/opacity-only, so this should hold).
 9. All anchor links still land correctly below the sticky nav.
-10. Emails unchanged: aaryanjuneja@gmail.com, ro.gandotra@gmail.com.
+10. Contact email is hello@sixthdegree.app everywhere.
 
 **Explicitly do NOT:**
 - Add a JS animation library (GSAP, AOS, Framer). Everything above is vanilla.

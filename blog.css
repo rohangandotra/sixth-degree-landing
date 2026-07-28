@@ -1,0 +1,239 @@
+/* ===== BLOG (matches landing design system — see styles.css) ===== */
+
+.post {
+  background: #faf8f5;
+  padding: 96px 0 120px;
+}
+
+.post__container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.post__breadcrumb {
+  margin-bottom: 32px;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+
+.post__breadcrumb a {
+  color: #0D9488;
+  font-weight: 500;
+}
+
+.post__breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.post__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  text-wrap: balance;
+  color: #1c302e;
+}
+
+.post__meta {
+  font-size: 0.9rem;
+  color: #7a8a87;
+  margin-bottom: 56px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(28, 48, 46, 0.1);
+}
+
+.post__body {
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: #3a4a47;
+}
+
+.post__body h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #1c302e;
+  margin: 52px 0 18px;
+}
+
+.post__body h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1c302e;
+  margin: 36px 0 14px;
+}
+
+.post__body p {
+  margin-bottom: 20px;
+}
+
+.post__body a {
+  color: #0D9488;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(13, 148, 136, 0.3);
+  transition: border-color 0.3s ease;
+}
+
+.post__body a:hover {
+  border-bottom-color: #0D9488;
+}
+
+.post__body strong {
+  font-weight: 600;
+  color: #1c302e;
+}
+
+.post__body ul,
+.post__body ol {
+  margin: 0 0 20px;
+  padding-left: 24px;
+}
+
+.post__body ul {
+  list-style: disc;
+}
+
+.post__body ol {
+  list-style: decimal;
+}
+
+.post__body li {
+  margin-bottom: 10px;
+}
+
+.post__body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 28px 0;
+  font-size: 0.95rem;
+  background: #fff;
+  border: 1px solid rgba(28, 48, 46, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.post__body th {
+  background: #1c302e;
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+}
+
+.post__body td {
+  padding: 12px 16px;
+  border-top: 1px solid rgba(28, 48, 46, 0.08);
+  vertical-align: top;
+}
+
+.post__body tr:nth-child(even) td {
+  background: #faf8f5;
+}
+
+.post__body blockquote {
+  border-left: 3px solid #0D9488;
+  background: #f4efe9;
+  border-radius: 0 12px 12px 0;
+  padding: 20px 24px;
+  margin: 0 0 20px;
+  font-style: italic;
+}
+
+.post__body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.post__cta {
+  margin-top: 64px;
+  padding: 36px;
+  background: #1c302e;
+  border-radius: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.post__cta p {
+  margin-bottom: 20px;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+/* ===== BLOG INDEX ===== */
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.post-card {
+  display: block;
+  background: #fff;
+  border: 1px solid rgba(28, 48, 46, 0.08);
+  border-radius: 12px;
+  padding: 32px 36px;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(13, 148, 136, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.post-card__date {
+  font-size: 0.8rem;
+  color: #7a8a87;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.post-card__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #1c302e;
+  margin-bottom: 10px;
+}
+
+.post-card__desc {
+  font-size: 0.95rem;
+  color: #7a8a87;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.post-card__more {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #0D9488;
+}
+
+@media (max-width: 768px) {
+  .post {
+    padding: 64px 0 80px;
+  }
+
+  .post__title {
+    font-size: 2rem;
+  }
+
+  .post__body table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .post-card {
+    padding: 24px;
+  }
+}
