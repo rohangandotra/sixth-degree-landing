@@ -3,7 +3,7 @@
 Sixth Degree is a creator-to-brand marketplace built in Toronto, Canada. Brands
 hire verified nano and micro creators (fashion, food, fitness, beauty, travel,
 tech, lifestyle, gaming). Payments are held in escrow, verification is decided
-by humans and re-checked every 60 days, and traced links and promo codes give
+by humans and re-checked every 90 days, and traced links and promo codes give
 brands a verifiable floor on results.
 
 Who it's for:

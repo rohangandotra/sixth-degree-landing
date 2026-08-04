@@ -67,7 +67,7 @@
         "name": "How are creators verified?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verification is a human decision, not an algorithm's guess. We check that the engagement is genuine and the audience is made of real people, then re-check every creator every 60 days. Brands can only hire creators who pass — the platform enforces it."
+          "text": "Verification is a human decision, not an algorithm's guess. We check that the engagement is genuine and the audience is made of real people, then re-check every creator every 90 days. Brands can only hire creators who pass — the platform enforces it."
         }
       },
       {
@@ -209,7 +209,7 @@
                 <p class="tab-card__desc">Find creators by niche, neighbourhood, follower band, and rate. Verification is decided by humans — and hiring is verified-only, enforced by the platform.</p>
                 <ul class="tab-card__features">
                   <li>Search by niche, neighbourhood, and follower band</li>
-                  <li>Human-decided verification, re-checked every 60 days</li>
+                  <li>Human-decided verification, re-checked every 90 days</li>
                   <li>Authentic engagement scoring</li>
                   <li>Verified-only hiring — enforced, not promised</li>
                 </ul>
@@ -346,7 +346,7 @@
         <div class="card reveal">
           <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
           <h3 class="card__title">Human-Verified Creators</h3>
-          <p class="card__desc">Verification is a human decision: is the engagement genuine, and is the audience made of real people. Every creator is re-checked every 60 days, and brands can only hire the ones who pass.</p>
+          <p class="card__desc">Verification is a human decision: is the engagement genuine, and is the audience made of real people. Every creator is re-checked every 90 days, and brands can only hire the ones who pass.</p>
         </div>
         <div class="card reveal">
           <div class="card__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.5 3.5L17 8l-2 3 1 4-4-2-4 2 1-4-2-3 3.5-1.5z"/><line x1="12" y1="22" x2="12" y2="16"/></svg></div>
@@ -392,7 +392,7 @@
         </details>
         <details class="faq__item reveal">
           <summary class="faq__question">How are creators verified?<span class="faq__icon" aria-hidden="true">+</span></summary>
-          <p class="faq__answer">Verification is a human decision, not an algorithm's guess. We check that the engagement is genuine and the audience is made of real people, then re-check every creator every 60 days. Brands can only hire creators who pass &mdash; the platform enforces it.</p>
+          <p class="faq__answer">Verification is a human decision, not an algorithm's guess. We check that the engagement is genuine and the audience is made of real people, then re-check every creator every 90 days. Brands can only hire creators who pass &mdash; the platform enforces it.</p>
         </details>
         <details class="faq__item reveal">
           <summary class="faq__question">What does Sixth Degree cost?<span class="faq__icon" aria-hidden="true">+</span></summary>
@@ -437,6 +437,8 @@
         <input type="hidden" name="_subject" value="Sixth Degree waitlist signup">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://sixthdegree.app/?joined=1#contact">
+        <!-- Honeypot: hidden from humans, bots fill it. FormSubmit and /api/waitlist both discard submissions where it has a value. -->
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;overflow:hidden;">
         <div class="waitlist__fields">
           <input class="waitlist__input" type="email" name="email" placeholder="you@email.com" required>
           <select class="waitlist__select" name="role" required>
