@@ -25,7 +25,6 @@ Key URLs:
   Toronto nano and micro creators by deliverable, with two worked budgets
 - https://sixthdegree.app/blog/micro-vs-nano-creators/ — how a Toronto brand
   picks between nano and micro creators, with a $1,000 worked example
-- App sign-in: https://app.sixthdegree.app/login
 - Terms of service: https://app.sixthdegree.app/terms
 - Privacy policy: https://app.sixthdegree.app/privacy
 - Creator Agreement: https://app.sixthdegree.app/creator-agreement
