@@ -438,6 +438,8 @@
         <input type="hidden" name="_subject" value="Sixth Degree waitlist signup">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://sixthdegree.app/?joined=1#contact">
+        <!-- Honeypot: hidden from humans, bots fill it. FormSubmit and /api/waitlist both discard submissions where it has a value. -->
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;overflow:hidden;">
         <div class="waitlist__fields">
           <input class="waitlist__input" type="email" name="email" placeholder="you@email.com" required>
           <select class="waitlist__select" name="role" required>

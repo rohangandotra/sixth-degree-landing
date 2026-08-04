@@ -9,6 +9,39 @@
     if (form) form.style.display = 'none';
   }
 
+  // Waitlist: submit to /api/waitlist (sends the role-specific welcome email).
+  // On any failure, fall back to the form's native FormSubmit action so the
+  // signup is never lost. form.submit() skips this listener, so no loop.
+  const waitlistForm = document.querySelector('.waitlist');
+  if (waitlistForm) {
+    waitlistForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = waitlistForm.querySelector('button[type="submit"]');
+      const label = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Joining…';
+      try {
+        const res = await fetch('/api/waitlist', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: waitlistForm.email.value.trim(),
+            role: waitlistForm.role.value,
+            _honey: waitlistForm._honey.value
+          })
+        });
+        if (!res.ok) throw new Error('waitlist api ' + res.status);
+        const thanks = document.getElementById('waitlist-thanks');
+        if (thanks) thanks.hidden = false;
+        waitlistForm.style.display = 'none';
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = label;
+        waitlistForm.submit();
+      }
+    });
+  }
+
   // Mobile nav: hamburger toggles the menu (must run before the reduced-motion early return)
   const navToggle = document.querySelector('.nav__toggle');
   const nav = document.querySelector('.nav');
