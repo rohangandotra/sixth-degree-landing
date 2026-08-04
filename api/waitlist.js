@@ -22,6 +22,7 @@ Thanks for joining the waitlist as a creator. Here's what that gets you:
 - First access when the private beta opens in Fall 2026.
 - Brand deals with the terms settled up front: deliverables, usage rights, and your fee, agreed before you start.
 - The brand funds the full fee to escrow before work begins, so you never chase an invoice. You keep 100% of your quoted fee.
+- If you're one of the first 100 creators on the platform, a founding creator badge on your profile. It stays there forever.
 
 Between now and the beta we're talking to creators across the city about rates, bad client stories, and what would actually make this worth using. If you have opinions, a media kit, or rates you want sanity-checked, reply to this email. It comes straight to the two of us and we answer everything.
 
@@ -36,10 +37,10 @@ sixthdegree.app`,
 Thanks for joining the waitlist as a brand. Here's what that gets you:
 
 - First access when the private beta opens in Fall 2026.
-- A pool of Toronto nano and micro creators where every account is checked by a human for bots and bought followers, and re-checked every 60 days.
+- A pool of Toronto nano and micro creators where every account is checked by a human for bots and bought followers, and re-checked every 90 days.
 - Campaigns with terms settled up front and payment held in escrow until the work is live, plus trackable links and promo codes so you can see what a creator actually drove.
 
-Between now and the beta we're talking to brands about the campaigns they want to run, so we build the thing you actually need. If you want to talk sooner, reply to this email. It comes straight to the two of us.
+Between now and the beta we're talking to brands about the campaigns they want to run, so we build the thing you actually need. If you want to talk sooner, reply to this email. It comes straight to the two of us and we reply to everything.
 
 Aaryan and Rohan
 Sixth Degree, Toronto
@@ -48,8 +49,10 @@ sixthdegree.app`,
 };
 
 // Minimal HTML wrapper around the same copy: readable, no images, no tracking.
+// The bare domain in the signature becomes a real link in the HTML version.
 function toHtml(text) {
-  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/(^|\s)sixthdegree\.app/g, '$1<a href="https://sixthdegree.app" style="color:#0D9488;">sixthdegree.app</a>');
   const paras = text.split('\n\n').map((block) => {
     if (block.trim().startsWith('- ')) {
       const items = block.split('\n').map((l) => `<li style="margin:0 0 8px;">${esc(l.replace(/^- /, ''))}</li>`).join('');
