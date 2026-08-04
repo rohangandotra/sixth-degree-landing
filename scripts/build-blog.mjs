@@ -1,6 +1,6 @@
 // Static blog generator for sixthdegree.app.
 // Reads content/posts/*.md, writes blog/<slug>/index.html + blog/index.html,
-// and regenerates sitemap.xml. Output is committed — no build step on Vercel.
+// and regenerates sitemap.xml. Output is committed, no build step on Vercel.
 // Usage: npm run build:blog
 
 import { marked } from 'marked';
@@ -42,8 +42,8 @@ const fmtDate = (iso) => new Date(`${iso}T12:00:00Z`).toLocaleDateString('en-CA'
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
 });
 
-// Exact PostHog snippet from index.html — keep the two files in sync.
-const POSTHOG = `  <!-- PostHog analytics — cookieless: memory-only persistence, no session recording, DNT respected. Key is the publishable project token (safe in public HTML). Config mirrors the app's instrumentation-client.ts; keep them in sync. -->
+// Exact PostHog snippet from index.html; keep the two files in sync.
+const POSTHOG = `  <!-- PostHog analytics, cookieless: memory-only persistence, no session recording, DNT respected. Key is the publishable project token (safe in public HTML). Config mirrors the app's instrumentation-client.ts; keep them in sync. -->
   <script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once unregister opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing identify reset get_distinct_id set_config on".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
     posthog.init('phc_qTWpE65KUpaBfMc8Qo8gkRsTjLKrXRMGM6NofQqLmLac', {
@@ -121,7 +121,7 @@ function page({ title, description, canonical, ogType, jsonLd, body, ogTitle }) 
   <meta property="og:image" content="${SITE}/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Sixth Degree — hire verified Toronto creators, escrow-paid, honestly measured.">
+  <meta property="og:image:alt" content="Sixth Degree: hire verified Toronto creators, escrow-paid, honestly measured.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="${SITE}/assets/og-image.png">
   <meta name="twitter:title" content="${esc(ogTitle || title)}">
@@ -242,7 +242,7 @@ ${indexCards}
 
 mkdirSync(join(ROOT, 'blog'), { recursive: true });
 writeFileSync(join(ROOT, 'blog', 'index.html'), page({
-  title: 'Blog — Sixth Degree',
+  title: 'Sixth Degree Blog: Toronto creator rates and campaign math',
   description: 'Rates, tactics, and honest math for Toronto brands working with nano and micro creators.',
   canonical: `${SITE}/blog/`,
   ogType: 'website',
