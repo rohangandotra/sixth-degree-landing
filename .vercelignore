@@ -1,0 +1,22 @@
+# Files that live in the repo but must never be served.
+#
+# Vercel serves this repo's root directory as the site, so anything committed
+# here is a public URL whether or not it is linked or in the sitemap. These are
+# internal engineering notes: they were reachable at sixthdegree.app/*.md,
+# unlinked but crawlable, and they still carry the emoji-and-dash house style
+# the public copy deliberately dropped.
+#
+# .vercelignore keeps them out of the deployment without deleting them from the
+# repo, so the team keeps the docs and the public site does not.
+DESIGN-REVIEW.md
+VERIFICATION.md
+
+# Build tooling and sources for the generated blog. The generated HTML in
+# blog/ is what ships; these are the inputs.
+scripts/
+content/
+
+# Local development noise.
+node_modules/
+package.json
+package-lock.json
