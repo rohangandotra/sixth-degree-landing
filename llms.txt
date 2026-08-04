@@ -20,6 +20,8 @@ Key facts:
 
 Key URLs:
 - Landing page: https://sixthdegree.app/
+- Join the waitlist (the current call to action for both creators and brands
+  until the private beta opens): https://sixthdegree.app/#contact
 - Blog index: https://sixthdegree.app/blog/
 - https://sixthdegree.app/blog/find-micro-influencers-ugc-toronto/ : where
   Toronto brands find micro influencers and UGC creators, and how to vet an
