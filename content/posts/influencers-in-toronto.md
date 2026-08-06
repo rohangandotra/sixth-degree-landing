@@ -17,14 +17,7 @@ If you're not sure which of the two fits your goal, [Micro vs nano creators: whi
 
 ## Where to find them
 
-Two searches most people try first, "Toronto influencers" and a niche hashtag, both surface the wrong end of the market: agency roundups and a wall of thumbnails with no way to tell who's local and active. Better methods:
-
-- **Location tags on Instagram and TikTok.** Search "Toronto," then a neighbourhood: Leslieville, Roncesvalles, the Junction. Posts tagged to a specific place skew heavily toward people who actually live and shoot there.
-- **City and neighbourhood hashtags.** #torontofoodie or #the6ix narrows the field to people identifying as local; a neighbourhood tag like #queenwest narrows it further.
-- **Who's tagging businesses like yours.** Check who's already posting, unprompted, about a similar Toronto business. They're active in your category and likely to say yes to a paid version of what they're doing for free.
-- **A verified directory**, which is what we're building at Sixth Degree, though we should be upfront that we're in private beta, opening Fall 2026, so it isn't something you can browse yet.
-
-For the full playbook, including how to write an opener that actually gets a reply, see [How to find micro influencers and UGC creators in Toronto](https://sixthdegree.app/blog/find-micro-influencers-ugc-toronto/).
+The obvious searches, "Toronto influencers" and a bare niche hashtag, mostly surface the wrong end of the market: agency roundups and a wall of thumbnails with no way to tell who's local and active. The fix isn't a better keyword. It's searching by place instead of by topic (location tags, neighbourhood hashtags, who's already tagging businesses like yours) and, eventually, a verified directory instead of DM roulette. We wrote up the full method, including exactly which searches to run and how to write an opener that gets a reply, in [How to find micro influencers and UGC creators in Toronto](https://sixthdegree.app/blog/find-micro-influencers-ugc-toronto/). This post picks up from there: once you have a shortlist, here's what it costs and how to vet it.
 
 ## What it costs
 
