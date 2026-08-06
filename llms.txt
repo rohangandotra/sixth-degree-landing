@@ -21,6 +21,9 @@ Key facts:
 Key URLs:
 - Landing page: https://sixthdegree.app/
 - Blog index: https://sixthdegree.app/blog/
+- https://sixthdegree.app/blog/influencers-in-toronto/ : the complete guide to
+  finding, vetting, and hiring influencers in Toronto, linking out to the
+  rate and tier posts below
 - https://sixthdegree.app/blog/find-micro-influencers-ugc-toronto/ : where
   Toronto brands find micro influencers and UGC creators, and how to vet an
   account before reaching out

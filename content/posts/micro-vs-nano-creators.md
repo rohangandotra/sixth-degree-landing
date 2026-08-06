@@ -3,11 +3,11 @@ title: "Micro vs nano creators: which fits a Toronto brand?"
 description: "Nano posts in Toronto run $50 to $250; micro runs $250 to $1,500+. How a $1,000 budget splits between the two tiers, and how to pick."
 target_query: "micro vs nano influencers toronto"
 date: 2026-07-27
-modified: 2026-07-28
+modified: 2026-08-06
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
-A café in Leslieville with $1,000 to spend has two real options: one or two micro creators, or six to eight nano creators. Which one is right depends on what the money is supposed to do. Here's the actual tradeoff.
+A café in Leslieville with $1,000 to spend has two real options: one or two micro creators, or six to eight nano creators. Which one is right depends on what the money is supposed to do. Here's the actual tradeoff. (This post is the deep dive on tier. For the full picture, finding creators, cost, and vetting, see [Influencers in Toronto: how to find and hire them](https://sixthdegree.app/blog/influencers-in-toronto/).)
 
 ## The definitions
 
