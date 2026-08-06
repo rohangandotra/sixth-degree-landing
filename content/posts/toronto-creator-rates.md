@@ -3,11 +3,11 @@ title: "Toronto creator rates: what nano and micro cost in 2026"
 description: "CAD rate ranges for Toronto nano and micro creators in 2026: static posts, reels, story sets, UGC with usage rights, plus two worked budgets."
 target_query: "toronto influencer rates"
 date: 2026-07-28
-modified: 2026-07-28
+modified: 2026-08-06
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
-Every brand conversation we have lands on the same question inside ten minutes: what does this actually cost? Here are the ranges we quote when Toronto brands ask. All figures are Canadian dollars, current as of mid-2026.
+Every brand conversation we have lands on the same question inside ten minutes: what does this actually cost? Here are the ranges we quote when Toronto brands ask. All figures are Canadian dollars, current as of mid-2026. (This post is the deep dive on price. For where to find creators and how to vet them too, see [Influencers in Toronto: how to find and hire them](https://sixthdegree.app/blog/influencers-in-toronto/).)
 
 Two definitions first. Nano creators run roughly 1,000 to 10,000 followers; micro creators run roughly 10,000 to 100,000. If you're still deciding which tier fits your goal, start with [Micro vs nano creators: which fits a Toronto brand?](https://sixthdegree.app/blog/micro-vs-nano-creators/) This post is just about price.
 

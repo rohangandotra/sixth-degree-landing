@@ -3,11 +3,11 @@ title: "How to find micro influencers and UGC creators in Toronto"
 description: "Where Toronto brands find micro influencers and UGC creators, how to vet an account before you DM it, and how to write an opener that gets a reply."
 target_query: "find micro influencers toronto"
 date: 2026-08-04
-modified: 2026-08-04
+modified: 2026-08-06
 author: "Aaryan Juneja, co-founder of Sixth Degree"
 ---
 
-Search "Toronto influencers" and you get agency roundups full of six-figure-follower names who won't answer a DM from a business with no ad budget. Search a niche hashtag and you get a wall of thumbnails with no way to tell who's actually local, who's active, and who's worth a message. Most of the difficulty in finding the right creator isn't a shortage of people. Toronto has thousands of nano and micro accounts. The difficulty is that the obvious searches surface the wrong end of the market. Here's where to actually look, and what to check before you reach out.
+Search "Toronto influencers" and you get agency roundups full of six-figure-follower names who won't answer a DM from a business with no ad budget. Search a niche hashtag and you get a wall of thumbnails with no way to tell who's actually local, who's active, and who's worth a message. Most of the difficulty in finding the right creator isn't a shortage of people. Toronto has thousands of nano and micro accounts. The difficulty is that the obvious searches surface the wrong end of the market. Here's where to actually look, and what to check before you reach out. (For the short version of this whole process, including cost and vetting in one place, see [Influencers in Toronto: how to find and hire them](https://sixthdegree.app/blog/influencers-in-toronto/).)
 
 ## Two different things you might be looking for
 
