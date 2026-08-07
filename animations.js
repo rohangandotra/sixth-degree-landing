@@ -14,6 +14,30 @@
   // signup is never lost. form.submit() skips this listener, so no loop.
   const waitlistForm = document.querySelector('.waitlist');
   if (waitlistForm) {
+    // Role-specific fields: creators give a platform + handle, brands a website.
+    // disabled and hidden always move together (see the note in index.html);
+    // disabled also keeps the inactive fields out of the FormSubmit fallback.
+    const roleSelect = waitlistForm.elements.role;
+    const extras = waitlistForm.querySelectorAll('[data-for]');
+    const syncExtras = () => {
+      extras.forEach((el) => {
+        const active = el.dataset.for === roleSelect.value;
+        el.disabled = !active;
+        el.hidden = !active;
+      });
+    };
+    roleSelect.addEventListener('change', syncExtras);
+    syncExtras();
+
+    // Pasting a profile link tells us the platform; keep the picker in sync.
+    const handleInput = waitlistForm.elements.handle;
+    const platformSelect = waitlistForm.elements.platform;
+    handleInput.addEventListener('input', () => {
+      const v = handleInput.value.toLowerCase();
+      if (v.includes('instagram.com/')) platformSelect.value = 'instagram';
+      else if (v.includes('tiktok.com/')) platformSelect.value = 'tiktok';
+    });
+
     waitlistForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = waitlistForm.querySelector('button[type="submit"]');
@@ -27,6 +51,9 @@
           body: JSON.stringify({
             email: waitlistForm.email.value.trim(),
             role: waitlistForm.role.value,
+            platform: roleSelect.value === 'creator' ? platformSelect.value : undefined,
+            handle: roleSelect.value === 'creator' ? handleInput.value.trim() : undefined,
+            website: roleSelect.value === 'brand' ? waitlistForm.elements.website.value.trim() : undefined,
             _honey: waitlistForm._honey.value
           })
         });

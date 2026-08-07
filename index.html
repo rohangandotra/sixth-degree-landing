@@ -446,6 +446,16 @@
             <option value="brand">Brand</option>
             <option value="creator">Creator</option>
           </select>
+          <!-- Role-specific fields. The inactive ones are disabled AND hidden together:
+               a hidden-but-enabled required control makes the browser refuse to submit
+               with nothing to focus, so the two attributes must always toggle as a pair. -->
+          <select class="waitlist__select" name="platform" data-for="creator" required disabled hidden>
+            <option value="" disabled selected>Instagram or TikTok?</option>
+            <option value="instagram">Instagram</option>
+            <option value="tiktok">TikTok</option>
+          </select>
+          <input class="waitlist__input" type="text" name="handle" data-for="creator" placeholder="@yourhandle or profile link" maxlength="120" required disabled hidden>
+          <input class="waitlist__input" type="text" name="website" data-for="brand" placeholder="yourbrand.com" maxlength="200" required disabled hidden>
           <button type="submit" class="btn btn--primary">Join the waitlist</button>
         </div>
       </form>

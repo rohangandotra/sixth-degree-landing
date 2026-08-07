@@ -1,6 +1,10 @@
 // Waitlist signup endpoint. Sends a role-specific welcome email to the
 // signee and a notification to the founders, both via Resend.
 //
+// Signups carry a role qualifier, validated and normalized here: creators an
+// Instagram or TikTok handle (platform + handle), brands a website. The
+// welcome email never mentions them; they ride the founder notification only.
+//
 // Requires RESEND_API_KEY in the Vercel project env. Until it is set this
 // returns 503 and the frontend falls back to the old FormSubmit flow, so
 // merging before the key exists is safe.
@@ -79,13 +83,49 @@ async function send(apiKey, payload) {
   return res.json();
 }
 
+// Creator qualifier: platform + handle. Accepts a bare handle, @handle, or a
+// pasted instagram.com/tiktok.com profile URL; a URL's host wins over the
+// declared platform. Returns { platform, handle } or null if unusable.
+function normalizeCreatorSocial(platform, handle) {
+  if (typeof handle !== 'string' || handle.length > 300) return null;
+  let h = handle.trim();
+  let p = platform === 'instagram' || platform === 'tiktok' ? platform : null;
+  const url = h.match(/^(?:https?:\/\/)?(?:www\.)?(instagram\.com|tiktok\.com)\/(@?[A-Za-z0-9._]+)/i);
+  if (url) {
+    p = url[1].toLowerCase() === 'instagram.com' ? 'instagram' : 'tiktok';
+    h = url[2];
+  }
+  h = h.replace(/^@/, '');
+  // Handles may lead with _ or . (e.g. _jane_), but must contain a letter or digit.
+  if (!p || !/^[A-Za-z0-9._]{1,30}$/.test(h) || !/[A-Za-z0-9]/.test(h)) return null;
+  return { platform: p, handle: h };
+}
+
+// Brand qualifier: website. Accepts a bare domain or a full URL; stored with
+// an https scheme. Returns the normalized URL string or null if unusable.
+function normalizeWebsite(website) {
+  if (typeof website !== 'string' || website.length > 300) return null;
+  let w = website.trim();
+  if (!w) return null;
+  if (!/^https?:\/\//i.test(w)) w = 'https://' + w;
+  let url;
+  try {
+    url = new URL(w);
+  } catch {
+    return null;
+  }
+  if (url.protocol !== 'https:' && url.protocol !== 'http:') return null;
+  if (!/^[a-z0-9-]+(\.[a-z0-9-]+)*\.[a-z]{2,}$/i.test(url.hostname)) return null;
+  return url.href;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
     return res.status(405).json({ error: 'method_not_allowed' });
   }
 
-  const { email, role, _honey } = req.body || {};
+  const { email, role, platform, handle, website, _honey } = req.body || {};
 
   // Honeypot filled means a bot; pretend it worked and send nothing.
   if (_honey) return res.status(200).json({ ok: true });
@@ -95,6 +135,17 @@ export default async function handler(req, res) {
   }
   if (role !== 'brand' && role !== 'creator') {
     return res.status(400).json({ error: 'invalid_role' });
+  }
+
+  // Role qualifiers are required. A 400 here still captures the signup: the
+  // frontend falls back to FormSubmit, which carries every enabled field.
+  const social = role === 'creator' ? normalizeCreatorSocial(platform, handle) : null;
+  const site = role === 'brand' ? normalizeWebsite(website) : null;
+  if (role === 'creator' && !social) {
+    return res.status(400).json({ error: 'invalid_handle' });
+  }
+  if (role === 'brand' && !site) {
+    return res.status(400).json({ error: 'invalid_website' });
   }
 
   const apiKey = process.env.RESEND_API_KEY;
@@ -117,13 +168,21 @@ export default async function handler(req, res) {
     return res.status(502).json({ error: 'send_failed' });
   }
 
+  const detail = social
+    ? `Platform: ${social.platform === 'instagram' ? 'Instagram' : 'TikTok'}\nHandle: @${social.handle}\nProfile: ${
+        social.platform === 'instagram'
+          ? `https://instagram.com/${social.handle}`
+          : `https://tiktok.com/@${social.handle}`
+      }`
+    : `Website: ${site}`;
+
   try {
     await send(apiKey, {
       from: FROM,
       to: [NOTIFY],
       reply_to: email,
       subject: `Waitlist signup: ${role} - ${email}`,
-      text: `New waitlist signup\n\nEmail: ${email}\nRole: ${role}\n\nWelcome email sent. Reply to this message to reach them directly.`,
+      text: `New waitlist signup\n\nEmail: ${email}\nRole: ${role}\n${detail}\n\nWelcome email sent. Reply to this message to reach them directly.`,
     });
   } catch (err) {
     // Signee already got their welcome; log and still report success.
