@@ -1,9 +1,20 @@
-// Waitlist signup endpoint. Sends a role-specific welcome email to the
-// signee and a notification to the founders, both via Resend.
+// Waitlist signup endpoint. Stores the lead in the app's database, then
+// sends a role-specific welcome email to the signee and a notification to
+// the founders via Resend.
 //
 // Signups carry a role qualifier, validated and normalized here: creators an
 // Instagram or TikTok handle (platform + handle), brands a website. The
 // welcome email never mentions them; they ride the founder notification only.
+//
+// THE DATABASE IS THE SYSTEM OF RECORD (the app repo's `waitlist_signups`
+// table, prod Supabase); emails are notifications. The lead is stored FIRST,
+// so a Resend outage cannot lose a signup; a store failure logs and falls
+// through to the email path, so a database outage cannot refuse one either.
+// This project holds ONLY the public anon key (SUPABASE_URL +
+// SUPABASE_ANON_KEY in Vercel env), and the key opens exactly one door: the
+// SECURITY DEFINER function waitlist_signup(), which validates its own
+// inputs and can only upsert a lead row. Never put a service-role key here.
+// Until the env vars are set, storage no-ops and emails remain the record.
 //
 // Requires RESEND_API_KEY in the Vercel project env. Until it is set this
 // returns 503 and the frontend falls back to the old FormSubmit flow, so
@@ -68,6 +79,30 @@ function toHtml(text) {
   <p style="margin:0 0 24px;font-family:Georgia,serif;font-size:22px;">Sixth Degree<span style="color:#0D9488;">&deg;</span></p>
   ${paras}
 </div>`;
+}
+
+// Upsert the lead via the one RPC the anon key can execute. Returns false
+// when storage is not configured (env vars absent); throws on a failed call.
+async function storeLead(email, role, social, site) {
+  const url = process.env.SUPABASE_URL;
+  const key = process.env.SUPABASE_ANON_KEY;
+  if (!url || !key) return false;
+  const res = await fetch(`${url}/rest/v1/rpc/waitlist_signup`, {
+    method: 'POST',
+    headers: { apikey: key, Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      p_email: email,
+      p_role: role,
+      p_platform: social ? social.platform : null,
+      p_handle: social ? social.handle : null,
+      p_website: site,
+    }),
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`waitlist store ${res.status}: ${body.slice(0, 300)}`);
+  }
+  return true;
 }
 
 async function send(apiKey, payload) {
@@ -146,6 +181,13 @@ export default async function handler(req, res) {
   }
   if (role === 'brand' && !site) {
     return res.status(400).json({ error: 'invalid_website' });
+  }
+
+  // Store first (see header). A failure here must never block the signup.
+  try {
+    await storeLead(email, role, social, site);
+  } catch (err) {
+    console.error('waitlist lead store failed', err);
   }
 
   const apiKey = process.env.RESEND_API_KEY;
