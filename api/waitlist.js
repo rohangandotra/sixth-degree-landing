@@ -1,9 +1,20 @@
-// Waitlist signup endpoint. Sends a role-specific welcome email to the
-// signee and a notification to the founders, both via Resend.
+// Waitlist signup endpoint. Stores the lead in the app's database, then
+// sends a role-specific welcome email to the signee and a notification to
+// the founders via Resend.
 //
 // Signups carry a role qualifier, validated and normalized here: creators an
 // Instagram or TikTok handle (platform + handle), brands a website. The
 // welcome email never mentions them; they ride the founder notification only.
+//
+// THE DATABASE IS THE SYSTEM OF RECORD (the app repo's `waitlist_signups`
+// table, prod Supabase); emails are notifications. The lead is stored FIRST,
+// so a Resend outage cannot lose a signup; a store failure logs and falls
+// through to the email path, so a database outage cannot refuse one either.
+// This project holds ONLY the public anon key (SUPABASE_URL +
+// SUPABASE_ANON_KEY in Vercel env), and the key opens exactly one door: the
+// SECURITY DEFINER function waitlist_signup(), which validates its own
+// inputs and can only upsert a lead row. Never put a service-role key here.
+// Until the env vars are set, storage no-ops and emails remain the record.
 //
 // Requires RESEND_API_KEY in the Vercel project env. Until it is set this
 // returns 503 and the frontend falls back to the old FormSubmit flow, so
@@ -70,6 +81,38 @@ function toHtml(text) {
 </div>`;
 }
 
+// Upsert the lead via the one RPC the anon key can execute. Returns false
+// when storage is not configured (env vars absent); throws on a failed call.
+async function storeLead(email, role, social, site) {
+  const url = process.env.SUPABASE_URL;
+  const key = process.env.SUPABASE_ANON_KEY;
+  if (!url || !key) {
+    // Unconfigured must never look like working: without this line, a typo'd
+    // env var means an empty leads table that nobody notices for weeks.
+    console.warn('waitlist lead storage not configured (SUPABASE_URL / SUPABASE_ANON_KEY); emails are the only record');
+    return false;
+  }
+  const res = await fetch(`${url.replace(/\/$/, '')}/rest/v1/rpc/waitlist_signup`, {
+    method: 'POST',
+    headers: { apikey: key, Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      p_email: email,
+      p_role: role,
+      p_platform: social ? social.platform : null,
+      p_handle: social ? social.handle : null,
+      p_website: site,
+    }),
+    // A hung database must degrade to the email path, not hold the signup
+    // hostage until the platform timeout. Failure is caught by the caller.
+    signal: AbortSignal.timeout(5000),
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`waitlist store ${res.status}: ${body.slice(0, 300)}`);
+  }
+  return true;
+}
+
 async function send(apiKey, payload) {
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -101,8 +144,13 @@ function normalizeCreatorSocial(platform, handle) {
   return { platform: p, handle: h };
 }
 
-// Brand qualifier: website. Accepts a bare domain or a full URL; stored with
-// an https scheme. Returns the normalized URL string or null if unusable.
+// Brand qualifier: website. Accepts a bare domain or a full URL; https is
+// prepended when no scheme is given (an explicit http:// is kept). Returns
+// the normalized URL string or null if unusable. The length cap is checked
+// on the NORMALIZED url, because that is what the database's own 300-char
+// bound sees: new URL() can expand its input (scheme prepend, percent
+// encoding), and a lead the database refuses is a lead silently missing
+// from the system of record.
 function normalizeWebsite(website) {
   if (typeof website !== 'string' || website.length > 300) return null;
   let w = website.trim();
@@ -116,6 +164,7 @@ function normalizeWebsite(website) {
   }
   if (url.protocol !== 'https:' && url.protocol !== 'http:') return null;
   if (!/^[a-z0-9-]+(\.[a-z0-9-]+)*\.[a-z]{2,}$/i.test(url.hostname)) return null;
+  if (url.href.length > 300) return null;
   return url.href;
 }
 
@@ -146,6 +195,13 @@ export default async function handler(req, res) {
   }
   if (role === 'brand' && !site) {
     return res.status(400).json({ error: 'invalid_website' });
+  }
+
+  // Store first (see header). A failure here must never block the signup.
+  try {
+    await storeLead(email, role, social, site);
+  } catch (err) {
+    console.error('waitlist lead store failed', err);
   }
 
   const apiKey = process.env.RESEND_API_KEY;
