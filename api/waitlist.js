@@ -86,8 +86,13 @@ function toHtml(text) {
 async function storeLead(email, role, social, site) {
   const url = process.env.SUPABASE_URL;
   const key = process.env.SUPABASE_ANON_KEY;
-  if (!url || !key) return false;
-  const res = await fetch(`${url}/rest/v1/rpc/waitlist_signup`, {
+  if (!url || !key) {
+    // Unconfigured must never look like working: without this line, a typo'd
+    // env var means an empty leads table that nobody notices for weeks.
+    console.warn('waitlist lead storage not configured (SUPABASE_URL / SUPABASE_ANON_KEY); emails are the only record');
+    return false;
+  }
+  const res = await fetch(`${url.replace(/\/$/, '')}/rest/v1/rpc/waitlist_signup`, {
     method: 'POST',
     headers: { apikey: key, Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -97,6 +102,9 @@ async function storeLead(email, role, social, site) {
       p_handle: social ? social.handle : null,
       p_website: site,
     }),
+    // A hung database must degrade to the email path, not hold the signup
+    // hostage until the platform timeout. Failure is caught by the caller.
+    signal: AbortSignal.timeout(5000),
   });
   if (!res.ok) {
     const body = await res.text().catch(() => '');
@@ -136,8 +144,13 @@ function normalizeCreatorSocial(platform, handle) {
   return { platform: p, handle: h };
 }
 
-// Brand qualifier: website. Accepts a bare domain or a full URL; stored with
-// an https scheme. Returns the normalized URL string or null if unusable.
+// Brand qualifier: website. Accepts a bare domain or a full URL; https is
+// prepended when no scheme is given (an explicit http:// is kept). Returns
+// the normalized URL string or null if unusable. The length cap is checked
+// on the NORMALIZED url, because that is what the database's own 300-char
+// bound sees: new URL() can expand its input (scheme prepend, percent
+// encoding), and a lead the database refuses is a lead silently missing
+// from the system of record.
 function normalizeWebsite(website) {
   if (typeof website !== 'string' || website.length > 300) return null;
   let w = website.trim();
@@ -151,6 +164,7 @@ function normalizeWebsite(website) {
   }
   if (url.protocol !== 'https:' && url.protocol !== 'http:') return null;
   if (!/^[a-z0-9-]+(\.[a-z0-9-]+)*\.[a-z]{2,}$/i.test(url.hostname)) return null;
+  if (url.href.length > 300) return null;
   return url.href;
 }
 
