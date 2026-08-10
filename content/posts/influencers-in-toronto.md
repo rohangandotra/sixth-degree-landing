@@ -3,11 +3,11 @@ title: "Influencers in Toronto: How to Find and Hire Them"
 description: "A practical guide to finding, vetting, and hiring influencers in Toronto: where to look, what they cost, and how to avoid a bad fit."
 target_query: "influencers in toronto"
 date: 2026-08-06
-modified: 2026-08-06
+modified: 2026-08-10
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
-"Influencers in Toronto" is a big search for a specific problem. Most brands typing it don't want a ranked list of the city's biggest accounts. They want to know: where do I actually find someone the right size for my budget, what should I expect to pay, and how do I tell a real local audience from a bought one before I send money. This is the short version of everything we've learned running a Toronto creator marketplace, with links to the longer version of each piece.
+"Influencers in Toronto" is a big search for a specific problem. Most brands typing it don't want a ranked list of the city's biggest accounts. They want to know: where do I actually find someone the right size for my budget, what should I expect to pay, and how do I tell a real local audience from a bought one before I send money. This is the short version of everything we've learned running a Toronto creator marketplace, with links to the longer version of each piece. If you want the fuller step-by-step, from setting a goal through paying safely, see [How to do influencer marketing: a small business guide](https://sixthdegree.app/blog/how-to-do-influencer-marketing/).
 
 ## Start with size, not fame
 
