@@ -38,6 +38,41 @@
       else if (v.includes('tiktok.com/')) platformSelect.value = 'tiktok';
     });
 
+    // Role-carrying CTAs: any link with data-join-role preselects the role
+    // before the browser's own anchor scroll to #contact, so the form never
+    // asks a question the visitor already answered. No preventDefault - the
+    // native jump (and the URL hash) still work with JS disabled.
+    document.querySelectorAll('[data-join-role]').forEach((cta) => {
+      cta.addEventListener('click', () => {
+        const role = cta.dataset.joinRole;
+        if (role !== 'brand' && role !== 'creator') return;
+        roleSelect.value = role;
+        syncExtras();
+      });
+    });
+
+    // Sticky mobile CTA: visible after the hero scrolls away, hidden while
+    // the signup section is on screen (it points there; showing both is
+    // noise). CSS keeps it display:none above the phone breakpoint.
+    const stickyJoin = document.getElementById('sticky-join');
+    const hero = document.querySelector('.hero');
+    const ctaSection = document.getElementById('contact');
+    if (stickyJoin && hero && ctaSection && 'IntersectionObserver' in window) {
+      let heroGone = false;
+      let formVisible = false;
+      const applyStickyState = () => {
+        stickyJoin.hidden = !(heroGone && !formVisible);
+      };
+      new IntersectionObserver(([entry]) => {
+        heroGone = !entry.isIntersecting;
+        applyStickyState();
+      }).observe(hero);
+      new IntersectionObserver(([entry]) => {
+        formVisible = entry.isIntersecting;
+        applyStickyState();
+      }).observe(ctaSection);
+    }
+
     waitlistForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = waitlistForm.querySelector('button[type="submit"]');

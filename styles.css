@@ -1308,3 +1308,36 @@ img {
     padding: 14px 0;
   }
 }
+
+/* ===== STICKY MOBILE CTA =====
+   Phones only: a thumb-reach "Join the waitlist" pinned to the bottom edge.
+   animations.js unhides it once the hero scrolls away and re-hides it while
+   the signup section itself is on screen. */
+.sticky-join {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .sticky-join {
+    display: block;
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    z-index: 60;
+    padding: 15px 24px;
+    border-radius: 100px;
+    background: #0D9488;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(13, 148, 136, 0.35);
+  }
+
+  .sticky-join[hidden] {
+    display: none;
+  }
+}
