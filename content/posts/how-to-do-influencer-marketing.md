@@ -4,7 +4,7 @@ description: "A step-by-step guide to running your first influencer marketing ca
 target_query: "how to do influencer marketing"
 date: 2026-08-10
 modified: 2026-08-10
-author: "Aaryan Juneja, co-founder of Sixth Degree"
+author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
 Most small businesses learn influencer marketing by doing it badly once. They DM a handful of accounts with big follower counts, send free product, get a post that disappears into a Story in 24 hours, and conclude the whole channel doesn't work. The channel worked fine. The plan underneath it didn't exist.
