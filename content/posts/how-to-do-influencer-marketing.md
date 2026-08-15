@@ -3,7 +3,7 @@ title: "How to Do Influencer Marketing: A Small Business Guide"
 description: "A step-by-step guide to running your first influencer marketing campaign: setting a goal, sizing creators, writing a brief, and paying safely."
 target_query: "how to do influencer marketing"
 date: 2026-08-10
-modified: 2026-08-10
+modified: 2026-08-13
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -17,7 +17,7 @@ This is the plan. It's the version we'd hand a friend opening their first campai
 
 - **Awareness.** You want more people in your city or category to know your business exists. Reach matters more than any single post's sales.
 - **Direct response.** You want people to click a link, use a code, or walk into a store this week. A smaller, more engaged audience beats a bigger, passive one.
-- **Content.** You want photos and video of real people using your product that you can reuse in ads, on your site, and in your own feed. The creator's own audience is a bonus, not the point.
+- **Content.** You want photos and video of real people using your product that you can reuse in ads, on your site, and in your own feed. The creator's own audience is a bonus, not the point. If this is your goal, you may not want an influencer collaboration at all: see [How to do creator marketing: a UGC guide for brands](https://sixthdegree.app/blog/how-to-do-creator-marketing-ugc/) for the version of this guide built specifically around content-only creators.
 
 Most first campaigns are quietly trying to do all three at once with one post from one creator, which is why they underperform. Pick one goal for the first campaign. You can layer the others in once you know what a single lane looks like.
 

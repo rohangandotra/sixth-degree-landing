@@ -3,7 +3,7 @@ title: "How to find micro influencers and UGC creators in Toronto"
 description: "Where Toronto brands find micro influencers and UGC creators, how to vet an account before you DM it, and how to write an opener that gets a reply."
 target_query: "find micro influencers toronto"
 date: 2026-08-04
-modified: 2026-08-06
+modified: 2026-08-13
 author: "Aaryan Juneja, co-founder of Sixth Degree"
 ---
 
@@ -11,7 +11,7 @@ Search "Toronto influencers" and you get agency roundups full of six-figure-foll
 
 ## Two different things you might be looking for
 
-An **influencer creator** posts to their own audience: you're paying for their reach and their endorsement showing up in someone else's feed. A **UGC creator** shoots content for your channels and never posts it publicly themselves: you're paying for production, not distribution. A lot of brands conflate the two and end up disappointed: hiring an influencer for pure content production wastes their audience, and hiring a UGC creator expecting organic reach misunderstands what you bought. If you haven't sorted out which one fits your goal yet, [Micro vs nano creators: which fits a Toronto brand?](https://sixthdegree.app/blog/micro-vs-nano-creators/) covers the tradeoff. This post is about the search, for either type.
+An **influencer creator** posts to their own audience: you're paying for their reach and their endorsement showing up in someone else's feed. A **UGC creator** shoots content for your channels and never posts it publicly themselves: you're paying for production, not distribution. A lot of brands conflate the two and end up disappointed: hiring an influencer for pure content production wastes their audience, and hiring a UGC creator expecting organic reach misunderstands what you bought. If you haven't sorted out which one fits your goal yet, [Micro vs nano creators: which fits a Toronto brand?](https://sixthdegree.app/blog/micro-vs-nano-creators/) covers the tradeoff. This post is about the search, for either type. Once you know you want UGC specifically, [How to do creator marketing: a UGC guide for brands](https://sixthdegree.app/blog/how-to-do-creator-marketing-ugc/) covers briefing, usage rights, and pricing it right.
 
 ## Where to actually search
 

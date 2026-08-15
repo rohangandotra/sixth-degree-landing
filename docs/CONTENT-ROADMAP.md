@@ -25,7 +25,20 @@ what's built and what's next.
    briefing, usage rights, escrow, measurement. Links out to the tier/rate/
    find posts and to the Toronto pillar rather than repeating them; the
    Toronto pillar now links back to it (two-way pillar-to-pillar link).
-3. **"How to do creator marketing / UGC" guide** — targets (c). Not started.
+3. **"How to do creator marketing / UGC" guide** — targets (c). **Published
+   2026-08-13**: `content/posts/how-to-do-creator-marketing-ugc.md`. Defines
+   creator marketing/UGC against influencer marketing (content vs. reach),
+   then covers what's actually different about it: hiring isn't by follower
+   count, briefs are detailed rather than loose (opposite of pillar 2's
+   advice, deliberately, since it's a different product), usage rights are
+   the core of the transaction rather than an add-on, and buying happens in
+   batches for testing rather than as one hero post. Links out to pillar 2,
+   the find-creators spoke, and the rates post rather than repeating their
+   content; pillar 2 and the find-creators spoke both got a linking sentence
+   back to it (two-way pillar-to-pillar links, same pattern as pillar 2's
+   launch).
+
+All three brand-side pillars are now published.
 
 ## Spokes (published)
 
@@ -37,46 +50,45 @@ what's built and what's next.
   than re-describe the search methods; that overlap was caught and fixed in
   the 2026-08-06 run (see PR history on `claude/seo-content-drafts`).
 
-## Next nine, in priority order (set 2026-08-10, pillar 2 published)
+## Next eight, in priority order (set 2026-08-13, pillar 3 published)
 
-Pillar 3 comes first since it's the biggest remaining gap: pillar 2
-(published 2026-08-10) now covers half of the group (c) educational head
-terms, but nothing targets "how to do creator marketing" / "creator
-marketing" yet. After that, spokes in the order below. Pull the next
-unwritten one each run rather than re-deriving priority from scratch;
-re-order here if something jumps the queue (a GSC gap, a founder ask)
-instead of just picking a different one.
+All three pillars are built. The backlog is now creator-side-first (per the
+2026-08-06 founder request below), then brand-side spokes in the order
+below. Pull the next unwritten one each run rather than re-deriving priority
+from scratch; re-order here if something jumps the queue (a GSC gap, a
+founder ask) instead of just picking a different one.
 
-1. **Pillar 3: "How to do creator marketing (UGC) — a beginner's guide."**
-   Targets (c): "how to do creator marketing," "creator marketing."
-2. **Creator-side: "How to get brand deals with 1,000 to 10,000 followers in
+1. **Creator-side: "How to get brand deals with 1,000 to 10,000 followers in
    Canada."** Added 2026-08-06 at the founder's request — we've only written
    brand-side content so far, and a creator searching "how do I get brand
-   deals" should find us too. Queue behind pillar 3 above, but write it
-   before adding more brand-side spokes so the content isn't one-sided.
-3. **"What is an ad rights rider? UGC usage rights, explained."** Links the
-   actual Ad Rights Rider document.
-4. **"What's a good engagement rate for nano and micro creators in
+   deals" should find us too. Write this next, before adding more
+   brand-side spokes, so the content isn't one-sided.
+2. **"What is an ad rights rider? UGC usage rights, explained."** Links the
+   actual Ad Rights Rider document. Now that both pillar 2 and pillar 3 lean
+   on the Ad Rights Rider concept, this spoke has two ready inbound links
+   waiting rather than needing new ones written.
+3. **"What's a good engagement rate for nano and micro creators in
    Toronto?"** Definitional; the ranges currently only appear in passing
    inside `micro-vs-nano-creators.md`.
-5. **"Seeding vs paid: when to give product instead of paying a creator."**
+4. **"Seeding vs paid: when to give product instead of paying a creator."**
    Decision framework, distinct from the rate/tier posts.
-6. **"Instagram vs TikTok for Toronto creator campaigns: where to put your
+5. **"Instagram vs TikTok for Toronto creator campaigns: where to put your
    budget first."** New comparison angle. Caveat: if it touches TikTok
    rates specifically, it needs a real citable source first, same bar the
    app repo's fee tooling holds itself to (`lib/deliverables.ts`: "adding a
    deliverable type means finding the published benchmark first"). Don't
    publish a TikTok number without one.
-7. **"How to brief a creator so the content doesn't miss."** Checklist for
-   the step after hiring, before filming. The new pillar 2 guide touches
-   this briefly (one section); this spoke should go deeper rather than
-   repeat that section.
-8. **"How to measure a Toronto influencer campaign without fake
+6. **"How to brief a creator so the content doesn't miss."** Checklist for
+   the step after hiring, before filming. Pillar 2 touches influencer briefs
+   briefly and pillar 3 now covers UGC briefs in some depth; this spoke
+   should go deeper on the influencer side specifically rather than repeat
+   either.
+7. **"How to measure a Toronto influencer campaign without fake
    attribution."** Ties to the real traced-links/promo-code/ROAS feature;
    reinforces the honesty positioning. Pillar 2 also touches measurement
    briefly; this spoke owns the depth.
-9. **"Creator marketing KPIs: what to track beyond likes and follower
-   count."** Pairs with #8 but is about picking goals before a campaign,
+8. **"Creator marketing KPIs: what to track beyond likes and follower
+   count."** Pairs with #7 but is about picking goals before a campaign,
    not measuring results after.
 
 Once there's real GSC query volume, let actual gaps override this ordering
