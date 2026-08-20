@@ -1087,6 +1087,22 @@ img {
   background: rgba(255, 255, 255, 0.09);
 }
 
+.waitlist__consent {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 400;
+}
+
+.waitlist__consent a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: underline;
+}
+
+.waitlist__consent a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .waitlist__thanks {
   font-size: 0.95rem;
   color: #5eead4;

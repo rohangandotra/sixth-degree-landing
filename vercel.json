@@ -5,6 +5,16 @@
       "has": [{ "type": "host", "value": "www.sixthdegree.app" }],
       "destination": "https://sixthdegree.app/:path*",
       "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "https://app.sixthdegree.app/privacy",
+      "permanent": false
+    },
+    {
+      "source": "/terms",
+      "destination": "https://app.sixthdegree.app/terms",
+      "permanent": false
     }
   ],
   "rewrites": [
