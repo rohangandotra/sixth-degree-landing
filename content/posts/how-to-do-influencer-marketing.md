@@ -3,7 +3,7 @@ title: "How to Do Influencer Marketing: A Small Business Guide"
 description: "A step-by-step guide to running your first influencer marketing campaign: setting a goal, sizing creators, writing a brief, and paying safely."
 target_query: "how to do influencer marketing"
 date: 2026-08-10
-modified: 2026-08-13
+modified: 2026-08-20
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -43,7 +43,7 @@ A brief that works covers four things and stops there: what the product or servi
 
 ## Agree on usage rights before you agree on a price
 
-Decide one thing before the first quote goes back and forth: are you only using this content once, for the creator's own post, or do you also want to repost it, run it as a paid ad, or keep using it after the campaign ends? Skipping this question is the most common source of after-the-fact disputes between brands and creators, and it costs two sentences to avoid. Usage beyond the creator's own organic post is typically priced separately, on top of the base rate, and reasonably so: you're buying a license, not just a post. On Sixth Degree this is handled through a standalone [Ad Rights Rider](https://app.sixthdegree.app/ad-rights-rider) so it's never assumed by either side.
+Decide one thing before the first quote goes back and forth: are you only using this content once, for the creator's own post, or do you also want to repost it, run it as a paid ad, or keep using it after the campaign ends? Skipping this question is the most common source of after-the-fact disputes between brands and creators, and it costs two sentences to avoid. Usage beyond the creator's own organic post is typically priced separately, on top of the base rate, and reasonably so: you're buying a license, not just a post. On Sixth Degree this is handled through a standalone [Ad Rights Rider](https://app.sixthdegree.app/ad-rights-rider) so it's never assumed by either side. [What is an ad rights rider?](https://sixthdegree.app/blog/ad-rights-rider-ugc-usage-rights/) covers what to put in that agreement, whichever platform you're hiring on.
 
 ## Pay in a way that protects both of you
 

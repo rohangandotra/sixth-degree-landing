@@ -3,7 +3,7 @@ title: "Toronto creator rates: what nano and micro cost in 2026"
 description: "CAD rate ranges for Toronto nano and micro creators in 2026: static posts, reels, story sets, UGC with usage rights, plus two worked budgets."
 target_query: "toronto influencer rates"
 date: 2026-07-28
-modified: 2026-08-06
+modified: 2026-08-20
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -30,7 +30,7 @@ How to read it:
 
 **Engagement quality.** Two accounts with 8,000 followers can be worth completely different amounts. One gets 40 comments from people in the city; the other gets 900 likes left over from a giveaway spike two years ago. The first deserves the top of the range. Thirty seconds of scrolling the comments tells you most of what you need to know.
 
-**Usage rights.** The base rate covers the creator posting to their own account. A repost to your brand's organic feed is often included or cheap. Running the content as paid ads from your ad account is not. Expect 25% to 100% on top of the base rate, priced by how long the ads run. On Sixth Degree, ad usage is a separate opt-in under the [Ad Rights Rider](https://app.sixthdegree.app/ad-rights-rider), so neither side discovers a misunderstanding after the campaign ends.
+**Usage rights.** The base rate covers the creator posting to their own account. A repost to your brand's organic feed is often included or cheap. Running the content as paid ads from your ad account is not. Expect 25% to 100% on top of the base rate, priced by how long the ads run. On Sixth Degree, ad usage is a separate opt-in under the [Ad Rights Rider](https://app.sixthdegree.app/ad-rights-rider), so neither side discovers a misunderstanding after the campaign ends. [What is an ad rights rider?](https://sixthdegree.app/blog/ad-rights-rider-ugc-usage-rights/) walks through what that agreement should cover.
 
 **Exclusivity.** Asking a creator to turn down competing brands for 60 or 90 days costs money, because you're buying the deals they won't take. For nano creators it's usually unnecessary, since competing offers are rare at that size. For micro creators, budget roughly 20% to 50% on top, depending on the category and the window.
 
