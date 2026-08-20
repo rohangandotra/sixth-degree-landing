@@ -49,46 +49,44 @@ All three brand-side pillars are now published.
   content** — the pillar above and any future piece should link here rather
   than re-describe the search methods; that overlap was caught and fixed in
   the 2026-08-06 run (see PR history on `claude/seo-content-drafts`).
+- `brand-deals-1000-10000-followers-canada.md` (2026-08-17) — creator-side:
+  what to charge and how to pitch brands at 1,000 to 10,000 followers.
+- `ad-rights-rider-ugc-usage-rights.md` (2026-08-20) — what an ad rights
+  rider is, what organic usage covers by default vs. what a paid-usage
+  agreement needs to cover, and how Sixth Degree's own rider works. Pillar 2,
+  pillar 3, and `toronto-creator-rates.md` all got a linking sentence back to
+  it in the same run (they already referenced the Ad Rights Rider document
+  directly; this spoke is the explainer those mentions were missing).
 
-## Next eight, in priority order (set 2026-08-13, pillar 3 published)
+## Next six, in priority order (set 2026-08-20, spoke #2 published)
 
-All three pillars are built. The backlog is now creator-side-first (per the
-2026-08-06 founder request below), then brand-side spokes in the order
-below. Pull the next unwritten one each run rather than re-deriving priority
-from scratch; re-order here if something jumps the queue (a GSC gap, a
-founder ask) instead of just picking a different one.
+All three pillars and the first two queued spokes are built. Pull the next
+unwritten one each run rather than re-deriving priority from scratch;
+re-order here if something jumps the queue (a GSC gap, a founder ask)
+instead of just picking a different one.
 
-1. **Creator-side: "How to get brand deals with 1,000 to 10,000 followers in
-   Canada."** Added 2026-08-06 at the founder's request — we've only written
-   brand-side content so far, and a creator searching "how do I get brand
-   deals" should find us too. Write this next, before adding more
-   brand-side spokes, so the content isn't one-sided.
-2. **"What is an ad rights rider? UGC usage rights, explained."** Links the
-   actual Ad Rights Rider document. Now that both pillar 2 and pillar 3 lean
-   on the Ad Rights Rider concept, this spoke has two ready inbound links
-   waiting rather than needing new ones written.
-3. **"What's a good engagement rate for nano and micro creators in
+1. **"What's a good engagement rate for nano and micro creators in
    Toronto?"** Definitional; the ranges currently only appear in passing
    inside `micro-vs-nano-creators.md`.
-4. **"Seeding vs paid: when to give product instead of paying a creator."**
+2. **"Seeding vs paid: when to give product instead of paying a creator."**
    Decision framework, distinct from the rate/tier posts.
-5. **"Instagram vs TikTok for Toronto creator campaigns: where to put your
+3. **"Instagram vs TikTok for Toronto creator campaigns: where to put your
    budget first."** New comparison angle. Caveat: if it touches TikTok
    rates specifically, it needs a real citable source first, same bar the
    app repo's fee tooling holds itself to (`lib/deliverables.ts`: "adding a
    deliverable type means finding the published benchmark first"). Don't
    publish a TikTok number without one.
-6. **"How to brief a creator so the content doesn't miss."** Checklist for
+4. **"How to brief a creator so the content doesn't miss."** Checklist for
    the step after hiring, before filming. Pillar 2 touches influencer briefs
    briefly and pillar 3 now covers UGC briefs in some depth; this spoke
    should go deeper on the influencer side specifically rather than repeat
    either.
-7. **"How to measure a Toronto influencer campaign without fake
+5. **"How to measure a Toronto influencer campaign without fake
    attribution."** Ties to the real traced-links/promo-code/ROAS feature;
    reinforces the honesty positioning. Pillar 2 also touches measurement
    briefly; this spoke owns the depth.
-8. **"Creator marketing KPIs: what to track beyond likes and follower
-   count."** Pairs with #7 but is about picking goals before a campaign,
+6. **"Creator marketing KPIs: what to track beyond likes and follower
+   count."** Pairs with #5 but is about picking goals before a campaign,
    not measuring results after.
 
 Once there's real GSC query volume, let actual gaps override this ordering

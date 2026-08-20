@@ -3,7 +3,7 @@ title: "How to Do Creator Marketing: A UGC Guide for Brands"
 description: "A guide to creator marketing and UGC: what it is, how it differs from influencer marketing, briefing creators, and buying usage rights."
 target_query: "how to do creator marketing"
 date: 2026-08-13
-modified: 2026-08-13
+modified: 2026-08-20
 author: "Aaryan Juneja, co-founder of Sixth Degree"
 ---
 
@@ -33,7 +33,7 @@ A working UGC brief covers four things: the hook, meaning the first line or shot
 
 With influencer marketing, usage rights are one line among several. With UGC, they're close to the whole transaction. You're not primarily paying for a post. You're paying for a license to run footage of a person appearing to endorse your product, in your own ads, for a set term or indefinitely. Get this wrong and you either overpay for a single-use clip or underpay and lose the right to keep running the ad that's actually converting.
 
-Settle it before the quote, not after: are you licensing this for organic use on your own channels only, or do you need paid ad rights, and for how long. Ask about exclusivity too, whether the same creator can shoot similar content for a competitor next month. On Sixth Degree this runs through a standalone [Ad Rights Rider](https://app.sixthdegree.app/ad-rights-rider), so a brand and a creator agree on paid usage in writing before any money moves, instead of finding out they disagreed once the ad is already spending. [Toronto creator rates: what nano and micro cost in 2026](https://sixthdegree.app/blog/toronto-creator-rates/) has current per-asset pricing, including the usage-rights premium.
+Settle it before the quote, not after: are you licensing this for organic use on your own channels only, or do you need paid ad rights, and for how long. Ask about exclusivity too, whether the same creator can shoot similar content for a competitor next month. On Sixth Degree this runs through a standalone [Ad Rights Rider](https://app.sixthdegree.app/ad-rights-rider), so a brand and a creator agree on paid usage in writing before any money moves, instead of finding out they disagreed once the ad is already spending. [What is an ad rights rider?](https://sixthdegree.app/blog/ad-rights-rider-ugc-usage-rights/) breaks down what a usage agreement like this one actually needs to cover. [Toronto creator rates: what nano and micro cost in 2026](https://sixthdegree.app/blog/toronto-creator-rates/) has current per-asset pricing, including the usage-rights premium.
 
 ## Buy in batches, not one hero post
 
