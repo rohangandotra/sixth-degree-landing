@@ -45,6 +45,9 @@ Key URLs:
 - https://sixthdegree.app/blog/ad-rights-rider-ugc-usage-rights/ : what an ad
   rights rider is, what organic usage covers by default, and what a paid
   usage agreement needs to cover
+- https://sixthdegree.app/blog/seeding-vs-paid-influencer-marketing/ : when
+  free-product seeding works, when a campaign needs a paid post instead, and
+  how to use seeding to find creators worth paying
 - Terms of service: https://app.sixthdegree.app/terms
 - Privacy policy: https://app.sixthdegree.app/privacy
 - Creator Agreement: https://app.sixthdegree.app/creator-agreement

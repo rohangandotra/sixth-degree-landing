@@ -3,7 +3,7 @@ title: "Micro vs nano creators: which fits a Toronto brand?"
 description: "Nano posts in Toronto run $50 to $250; micro runs $250 to $1,500+. How a $1,000 budget splits between the two tiers, and how to pick."
 target_query: "micro vs nano influencers toronto"
 date: 2026-07-27
-modified: 2026-08-06
+modified: 2026-08-24
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -66,7 +66,7 @@ Plenty of campaigns do both: one micro creator for the launch asset, a handful o
 
 Sometimes the honest answer is: don't book creators yet.
 
-If your Google listing has three reviews and no photos, fix that first. Creator traffic will land on it and bounce. If you can't absorb a bump in demand (a kitchen already at capacity on weekends), a successful post just buys you angry comments. And if the total budget is under about $150, put it into seeding instead: give the product to five nano creators with no obligation attached. Some will post anyway, and you'll learn who's worth paying next quarter.
+If your Google listing has three reviews and no photos, fix that first. Creator traffic will land on it and bounce. If you can't absorb a bump in demand (a kitchen already at capacity on weekends), a successful post just buys you angry comments. And if the total budget is under about $150, put it into seeding instead: give the product to five nano creators with no obligation attached. Some will post anyway, and you'll learn who's worth paying next quarter. [Seeding vs. paid: when to gift, when to pay creators](https://sixthdegree.app/blog/seeding-vs-paid-influencer-marketing/) covers that tradeoff in full.
 
 Creators amplify what's already working. They don't repair what isn't.
 
