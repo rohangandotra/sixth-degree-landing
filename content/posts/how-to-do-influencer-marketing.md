@@ -3,7 +3,7 @@ title: "How to Do Influencer Marketing: A Small Business Guide"
 description: "A step-by-step guide to running your first influencer marketing campaign: setting a goal, sizing creators, writing a brief, and paying safely."
 target_query: "how to do influencer marketing"
 date: 2026-08-10
-modified: 2026-08-20
+modified: 2026-08-24
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -20,6 +20,8 @@ This is the plan. It's the version we'd hand a friend opening their first campai
 - **Content.** You want photos and video of real people using your product that you can reuse in ads, on your site, and in your own feed. The creator's own audience is a bonus, not the point. If this is your goal, you may not want an influencer collaboration at all: see [How to do creator marketing: a UGC guide for brands](https://sixthdegree.app/blog/how-to-do-creator-marketing-ugc/) for the version of this guide built specifically around content-only creators.
 
 Most first campaigns are quietly trying to do all three at once with one post from one creator, which is why they underperform. Pick one goal for the first campaign. You can layer the others in once you know what a single lane looks like.
+
+One more decision sits underneath all three: are you sending free product with no fee and no guarantee, or paying for a post you can plan around? [Seeding vs. paid: when to gift, when to pay creators](https://sixthdegree.app/blog/seeding-vs-paid-influencer-marketing/) breaks down which one fits which goal above, and how to use free product to find creators worth paying next.
 
 ## Set a budget before you pick a creator size
 

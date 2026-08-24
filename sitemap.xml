@@ -2,11 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sixthdegree.app/</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://sixthdegree.app/blog/</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-24</lastmod>
+  </url>
+  <url>
+    <loc>https://sixthdegree.app/blog/seeding-vs-paid-influencer-marketing/</loc>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://sixthdegree.app/blog/ad-rights-rider-ugc-usage-rights/</loc>
@@ -22,7 +26,7 @@
   </url>
   <url>
     <loc>https://sixthdegree.app/blog/how-to-do-influencer-marketing/</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://sixthdegree.app/blog/influencers-in-toronto/</loc>
@@ -38,6 +42,6 @@
   </url>
   <url>
     <loc>https://sixthdegree.app/blog/micro-vs-nano-creators/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-24</lastmod>
   </url>
 </urlset>
