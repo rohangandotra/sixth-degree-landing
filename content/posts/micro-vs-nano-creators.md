@@ -20,9 +20,9 @@ The lines are fuzzy and platforms draw them differently. What matters is the sha
 
 Small accounts talk to people they know. When a 3,000-follower account posts about your bakery, a meaningful share of the audience lives within walking distance of it, and the comments come from people the creator will see this week.
 
-Engagement rates reflect that. Commonly cited industry benchmarks put nano accounts somewhere around 4% to 8% engagement, against 1% to 2% for much larger accounts. Treat those as rough ranges, not physics. They shift by platform, by format, and by year. The direction is consistent, though: the smaller the account, the larger the share of the audience that actually responds, because the audience is friends and neighbours rather than strangers who followed a viral clip two years ago.
+Engagement rates reflect that. Commonly cited industry benchmarks put nano accounts somewhere around 4% to 8% engagement, against 1% to 2% for much larger accounts. Treat those as rough ranges, not physics. They shift by platform, by format, and by year. The direction is consistent, though: the smaller the account, the larger the share of the audience that actually responds, because the audience is friends and neighbours rather than strangers who followed a viral clip two years ago. [What is a good engagement rate for influencers?](https://sixthdegree.app/blog/engagement-rate-explained/) walks through the formula and how to spot a number that's bought rather than earned.
 
-The costs are lower too. Nano posts in Toronto commonly land between $50 and $250, and some nano creators will work for product plus a modest fee if the fit is genuine.
+The costs are lower too. Nano posts in Toronto commonly land between $50 and $250, and some nano creators will work for product plus a modest fee if the fit is genuine. If you're a nano creator wondering how to land your first paid deal instead of gifted product, [How to get brand deals with 1,000 to 10,000 followers in Canada](https://sixthdegree.app/blog/brand-deals-1000-10000-followers-canada/) is written for you specifically.
 
 The catch: reach per post is small and content quality varies a lot, so you need volume for the math to work. Eight nano posts means eight briefs and eight separate payments, which is real coordination work if you're doing it over DMs and e-transfers.
 

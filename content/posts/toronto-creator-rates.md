@@ -28,7 +28,7 @@ How to read it:
 
 ## What moves the price up
 
-**Engagement quality.** Two accounts with 8,000 followers can be worth completely different amounts. One gets 40 comments from people in the city; the other gets 900 likes left over from a giveaway spike two years ago. The first deserves the top of the range. Thirty seconds of scrolling the comments tells you most of what you need to know.
+**Engagement quality.** Two accounts with 8,000 followers can be worth completely different amounts. One gets 40 comments from people in the city; the other gets 900 likes left over from a giveaway spike two years ago. The first deserves the top of the range. Thirty seconds of scrolling the comments tells you most of what you need to know, and [What is a good engagement rate for influencers?](https://sixthdegree.app/blog/engagement-rate-explained/) has the full formula and benchmarks by tier if you want the exact math.
 
 **Usage rights.** The base rate covers the creator posting to their own account. A repost to your brand's organic feed is often included or cheap. Running the content as paid ads from your ad account is not. Expect 25% to 100% on top of the base rate, priced by how long the ads run. On Sixth Degree, ad usage is a separate opt-in under the [Ad Rights Rider](https://app.sixthdegree.app/ad-rights-rider), so neither side discovers a misunderstanding after the campaign ends. [What is an ad rights rider?](https://sixthdegree.app/blog/ad-rights-rider-ugc-usage-rights/) walks through what that agreement should cover.
 
@@ -47,6 +47,8 @@ Most rate confusion starts with a vague first message. "Hey, love your content, 
 A first message that gets a straight answer names four things: the deliverable ("one reel plus a three-frame story set"), the timeline ("live in the first two weeks of September"), the usage intent ("organic repost to our account, no paid ads for now"), and your budget band. Naming a band is not weakness. It filters out mismatches in one reply instead of five. A creator whose reel rate is $900 will tell a brand with a $400 band immediately, and both sides keep their afternoon.
 
 If the quote comes back inside the ranges above, you're negotiating details. If it comes back at triple, you're either talking to the wrong tier or missing what the quote includes.
+
+If you're a nano creator reading this from the other side of the DM, the same ranges apply to you: [How to get brand deals with 1,000 to 10,000 followers in Canada](https://sixthdegree.app/blog/brand-deals-1000-10000-followers-canada/) covers what to charge and how to pitch.
 
 ## Worked example 1: $600, one neighbourhood
 
