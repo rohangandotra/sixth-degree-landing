@@ -39,7 +39,7 @@ A profile that looks right can still be wrong. Three checks before you send a me
 2. **Look for local signal in the audience, not just the bio.** A Toronto location tag is one line of text. Neighbourhood mentions and other local accounts showing up in the comments are the real signal.
 3. **Scroll back three or four months**, not just the best nine posts. A follower jump with no matching engagement bump is worth a second look.
 
-The longer checklist, plus how to read past brand work in a creator's grid, is in the find-influencers post linked above.
+The longer checklist, plus how to read past brand work in a creator's grid, is in the find-influencers post linked above. For the actual math behind check three, [What is a good engagement rate for influencers?](https://sixthdegree.app/blog/engagement-rate-explained/) has the formula and what's normal by tier.
 
 ## "Creators near me" and the local advantage
 

@@ -33,7 +33,7 @@ If you're specifically budgeting in Canadian dollars for a Toronto campaign, [To
 
 ## Find creators who fit, not just ones who look right
 
-A big follower count is the easiest thing to fake and the least useful signal for a small budget. Before you reach out to anyone, check three things: whether the comments read like real conversation rather than emoji spam, whether the audience shows any local or category-relevant signal beyond a bio line, and whether engagement holds steady across a few months of posts rather than spiking once and fading.
+A big follower count is the easiest thing to fake and the least useful signal for a small budget. Before you reach out to anyone, check three things: whether the comments read like real conversation rather than emoji spam, whether the audience shows any local or category-relevant signal beyond a bio line, and whether engagement holds steady across a few months of posts rather than spiking once and fading. [What is a good engagement rate for influencers?](https://sixthdegree.app/blog/engagement-rate-explained/) covers exactly how to calculate that number and what's normal by tier.
 
 Where to actually search, and how to write a first message that gets a reply instead of silence, is its own topic with enough detail that we wrote it up separately: [How to find micro influencers and UGC creators in Toronto](https://sixthdegree.app/blog/find-micro-influencers-ugc-toronto/). The search methods there apply outside Toronto too, just swap the location tags and neighbourhood hashtags for your own city. If you're specifically hiring in Toronto, [Influencers in Toronto: how to find and hire them](https://sixthdegree.app/blog/influencers-in-toronto/) walks through the whole local process in one place.
 
