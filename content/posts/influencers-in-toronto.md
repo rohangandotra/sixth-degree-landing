@@ -3,7 +3,7 @@ title: "Influencers in Toronto: How to Find and Hire Them"
 description: "A practical guide to finding, vetting, and hiring influencers in Toronto: where to look, what they cost, and how to avoid a bad fit."
 target_query: "influencers in toronto"
 date: 2026-08-06
-modified: 2026-08-10
+modified: 2026-08-31
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -48,6 +48,10 @@ A lot of this search happens as "influencers near me" or "creators near me," whi
 ## Usage rights, decided upfront
 
 Before you hire, decide one thing and say it in your first message: are you only using the content once, for the creator's own post, or do you also want to repost it, run it as a paid ad, or keep using it after the campaign ends? This is the single most common source of after-the-fact disagreement between brands and creators, and naming the answer costs you two lines in a DM. On Sixth Degree, this is handled explicitly through a separate [Ad Rights Rider](https://app.sixthdegree.app/ad-rights-rider) rather than assumed.
+
+## Agency, freelancer, or marketplace?
+
+Everything above assumes you're hiring creators directly. Some Toronto brands instead consider a full-service influencer marketing agency, which runs the whole campaign for a management fee on top of what creators are paid. That's worth it if you have zero hours to spend on this yourself; it's usually overkill for a single-location business running a handful of local posts. [Influencer marketing agency vs. marketplace in Toronto](https://sixthdegree.app/blog/influencer-marketing-agency-vs-marketplace-toronto/) walks through the cost difference and how to decide.
 
 ## Where Sixth Degree fits
 
