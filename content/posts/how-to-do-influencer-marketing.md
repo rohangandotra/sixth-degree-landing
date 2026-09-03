@@ -3,7 +3,7 @@ title: "How to Do Influencer Marketing: A Small Business Guide"
 description: "A step-by-step guide to running your first influencer marketing campaign: setting a goal, sizing creators, writing a brief, and paying safely."
 target_query: "how to do influencer marketing"
 date: 2026-08-10
-modified: 2026-08-24
+modified: 2026-09-03
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -55,7 +55,7 @@ Escrow, where the money is held by a neutral third party and released once the p
 
 ## Measure what you can actually prove
 
-Likes and views feel like results and prove almost nothing about whether the campaign paid for itself. Before the campaign starts, decide what you'll actually check afterward: a unique promo code per creator, a tracked link, or a simple "how did you hear about us" question at checkout. Any one of these gives you a real number. None of them require guessing.
+Likes and views feel like results and prove almost nothing about whether the campaign paid for itself. Before the campaign starts, decide what you'll actually check afterward: a unique promo code per creator, a tracked link, or a simple "how did you hear about us" question at checkout. Any one of these gives you a real number. None of them require guessing. For the full breakdown of what each kind of number actually proves, and what it doesn't, see [How to measure an influencer campaign honestly](https://sixthdegree.app/blog/measure-influencer-campaign-without-fake-attribution/).
 
 Be honest about what each source tells you, too. A creator's own screenshot of their reach is useful context, not proof of a sale. A code redeemed at your register is proof of a sale. Keep those two categories separate in your head, and you'll make better decisions about which creators to rebook.
 
