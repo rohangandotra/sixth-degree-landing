@@ -44,3 +44,27 @@ confirm the live submission process before sending.
 See the current run's report for draft pitch text (not persisted here to
 avoid this file drifting from what was actually proposed most recently;
 the log's job is dedup, not the copy itself).
+
+## Suggested 2026-09-07
+
+- **Toronto Directory** (toronto.directory) — GTHA-wide local business
+  directory with a "List Your Business" join flow and a free listing tier.
+  WebFetch to this domain was blocked by this session's network egress
+  policy again (same as the 2026-09-03 run's Built In Toronto/Start Up HERE
+  Toronto entries), so this is based on search-result snippets only; a
+  founder should confirm the free tier's actual requirements before
+  submitting.
+- **Featured.com** (featured.com, formerly Terkel) — expert/journalist
+  source-request platform, the same category as Qwoted (already suggested
+  2026-08-03) but a distinct platform: publishers post queries, experts
+  submit short four-to-five-sentence answers for roundup and Q&A articles,
+  free tier is three queries a month. Well-documented signup flow per
+  multiple independent sources this run.
+- **MaRS Discovery District — Entrepreneurship 101 (E101)** — Toronto's
+  flagship startup hub; E101 is a free course/community with a Slack of
+  roughly 1,200 founders across 36 channels. Not a direct backlink, but the
+  strongest-fit Toronto-specific founder community found this run for
+  natural mentions and connections, distinct from any general startup-press
+  or directory pitch already suggested.
+
+See the 2026-09-07 report for the ready-to-send text for each.

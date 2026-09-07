@@ -280,3 +280,115 @@ known quirk noted in the 2026-08-20 entry). No genuine keyword gap
 surfaced either: every long-tail query with impressions this window already
 lands on a topically relevant published post; the issue is ranking depth
 (position 33-95), not a missing page.
+
+## 2026-09-07 (window: 2026-08-08 to 2026-09-04)
+
+| Target keyword | Impressions | Avg position | Change since 2026-09-03 |
+|---|---|---|---|
+| influencers in Toronto | 0 | — | no change |
+| Toronto influencers | 0 | — | no change |
+| find creators Toronto | 0 | — | no change |
+| hire influencers Toronto | 0 | — | no change |
+| influencer marketing Toronto | 0 | — | no change |
+| UGC creators Toronto | 0 | — | no change |
+| micro influencers Toronto | 0 | — | no change |
+| creators near me | 0 | — | no change |
+| influencers near me | 0 | — | no change |
+| how to do influencer marketing | 0 | — | no change |
+| how to do creator marketing | 0 | — | no change |
+| influencer marketing for small business | 0 | — | no change |
+| creator marketing | 0 | — | no change |
+
+Still zero impressions on every standing target keyword, five straight
+entries now. Query-dimension data site-wide is six rows total this window:
+branded/near-brand ("sixth degree" 27 impressions avg position 10.19,
+"sixthdegree" 1 impression position 8, "the sixth degree" 2 impressions
+position 41, "ugc creator management" 1 impression position 87, continuing
+from last entry) and the same two engagement-rate long-tails as last entry
+("is 5 engagement rate good" 1 impression position 71, "what is bad
+engagement rate" 2 impressions position 95, both landing on
+`blog/engagement-rate-explained/`). "ugc content booth toronto" and "6th
+degrees," present last entry, dropped out of this window (both were
+one-off single impressions; not a trend either way at this volume).
+
+Page-level signal (`dimensions: ["page"]`, same window). Most rows are
+close to the 2026-09-03 entry's numbers, expected given the two windows
+share about three quarters of their days:
+
+| Page | Impressions | Clicks | Avg position | vs. 2026-09-03 |
+|---|---|---|---|---|
+| app.sixthdegree.app/ | 43 | 2 | 11.67 | steady (42/2/13.21) |
+| sixthdegree.app/ | 23 | 9 | 9.13 | up (18/8/7.72) |
+| blog/engagement-rate-explained/ | 18 | 0 | 79.17 | unchanged |
+| blog/ (index) | 8 | 2 | 8.88 | steady (7/2/9.57) |
+| how-to-do-creator-marketing-ugc/ | 8 | 0 | 62.75 | unchanged |
+| seeding-vs-paid-influencer-marketing/ | 8 | 0 | 50.38 | unchanged |
+| www.sixthdegree.app/ | 6 | 2 | 13.33 | steady (8/3/11.25) |
+| how-to-do-influencer-marketing/ | 4 | 0 | 50.25 | unchanged |
+| find-micro-influencers-ugc-toronto/ | 3 | 0 | 6.33 | up from 11.8 |
+| ad-rights-rider-ugc-usage-rights/ | 3 | 0 | 59.33 | unchanged |
+| toronto-creator-rates/ | 2 | 0 | 31.5 | up from position 58 |
+| brand-deals-1000-10000-followers-canada/ | 2 | 0 | 4 | up from position 7 |
+| influencers-in-toronto/ | 2 | 1 | 4.5 | unchanged |
+| app.sixthdegree.app/ad-rights-rider | 1 | 0 | 6 | unchanged |
+| app.sixthdegree.app/creator-agreement | 1 | 0 | 2 | unchanged |
+| app.sixthdegree.app/privacy | 1 | 0 | 2 | unchanged |
+
+`toronto-creator-rates/` partially recovered (position 58 to 31.5) but is
+still far below the 2.5 it held in the very first log entry, and
+`micro-vs-nano-creators/` still doesn't appear in the page table at all,
+second entry running at zero. Keep watching; not calling this resolved yet.
+
+**Escalating, not resolved: `app.sixthdegree.app/` is still indexed
+despite carrying `noindex, follow`, and Google has not recrawled it since
+before the tag went live.** The 2026-09-03 entry flagged this
+(`lastCrawlTime: 2026-07-28T09:20:45Z`); URL Inspection this run returns
+the identical timestamp, `2026-07-28T09:20:45Z`, meaning Google has not
+recrawled this URL in over five weeks despite the branded query "sixth
+degree" sending it 25+ impressions a window. The live page still serves
+the correct tag (verified by direct fetch this run) and `robotsTxtState:
+ALLOWED` / `indexingState: INDEXING_ALLOWED` confirm Google has permission
+to act on it, it just hasn't been back to look. This has now sat for two
+full log entries with no movement, longer than the `www` staleness took to
+clear on its own in August. **Founder action: a manual "Request Indexing"
+or "Validate Fix" on `https://app.sixthdegree.app/` in Search Console**
+would force a recrawl rather than waiting on Google's own schedule; no code
+change applies since the live tag is already correct.
+
+URL Inspection API status (required check, homepage / blog index / two most
+recent *live* posts — engagement-rate-explained and seeding-vs-paid remain
+the two most recent live posts; the three posts drafted since
+[agency-vs-marketplace, measure-honestly, and this run's KPI piece] are
+still sitting in unmerged PRs, so none of them are inspectable yet):
+
+| URL | Verdict | Coverage | Last crawl |
+|---|---|---|---|
+| sixthdegree.app/ | PASS | Submitted and indexed | 2026-08-29 |
+| sixthdegree.app/blog/ | PASS | Submitted and indexed | 2026-08-04 |
+| blog/engagement-rate-explained/ | PASS | Submitted and indexed | 2026-08-28 |
+| blog/seeding-vs-paid-influencer-marketing/ | PASS | Submitted and indexed | 2026-08-25 |
+
+All four green, unchanged from last entry. `sixthdegree.app/blog/` hasn't
+recrawled since 2026-08-04, over a month now; worth a "Request Indexing" in
+the same founder pass as the app-root fix above if it's still stale next
+entry, though lower urgency since the blog index isn't losing branded-query
+share to anything the way the app root is.
+
+Sitemap coverage: `sixthdegree.app/sitemap.xml` still shows 12 submitted /
+0 indexed as of last download (2026-09-05 17:02 UTC); the live sitemap on
+`main` is also still 12 URLs, since PR #21 (2 posts) remains unmerged and
+this run's post stacks a third post onto the same unmerged branch, so
+there's no drift, just three posts' worth of sitemap growth waiting on one
+merge. `app.sixthdegree.app/sitemap.xml`: 4 submitted / 0 indexed,
+unchanged since the first entry.
+
+Cannibalization / CTR analysis: still too thin for either (6 total
+query-dimension rows this window, same dimension-suppression caveat as
+every prior entry). No new keyword gap surfaced: every long-tail query with
+impressions already lands on a topically relevant published post; the
+constraint is still ranking depth (position 8-95 depending on the page),
+not a missing page. The clearest opportunity in the data remains
+`blog/engagement-rate-explained/`: 18 impressions and 0 clicks at position
+79 says Google is matching the page to real queries but ranking it too low
+to be clickable yet, consistent with a five-week-old post with no backlink
+profile rather than anything wrong with the page itself.

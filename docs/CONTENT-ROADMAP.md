@@ -82,23 +82,38 @@ All three brand-side pillars are now published.
   and it needed no unavailable source. `how-to-do-influencer-marketing.md`
   got a reciprocal linking sentence in its "Measure what you can actually
   prove" section.
+- `creator-marketing-kpis-what-to-track.md` (2026-09-07) — which KPI
+  actually matches each of the three campaign goals from pillar 2 (reach for
+  awareness, cost per click/sale for direct response, cost per usable asset
+  for content), why follower growth and raw likes don't hold up as
+  scorecards alone, and a worked cost-per-outcome comparison across three
+  creators. Was "Next four" item 3, written as the goal-setting companion to
+  the measurement spoke rather than a repeat of it: that post is about what
+  a number proves once you have it, this one is about picking which number
+  to watch before you do. `how-to-do-influencer-marketing.md`'s "Measure
+  what you can actually prove" section got a reciprocal linking sentence;
+  `modified` bumped to 2026-09-07.
 
-## Next four, in priority order (updated 2026-09-03)
+## Next three, in priority order (updated 2026-09-07)
 
-All three pillars and five of six originally queued spokes are now built
-(items 1, 2, and 5 above; items 3 and 4 held back, reasons below). Pull the
-next unwritten one each run rather than re-deriving priority from scratch;
-re-order here if something jumps the queue (a GSC gap, a founder ask)
-instead of just picking a different one.
+All three pillars and six of the seven spokes ever queued are now built
+(the original "next six" items 1, 2, 5, plus this run's item 3 above; item 4
+below is the one still held back). Pull the next unwritten one each run
+rather than re-deriving priority from scratch; re-order here if something
+jumps the queue (a GSC gap, a founder ask) instead of just picking a
+different one.
 
 1. **"Instagram vs TikTok for Toronto creator campaigns: where to put your
-   budget first."** New comparison angle, still held back: if it touches
-   TikTok rates specifically, it needs a real citable source first, same bar
-   the app repo's fee tooling holds itself to (`lib/deliverables.ts`:
-   "adding a deliverable type means finding the published benchmark first").
-   Don't publish a TikTok number without one. A future run should spend a
-   few minutes web-searching for a citable TikTok Canada/Toronto rate
-   source before defaulting to skipping this again.
+   budget first."** Still held back on the TikTok-rate half. This run spent
+   a few minutes searching for a citable TikTok Canada/Toronto creator-rate
+   source (per the standing instruction below) and found only content-mill
+   "2026 pricing guide" pages (Hootsuite, Launchpoint, InfluenceFlow,
+   InfluencerFee, Nowadays, usesnippet.app) whose numbers disagree with each
+   other by 3 to 5x for the same tier and cite no primary research, the
+   same genre of unsourced content our own posts are written to be better
+   than. That's not a citable source by the `lib/deliverables.ts` bar
+   ("published benchmark," not another blog's guess). Keep checking each
+   run; don't lower the bar to unblock this topic.
 2. **"How to brief a creator so the content doesn't miss."** Checklist for
    the step after hiring, before filming. Pillar 2 touches influencer briefs
    briefly (a full paragraph, "Brief the creator. Don't script them.") and
@@ -106,15 +121,7 @@ instead of just picking a different one.
    needs a genuinely deeper angle (before/during/after checklist, common
    mistakes with real examples) or it will substantially repeat those two
    sections. Check both again before writing.
-3. **"Creator marketing KPIs: what to track beyond likes and follower
-   count."** About picking goals before a campaign, distinct from the
-   just-published measurement spoke (which is about what a number proves
-   *after* a campaign runs). Some overlap risk with the new
-   `measure-influencer-campaign-without-fake-attribution.md` "what worked"
-   framing; if written, keep this one about goal-setting and success
-   criteria, and link to the measurement post rather than repeating its
-   three-layer breakdown.
-4. New GSC-driven or founder-requested topics as they surface. Query volume
+3. New GSC-driven or founder-requested topics as they surface. Query volume
    is still thin (see `docs/GSC-LOG.md`); once real gaps appear, let them
    override this list instead of continuing to guess.
 

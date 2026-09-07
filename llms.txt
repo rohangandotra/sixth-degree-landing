@@ -58,6 +58,9 @@ Key URLs:
   what a tracked click, a creator's own reach numbers, and a brand-verified
   order each actually prove, and how to set up honest measurement before a
   campaign starts
+- https://sixthdegree.app/blog/creator-marketing-kpis-what-to-track/ : which
+  KPI actually matches a campaign's goal, chosen before launch, and why
+  follower growth and raw likes don't hold up as scorecards on their own
 - Terms of service: https://app.sixthdegree.app/terms
 - Privacy policy: https://app.sixthdegree.app/privacy
 - Creator Agreement: https://app.sixthdegree.app/creator-agreement
