@@ -61,6 +61,9 @@ Key URLs:
 - https://sixthdegree.app/blog/creator-marketing-kpis-what-to-track/ : which
   KPI actually matches a campaign's goal, chosen before launch, and why
   follower growth and raw likes don't hold up as scorecards on their own
+- https://sixthdegree.app/blog/how-to-brief-an-influencer/ : what to put in an
+  influencer brief, what to leave out, Canadian disclosure requirements, and a
+  real six-line brief to copy
 - Terms of service: https://app.sixthdegree.app/terms
 - Privacy policy: https://app.sixthdegree.app/privacy
 - Creator Agreement: https://app.sixthdegree.app/creator-agreement

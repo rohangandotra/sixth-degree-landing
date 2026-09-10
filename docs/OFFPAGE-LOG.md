@@ -68,3 +68,37 @@ the log's job is dedup, not the copy itself).
   or directory pitch already suggested.
 
 See the 2026-09-07 report for the ready-to-send text for each.
+
+## Suggested 2026-09-10
+
+Direct page fetches to all three domains below were blocked by this
+session's network egress policy (same recurring limitation as 2026-09-03 and
+2026-09-07), so these are based on search-result snippets only, not a
+verified read of the live submission flow. Flagged in the report; a founder
+should confirm each before sending.
+
+- **SourceBottle** (sourcebottle.com) — free journalist/blogger source-request
+  platform, active in Canada specifically (unlike HARO/Connectively, which
+  shut down). Distinct from Qwoted (already suggested 2026-08-03): SourceBottle
+  is query-response based (sign up, respond to open call-outs as they're
+  posted) rather than a always-on expert profile. Influencer marketing and
+  content marketing are both listed topic categories.
+- **Digital Main Street — Free Business Listing** (digitalmainstreet.ca,
+  product page distinct from their Vendor Directory, which a search snippet
+  says is currently closed to new submissions) — City of Toronto/TABIA-backed
+  program that syndicates a business's listing to Google, Yelp, TripAdvisor,
+  and similar. Directly relevant to the near-me / local-SEO goal in the
+  routine's own mission (consistent NAP-style signals), not just a generic
+  directory add. Confirm it's actually open and check the address/NAP fields
+  it wants before submitting, since Sixth Degree doesn't have a public
+  storefront the way a typical listed business does.
+- **Lindsey Gamble's Newsletter** (lindseygamble.com/newsletter) — creator
+  economy / influencer marketing newsletter, named a top creator-economy
+  newsletter by Buffer. No documented submission process found this run
+  (unlike Creator Spotlight's guidelines page from 2026-09-03); this is a
+  cold pitch, not a known open door, so confidence is lower than the other
+  two. Included anyway because a Toronto-first, honesty-positioned
+  marketplace is a genuinely different story than most creator-economy
+  coverage, which skews US-platform-news.
+
+See the current run's report for the ready-to-send text for each.

@@ -3,7 +3,7 @@ title: "How to Do Influencer Marketing: A Small Business Guide"
 description: "A step-by-step guide to running your first influencer marketing campaign: setting a goal, sizing creators, writing a brief, and paying safely."
 target_query: "how to do influencer marketing"
 date: 2026-08-10
-modified: 2026-09-07
+modified: 2026-09-10
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -41,7 +41,7 @@ Where to actually search, and how to write a first message that gets a reply ins
 
 The single biggest quality killer in small business influencer marketing is an over-written brief. A page of mandatory phrases and shot lists produces content that reads like an ad, which is the one thing that defeats the purpose of using a creator instead of buying a display ad.
 
-A brief that works covers four things and stops there: what the product or service actually does and who it's for, one or two things you genuinely want mentioned (a promo code, a specific benefit, a call to action), what's off-limits (a competitor claim, a medical claim, anything your industry regulates), and the deadline. Everything else, the exact wording, the shots, the tone, is the creator's job. Their audience follows them for their voice. Overwriting it is buying their reach and then throwing away the reason it converts.
+A brief that works covers four things and stops there: what the product or service actually does and who it's for, one or two things you genuinely want mentioned (a promo code, a specific benefit, a call to action), what's off-limits (a competitor claim, a medical claim, anything your industry regulates), and the deadline. Everything else, the exact wording, the shots, the tone, is the creator's job. Their audience follows them for their voice. Overwriting it is buying their reach and then throwing away the reason it converts. [How to brief an influencer so the content doesn't miss](https://sixthdegree.app/blog/how-to-brief-an-influencer/) goes deeper on this, including disclosure requirements and a real six-line brief you can copy.
 
 ## Agree on usage rights before you agree on a price
 
