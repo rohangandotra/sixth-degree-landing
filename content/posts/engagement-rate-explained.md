@@ -3,7 +3,7 @@ title: "What Is a Good Engagement Rate for Influencers?"
 description: "Engagement rate benchmarks by follower tier, how to calculate it by hand, and the red flags that mean a high number is bought, not earned."
 target_query: "what is a good engagement rate for influencers"
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-09-14
 author: "Aaryan Juneja, co-founder of Sixth Degree"
 ---
 
@@ -33,6 +33,18 @@ Commonly cited industry benchmarks put nano accounts (roughly 1,000 to 10,000 fo
 The direction is consistent even where the exact numbers move: smaller accounts skew toward people who know the creator, or know someone who does. Bigger accounts skew toward strangers who followed a clip that traveled once. Strangers scroll past. Neighbours comment.
 
 So "good" depends entirely on tier. A 3% rate is disappointing on a 4,000-follower account and strong on a 60,000-follower one. Judging every creator against the same flat number, regardless of size, is the single most common vetting mistake we see brands make.
+
+## Is 5% good? What's bad? Quick answers by number
+
+People land on this page already holding a specific number, not just the general question, so here are direct answers for the ones we're asked about most.
+
+**Is 5% a good engagement rate?** For a nano account (roughly 1,000 to 10,000 followers), 5% sits inside the commonly cited 4% to 8% range: solid, not exceptional. For a micro account (roughly 10,000 to 100,000), 5% is well above the 1% to 2% range most sources cite for that tier, a genuinely strong number worth a closer look at who's driving it. Same digit, different verdict, because the tier changes what "normal" means.
+
+**What counts as a bad engagement rate?** Sources commonly put the low end around 1% for nano accounts and around 0.5% for micro accounts. Below that is usually a sign of a bought or inactive audience rather than a small but real one. A single number below the range isn't proof of anything by itself. Run it through the comment-quality check above before writing an account off.
+
+**Is 2% good?** At the micro tier, 2% sits at the healthy end of the typical range. At the nano tier, 2% is low, worth asking why rather than necessarily walking away, since a newer account or one in a quieter niche (finance, home services) can post low numbers everywhere without it meaning much.
+
+None of these thresholds are official. Nobody audits engagement rate the way a stock exchange audits a share price. They're the ranges we see cited consistently across the industry, and the same tier-first logic from the section above applies to whatever number you're actually looking at.
 
 ## Reading the number, not just the percentage
 

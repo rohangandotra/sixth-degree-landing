@@ -114,6 +114,25 @@ sixthdegree.app yet). This run's commit lands on that same branch/PR rather
 than opening a competing one. Flagged as a founder action in the report;
 worth checking why review has stalled if it happens again.
 
+## 2026-09-14 run: expanded an existing page instead of a new post
+
+All three pillars and all eight spokes are still published; the TikTok-rate
+spoke below is still blocked (re-checked again this run, same content-mill
+sources disagreeing 3 to 5x, nothing new); GSC still shows no genuine keyword
+gap. Rather than force a ninth spoke, this run improved
+`engagement-rate-explained.md`: GSC shows two real long-tail queries ("is 5
+engagement rate good," "what is bad engagement rate") landing on that page
+for four straight log entries, matched by Google but ranked too low
+(position 71-95) to ever get a click. The post talked about tiers and ranges
+but never directly answered either literal question. Added a "Is 5% good?
+What's bad? Quick answers by number" section that does, using the same
+already-cited benchmark ranges (no new stats invented). This does not
+promise a ranking fix (prior entries correctly diagnosed this as a
+ranking-age/backlink problem, not a title/description problem), but it closes
+a real content gap for the queries already reaching the page and was the
+highest-confidence, non-cannibalizing move available this run. `modified`
+bumped to 2026-09-14.
+
 ## Next two, in priority order (updated 2026-09-10)
 
 All three pillars and all eight spokes ever queued are now built. Pull the
