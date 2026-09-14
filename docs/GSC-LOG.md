@@ -501,3 +501,101 @@ problem (too far down to be clickable) rather than a title/description
 problem, since the current meta is already specific. No action taken this
 run; revisit if it's still 0 clicks at real volume once ranking position
 improves or four more weeks pass without improvement.
+
+## 2026-09-14 (window: 2026-08-15 to 2026-09-11)
+
+| Target keyword | Impressions | Avg position | Change since 2026-09-10 |
+|---|---|---|---|
+| influencers in Toronto | 0 | — | no change |
+| Toronto influencers | 0 | — | no change |
+| find creators Toronto | 0 | — | no change |
+| hire influencers Toronto | 0 | — | no change |
+| influencer marketing Toronto | 0 | — | no change |
+| UGC creators Toronto | 0 | — | no change |
+| micro influencers Toronto | 0 | — | no change |
+| creators near me | 0 | — | no change |
+| influencers near me | 0 | — | no change |
+| how to do influencer marketing | 0 | — | no change |
+| how to do creator marketing | 0 | — | no change |
+| influencer marketing for small business | 0 | — | no change |
+| creator marketing | 0 | — | no change |
+
+Still zero impressions on every standing target keyword, seven straight
+entries now. Query-dimension data site-wide is five rows this window (down
+from six last entry): "sixth degree" (23 impressions, avg position 10.7,
+was 23/10.35, essentially flat), "sixthdegree" (1 impression, position 8,
+unchanged), "is 5 engagement rate good" (1 impression, position 71,
+unchanged) and "what is bad engagement rate" (2 impressions, position 95,
+unchanged), both still landing on `blog/engagement-rate-explained/". "the
+sixth degree" and "ugc creator management," present last entry, dropped out
+of this window (both were one- or two-off impressions, not a trend at this
+volume).
+
+Page-level signal (`dimensions: ["page"]`, same window):
+
+| Page | Impressions | Clicks | Avg position |
+|---|---|---|---|
+| app.sixthdegree.app/ | 33 | 1 | 11.0 |
+| sixthdegree.app/ | 28 | 10 | 8.86 |
+| blog/engagement-rate-explained/ | 18 | 0 | 79.17 |
+| how-to-do-creator-marketing-ugc/ | 8 | 0 | 62.75 |
+| seeding-vs-paid-influencer-marketing/ | 8 | 0 | 50.38 |
+| blog/ (index) | 4 | 1 | 5.5 |
+| how-to-do-influencer-marketing/ | 4 | 0 | 49.25 |
+| ad-rights-rider-ugc-usage-rights/ | 3 | 0 | 59.33 |
+| brand-deals-1000-10000-followers-canada/ | 3 | 0 | 4.67 |
+| find-micro-influencers-ugc-toronto/ | 3 | 0 | 6.33 |
+| toronto-creator-rates/ | 2 | 0 | 31.5 |
+| app.sixthdegree.app/privacy | 1 | 0 | 2 |
+
+`www.sixthdegree.app/`, `influencers-in-toronto/`, and the two app legal
+pages besides privacy, all present in at least one of the last two entries
+at 1-3 impressions, dropped out of this window; one-offs cycling, not a
+trend at this volume. `micro-vs-nano-creators/` remains absent from the
+page table for a fifth straight entry; still nothing actionable beyond the
+three existing internal links into it.
+
+**Both standing indexing escalations from the last three entries are
+resolved this run.** `app.sixthdegree.app/` (carrying `noindex, follow`)
+finally recrawled: `lastCrawlTime` is now `2026-09-14T01:23:49Z` (was stuck
+at `2026-07-28T09:20:45Z` for three straight checks), and `coverageState`
+correctly reads `"Excluded by 'noindex' tag"` instead of the stale
+`"Submitted and indexed"` verdict that had persisted for six-plus weeks
+after the tag went live. `sixthdegree.app/blog/` also recrawled
+(`2026-09-13T22:22:46Z`, was stuck at `2026-08-04T22:55:55Z` for three
+checks). Both cleared on their own, same pattern as the `www` staleness
+that resolved itself in August; no code or founder action was needed
+either time. No new indexing problem found this run.
+
+URL Inspection API status (required check, homepage / blog index / two most
+recent live posts):
+
+| URL | Verdict | Coverage | Last crawl |
+|---|---|---|---|
+| sixthdegree.app/ | PASS | Submitted and indexed | 2026-08-29 |
+| sixthdegree.app/blog/ | PASS | Submitted and indexed | 2026-09-13 |
+| blog/how-to-brief-an-influencer/ | PASS | Submitted and indexed | 2026-09-13 |
+| blog/creator-marketing-kpis-what-to-track/ | PASS | Submitted and indexed | 2026-09-13 |
+
+All four green. The two most recently published posts (2026-09-10 and
+2026-09-07) are both now indexed; this is the first entry able to inspect
+them, since PR #21 was still unmerged at the last two data-pulls.
+
+Sitemap coverage: `sixthdegree.app/sitemap.xml` showed 16 submitted / 0
+indexed as of last download (2026-09-13 12:40 UTC), matching the live
+sitemap's 16 URLs exactly (14 posts + home + blog index) — no drift.
+`app.sixthdegree.app/sitemap.xml`: 4 submitted / 0 indexed, unchanged since
+the first entry. Per the standing note, treat URL Inspection as
+authoritative over this "0 indexed" count; three of four inspected URLs
+above are individually confirmed indexed despite it.
+
+Cannibalization / CTR analysis: still too thin for either (5 total
+query-dimension rows this window). No new keyword gap surfaced; the two
+long-tail queries with impressions already land on a topically relevant
+published post. This run's content PR (#22, landing repo) added a direct-
+answer section to `engagement-rate-explained.md` addressing both of them by
+name, since the page has now shown 0 clicks at position 71-95 on these
+exact queries across four straight entries; see `docs/CONTENT-ROADMAP.md`
+for the reasoning. `toronto-creator-rates/` held steady at position 31.5,
+same as last entry; still far below its all-time-best 2.5, not calling it
+resolved, nothing new to act on.
