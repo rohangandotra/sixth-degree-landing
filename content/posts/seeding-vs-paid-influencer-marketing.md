@@ -3,7 +3,7 @@ title: "Seeding vs. Paid: When to Gift, When to Pay Creators"
 description: "Seeding (free product, no fee) works for some goals and wastes budget on others. How to tell which one your campaign actually needs, with real numbers."
 target_query: "seeding vs paid influencer marketing"
 date: 2026-08-24
-modified: 2026-08-24
+modified: 2026-09-17
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -21,7 +21,7 @@ Because there's no fee, there's no guarantee. Some creators post, most don't, an
 
 A paid partnership is a transaction with terms: a fee, a brief, a deadline, and usually a right to specify what gets said and shown. You're not hoping for a post. You're buying one, on a schedule you control, from a creator whose audience size and engagement you can weigh against the price before you commit.
 
-That certainty is worth something, and it's why paid posts cost real money. [Toronto creator rates: what nano and micro cost in 2026](https://sixthdegree.app/blog/toronto-creator-rates/) has the current ranges: a nano feed post typically runs $50 to $250, a micro Reel $250 to $1,500 or more, depending on following and format. Seeding costs whatever the product costs. Paid costs that plus the creator's time and audience.
+That certainty is worth something, and it's why paid posts cost real money. [Toronto creator rates: what nano and micro cost in 2026](https://sixthdegree.app/blog/toronto-creator-rates/) has the current ranges: a nano feed post typically runs $50 to $250, a micro Reel $250 to $1,500 or more, depending on following and format. Seeding costs whatever the product costs. Paid costs that plus the creator's time and audience. "Paid" also isn't one structure: [affiliate vs. flat fee](https://sixthdegree.app/blog/affiliate-vs-flat-fee-influencer-payment/) covers the difference between a guaranteed fee and a commission on sales, which matters just as much as whether you pay at all.
 
 ## The actual decision
 

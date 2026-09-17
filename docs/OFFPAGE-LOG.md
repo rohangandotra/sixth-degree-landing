@@ -102,3 +102,63 @@ should confirm each before sending.
   coverage, which skews US-platform-news.
 
 See the current run's report for the ready-to-send text for each.
+
+## Suggested 2026-09-14
+
+- **TorontoStarts Startup List** (torontostarts.com/toronto-startup-list-entry-form/)
+  — Toronto-focused entrepreneur/startup community with a startup-list entry
+  form and monthly Startup Social events. Distinct from Built In Toronto
+  (2026-09-03, a profile-network directory) and Toronto Directory
+  (2026-09-07, a general local-business directory): this one is
+  startup-community-specific, closer in kind to Start Up HERE Toronto but a
+  different, separately-run list. Search-snippet-only confirmation of the
+  entry form; a founder should confirm the live page before submitting.
+- **The Logic** (thelogic.co) — Toronto-headquartered, subscription Canadian
+  "innovation economy" news outlet with a documented pitch page
+  (thelogic.co/how-to-pitch/), founded by a former Toronto Star/Boston
+  Globe/Global News editor. Distinct from BetaKit (2026-08-03, broader
+  Canadian tech-news): The Logic is more selective, subscription-funded
+  journalism, a stronger authority signal if a pitch lands, worth trying
+  once the story is genuinely pitchable (a launch, a funding milestone, or a
+  data point worth reporting on, not "we exist").
+- **The Shelf — Write For Us** (theshelf.com/write-for-us/) — data-first
+  influencer marketing company accepting guest posts (1,000-1,500 words) on
+  social media marketing, platform trends, and influencer marketing.
+  Distinct from Creator Spotlight (2026-09-03, paid, $0.50/word) and
+  Lindsey Gamble's Newsletter (2026-09-10, cold pitch, no documented
+  process): this is a free, documented guest-post channel specifically in
+  our content category, a genuine backlink opportunity from a site already
+  ranking in this space.
+
+See the current run's report for the ready-to-send text for each.
+
+## Suggested 2026-09-17
+
+- **Influencer Hero — Write for Us** (influencer-hero.com/influencer-page/write-for-us)
+  — a documented guest-post page (found via search snippet; WebFetch to the
+  domain was blocked by this session's network egress policy, the same
+  recurring limitation as every prior run's off-page section) in our exact
+  category: influencer marketing, creator economy, brand growth, 1,000+
+  words, wants sources/case studies over AI-flavoured writing. Distinct from
+  The Shelf (2026-09-14, also a guest-post channel but a different site) and
+  Creator Spotlight (2026-09-03, paid, $0.50/word); this one is free and
+  explicitly wants genuine expertise, which fits our honesty-first angle
+  well.
+- **The Influence Agency — Become a Contributor** (theinfluenceagency.com/become-a-contributor)
+  — a Toronto-based influencer marketing agency's own contributor program
+  (same search-snippet caveat as above). Distinct from every directory
+  suggested so far: this is an actual Toronto agency in our exact market,
+  publishing outside contributors, which is both a backlink and a direct
+  connection to a Toronto industry peer rather than a general startup or
+  press listing.
+- **Strategy** (strategyonline.ca) — the leading Canadian marketing and
+  advertising trade publication (merged with the former Marketing magazine
+  in 2016). No documented open-submission page found this run, so this is a
+  cold pitch to their editorial team rather than a known open door, the same
+  confidence level as The Logic (2026-09-14). Distinct from BetaKit
+  (general Canadian tech news) and The Logic (broader innovation-economy
+  news): Strategy is specifically the marketing industry's own trade press,
+  the highest-authority fit found yet for a story about how Toronto brands
+  actually pay creators.
+
+See the current run's report for the ready-to-send text for each.
