@@ -3,7 +3,7 @@ title: "How to Do Influencer Marketing: A Small Business Guide"
 description: "A step-by-step guide to running your first influencer marketing campaign: setting a goal, sizing creators, writing a brief, and paying safely."
 target_query: "how to do influencer marketing"
 date: 2026-08-10
-modified: 2026-09-10
+modified: 2026-09-17
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -52,6 +52,8 @@ Decide one thing before the first quote goes back and forth: are you only using 
 The two failure modes are symmetrical: a brand that pays half upfront and never hears back once the money lands, and a creator who posts on faith and chases an invoice for weeks afterward. Neither is malicious most of the time. It's what happens when there's no structure holding the agreement together.
 
 Escrow, where the money is held by a neutral third party and released once the post is confirmed live, solves both sides of that problem at once. It's standard in freelance marketplaces for exactly this reason and it's underused in influencer marketing, mostly because most of that spend still happens over DM and e-transfer with no structure at all.
+
+That's the "how" of getting paid safely. There's also a "what": a flat fee and a commission on tracked sales protect the two of you against different risks, and picking between them matters as much as picking escrow over e-transfer. [Affiliate vs. flat fee: how to pay an influencer](https://sixthdegree.app/blog/affiliate-vs-flat-fee-influencer-payment/) covers which one fits which situation.
 
 ## Measure what you can actually prove
 

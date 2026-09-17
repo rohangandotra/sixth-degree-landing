@@ -599,3 +599,95 @@ exact queries across four straight entries; see `docs/CONTENT-ROADMAP.md`
 for the reasoning. `toronto-creator-rates/` held steady at position 31.5,
 same as last entry; still far below its all-time-best 2.5, not calling it
 resolved, nothing new to act on.
+
+## 2026-09-17 (window: 2026-08-18 to 2026-09-14)
+
+**PR #22 (`claude/seo-content-drafts`, opened 2026-09-14) was still open and
+unmerged at data-pull time.** This run's new post commits onto the same
+branch/PR rather than opening a competing one.
+
+| Target keyword | Impressions | Avg position | Change since 2026-09-14 |
+|---|---|---|---|
+| influencers in Toronto | 0 | n/a | no change |
+| Toronto influencers | 0 | n/a | no change |
+| find creators Toronto | 0 | n/a | no change |
+| hire influencers Toronto | 0 | n/a | no change |
+| influencer marketing Toronto | 0 | n/a | no change |
+| UGC creators Toronto | 0 | n/a | no change |
+| micro influencers Toronto | 0 | n/a | no change |
+| creators near me | 0 | n/a | no change |
+| influencers near me | 0 | n/a | no change |
+| how to do influencer marketing | 0 | n/a | no change |
+| how to do creator marketing | 0 | n/a | no change |
+| influencer marketing for small business | 0 | n/a | no change |
+| creator marketing | 0 | n/a | no change |
+
+Still zero impressions on every standing target keyword, eighth straight
+entry. Query-dimension data site-wide is six rows this window (up one from
+last entry's five): "sixth degree" (24 impressions, avg position 12.08, was
+23/10.7, a small position drop, within normal window-shift noise at this
+volume), "sixthdegree" (1 impression, position 8, unchanged), "6 degree" (1
+impression, position 39, new this window, a one-off not seen before), "is 5
+engagement rate good" (1 impression, position 71, unchanged) and "what is
+bad engagement rate" (2 impressions, position 95, unchanged), both still
+landing on `blog/engagement-rate-explained/`, and "ugc creator management"
+(1 impression, position 87, back after dropping out last entry, still
+landing on `how-to-do-creator-marketing-ugc/`).
+
+Page-level signal (`dimensions: ["page"]`, same window):
+
+| Page | Impressions | Clicks | Avg position |
+|---|---|---|---|
+| sixthdegree.app/ | 36 | 11 | 9.19 |
+| app.sixthdegree.app/ | 32 | 1 | 12.06 |
+| blog/engagement-rate-explained/ | 18 | 0 | 79.17 |
+| sixthdegree.app/blog/ | 7 | 1 | 17.0 |
+| how-to-do-creator-marketing-ugc/ | 8 | 0 | 62.75 |
+| seeding-vs-paid-influencer-marketing/ | 8 | 0 | 50.38 |
+| how-to-do-influencer-marketing/ | 4 | 0 | 49.25 |
+| ad-rights-rider-ugc-usage-rights/ | 3 | 0 | 59.33 |
+| brand-deals-1000-10000-followers-canada/ | 3 | 0 | 4.67 |
+| find-micro-influencers-ugc-toronto/ | 3 | 0 | 6.33 |
+| toronto-creator-rates/ | 2 | 0 | 31.5 |
+| app.sixthdegree.app/privacy | 1 | 0 | 2.0 |
+
+Twelve page rows, same count as last entry. `influencers-in-toronto/` and
+`www.sixthdegree.app/`, each present in at least one recent entry at 1-3
+impressions, dropped out of this window again; still reading as noise
+cycling in and out at this volume, not a trend. `micro-vs-nano-creators/`
+remains absent from the page table for a sixth straight entry; nothing new
+to act on beyond the three existing internal links into it.
+`sixthdegree.app/` picked up its best click count yet (11, up from 10 last
+entry) at a slightly better position (9.19 vs 8.86); too small a sample to
+call a trend at this traffic level, noted for continuity only.
+
+URL Inspection API status (required check, homepage / blog index / two most
+recent live posts):
+
+| URL | Verdict | Coverage | Last crawl |
+|---|---|---|---|
+| sixthdegree.app/ | PASS | Submitted and indexed | 2026-09-17 |
+| sixthdegree.app/blog/ | PASS | Submitted and indexed | 2026-09-13 |
+| blog/how-to-brief-an-influencer/ | PASS | Submitted and indexed | 2026-09-13 |
+| blog/creator-marketing-kpis-what-to-track/ | PASS | Submitted and indexed | 2026-09-13 |
+
+All four green. The homepage recrawled again since last entry (2026-09-17
+vs 2026-08-29); the other three are unchanged since the last check but were
+already confirmed indexed, so no concern.
+
+Sitemap coverage: `sixthdegree.app/sitemap.xml` showed 16 submitted / 0
+indexed as of last download (2026-09-17, before this run's build), matching
+the live sitemap's 16 URLs exactly (14 posts + home + blog index); this
+run's new post and `seeding-vs-paid-influencer-marketing.md`'s `modified`
+bump will grow it to 17 once merged. `app.sixthdegree.app/sitemap.xml`: 4
+submitted / 0 indexed, unchanged since the first entry. Per the standing
+note, treat URL Inspection as authoritative over this "0 indexed" count.
+
+Cannibalization / CTR analysis: still too thin for either (6 total
+query-dimension rows this window). No new keyword gap surfaced; every query
+with impressions lands on a topically relevant published post, and the two
+`engagement-rate-explained/` long-tail queries are already answered by
+PR #22's unmerged direct-answer section, not something this run needed to
+duplicate. `toronto-creator-rates/` held steady at position 31.5 for a third
+straight entry now; still well below its all-time-best 2.5, still nothing
+new to act on since it's already linked from three posts and the pillar.

@@ -131,3 +131,34 @@ See the current run's report for the ready-to-send text for each.
   ranking in this space.
 
 See the current run's report for the ready-to-send text for each.
+
+## Suggested 2026-09-17
+
+- **Influencer Hero — Write for Us** (influencer-hero.com/influencer-page/write-for-us)
+  — a documented guest-post page (found via search snippet; WebFetch to the
+  domain was blocked by this session's network egress policy, the same
+  recurring limitation as every prior run's off-page section) in our exact
+  category: influencer marketing, creator economy, brand growth, 1,000+
+  words, wants sources/case studies over AI-flavoured writing. Distinct from
+  The Shelf (2026-09-14, also a guest-post channel but a different site) and
+  Creator Spotlight (2026-09-03, paid, $0.50/word); this one is free and
+  explicitly wants genuine expertise, which fits our honesty-first angle
+  well.
+- **The Influence Agency — Become a Contributor** (theinfluenceagency.com/become-a-contributor)
+  — a Toronto-based influencer marketing agency's own contributor program
+  (same search-snippet caveat as above). Distinct from every directory
+  suggested so far: this is an actual Toronto agency in our exact market,
+  publishing outside contributors, which is both a backlink and a direct
+  connection to a Toronto industry peer rather than a general startup or
+  press listing.
+- **Strategy** (strategyonline.ca) — the leading Canadian marketing and
+  advertising trade publication (merged with the former Marketing magazine
+  in 2016). No documented open-submission page found this run, so this is a
+  cold pitch to their editorial team rather than a known open door, the same
+  confidence level as The Logic (2026-09-14). Distinct from BetaKit
+  (general Canadian tech news) and The Logic (broader innovation-economy
+  news): Strategy is specifically the marketing industry's own trade press,
+  the highest-authority fit found yet for a story about how Toronto brands
+  actually pay creators.
+
+See the current run's report for the ready-to-send text for each.
