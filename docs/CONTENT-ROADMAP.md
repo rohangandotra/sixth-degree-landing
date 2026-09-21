@@ -105,6 +105,16 @@ All three brand-side pillars are now published.
   influencer side specifically rather than repeating either. Was "Next
   three" item 2. `how-to-do-influencer-marketing.md` got a reciprocal
   linking sentence in its brief section; `modified` bumped to 2026-09-10.
+- `affiliate-vs-flat-fee-influencer-payment.md` (2026-09-17) — affiliate
+  commission versus a guaranteed flat fee (and the base-plus-bonus hybrid)
+  as two different ways to allocate risk between brand and creator, when
+  each fits, who eats the loss on a flop under each, and a worked $1,000
+  Toronto launch-budget comparison. Genuinely new ground: checked every
+  published post first (see the note below) and nothing already covers
+  payment *structure* as distinct from seeding-vs-paid's pay-or-don't-pay
+  question. `seeding-vs-paid-influencer-marketing.md` and
+  `how-to-do-influencer-marketing.md` (the pillar) both got reciprocal
+  linking sentences; both `modified` bumped to 2026-09-17.
 
 **Also found this run: PR #21 (`claude/seo-content-drafts`, opened
 2026-08-31) was still open and unmerged at data-pull time, ten days and
@@ -114,26 +124,98 @@ sixthdegree.app yet). This run's commit lands on that same branch/PR rather
 than opening a competing one. Flagged as a founder action in the report;
 worth checking why review has stalled if it happens again.
 
-## Next two, in priority order (updated 2026-09-10)
+## 2026-09-14 run: expanded an existing page instead of a new post
 
-All three pillars and all eight spokes ever queued are now built. Pull the
-next unwritten one each run rather than re-deriving priority from scratch;
-re-order here if something jumps the queue (a GSC gap, a founder ask)
-instead of just picking a different one.
+All three pillars and all eight spokes are still published; the TikTok-rate
+spoke below is still blocked (re-checked again this run, same content-mill
+sources disagreeing 3 to 5x, nothing new); GSC still shows no genuine keyword
+gap. Rather than force a ninth spoke, this run improved
+`engagement-rate-explained.md`: GSC shows two real long-tail queries ("is 5
+engagement rate good," "what is bad engagement rate") landing on that page
+for four straight log entries, matched by Google but ranked too low
+(position 71-95) to ever get a click. The post talked about tiers and ranges
+but never directly answered either literal question. Added a "Is 5% good?
+What's bad? Quick answers by number" section that does, using the same
+already-cited benchmark ranges (no new stats invented). This does not
+promise a ranking fix (prior entries correctly diagnosed this as a
+ranking-age/backlink problem, not a title/description problem), but it closes
+a real content gap for the queries already reaching the page and was the
+highest-confidence, non-cannibalizing move available this run. `modified`
+bumped to 2026-09-14.
+
+**Also found this run: PR #22 (`claude/seo-content-drafts`, opened
+2026-09-14) was still open and unmerged at data-pull time**, carrying the
+engagement-rate-explained CTR expansion from that run. This run's commit
+(the new spoke below) lands on that same branch/PR. Not yet a multi-run
+pattern like PR #21 was, but flagged the same way in case it becomes one.
+
+## 2026-09-17 run: a new spoke on payment structure, not from this queue
+
+All three pillars and nine spokes are still published (see the list above);
+the TikTok-rate spoke below is still blocked (re-checked again this run,
+same content-mill sources disagreeing widely, including a Creator Fund CPM
+figure that's a different thing entirely from a sponsored-post rate, still
+nothing citable); GSC still shows no genuine keyword gap (5-6 total
+query-dimension rows, same pattern as every prior entry). Rather than force
+a tenth spoke onto a queue that was already down to "next: none," this run
+re-read every published post looking for a real gap in the architecture
+itself, not a GSC signal, and found one: `seeding-vs-paid-influencer-marketing.md`
+answers "do you pay at all," but nothing addresses "once you're paying,
+what's the fee tied to," flat fee versus a commission on tracked sales
+versus a hybrid of both. That's a distinct decision with its own real-world
+failure mode (a nano creator earning far under a flat rate on a
+commission-only launch-week deal, worked out in the new post's numbers), not
+a rewording of the seeding question. See
+`affiliate-vs-flat-fee-influencer-payment.md` in the list above.
+
+## 2026-09-21 run: expanded the pillar's near-me section, did not ship a new post
+
+Drafted a full new spoke this run ("How to find influencers near you") aimed
+at mission bucket (b), near-me intent, before checking this file. Caught the
+mistake before committing: the **"Near-me: landing page, not a blog post"**
+section below is a standing decision from an earlier run, and a dedicated
+post whose `target_query` is "influencers near me" is exactly the thing it
+says not to build. Discarded that draft rather than ship something that
+overrides prior reasoning without new information or a founder call.
+
+Instead, expanded `influencers-in-toronto.md`'s existing "Creators near me"
+section with two genuinely new tactics that respect the standing decision
+(support via internal content on an existing page, not a competing URL):
+checking your own Google Business Profile photo tab and Instagram location
+page for people who already tagged your business (the highest-signal list
+available, since these people showed up in person, not a stranger's tag
+search having to guess who's nearby). `modified` bumped to 2026-09-21. This
+follows the 2026-09-14 run's precedent (improve an existing page rather than
+force a new one) for the same underlying reason: GSC surfaced no new keyword
+gap this run either (same 5-6 query-dimension rows pattern as every prior
+entry; see `docs/GSC-LOG.md`), and the one queued idea (TikTok rates) is
+still blocked on a citable source.
+
+**Also found this run: PR #22 (`claude/seo-content-drafts`, opened
+2026-09-14) is still open and unmerged, now three runs and a week later**
+(09-14, 09-17, 09-21 all landed on it). This is the second entry flagging
+this exact PR as stalled (see the 09-14 note above); it's now a genuine
+pattern, not a one-off. Flagged again, more strongly, as a founder action in
+this run's report.
+
+## Next, in priority order (updated 2026-09-21)
 
 1. **"Instagram vs TikTok for Toronto creator campaigns: where to put your
    budget first."** Still held back on the TikTok-rate half. Re-checked
    again this run for a citable TikTok Canada/Toronto creator-rate source
    and found nothing beyond the same content-mill "2026 pricing guide"
    pages flagged 2026-09-07 (Hootsuite, Launchpoint, InfluenceFlow,
-   InfluencerFee, Nowadays, usesnippet.app), still disagreeing 3 to 5x
-   with no primary research. Not a citable source by the
-   `lib/deliverables.ts` bar. Keep checking each run; don't lower the bar.
+   InfluencerFee, Nowadays, usesnippet.app), still disagreeing widely with
+   no primary research. Not a citable source by the `lib/deliverables.ts`
+   bar. Keep checking each run; don't lower the bar.
 2. New GSC-driven or founder-requested topics as they surface. Query volume
    is still thin (see `docs/GSC-LOG.md`); once real gaps appear, let them
    override this list instead of continuing to guess. No genuine keyword
-   gap has surfaced yet as of 2026-09-10; every long-tail query with
+   gap has surfaced yet as of 2026-09-21; every long-tail query with
    impressions already lands on a topically relevant published post.
+3. If the founder green-lights the near-me landing page proposed below,
+   that becomes the top priority the run after it's approved: it's the only
+   queued item that isn't blocked on a missing source or waiting on GSC.
 
 ## Near-me: landing page, not a blog post
 
