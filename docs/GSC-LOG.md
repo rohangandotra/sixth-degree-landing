@@ -691,3 +691,102 @@ PR #22's unmerged direct-answer section, not something this run needed to
 duplicate. `toronto-creator-rates/` held steady at position 31.5 for a third
 straight entry now; still well below its all-time-best 2.5, still nothing
 new to act on since it's already linked from three posts and the pillar.
+
+## 2026-09-21 (window: 2026-08-21 to 2026-09-18)
+
+**PR #22 (`claude/seo-content-drafts`, opened 2026-09-14) is still open and
+unmerged, now three runs and a week later** (09-14, 09-17, this run all
+landed on it). Flagged again as a founder action; see the report.
+
+| Target keyword | Impressions | Avg position | Change since 2026-09-17 |
+|---|---|---|---|
+| influencers in Toronto | 0 | n/a | no change |
+| Toronto influencers | 0 | n/a | no change |
+| find creators Toronto | 0 | n/a | no change |
+| hire influencers Toronto | 0 | n/a | no change |
+| influencer marketing Toronto | 0 | n/a | no change |
+| UGC creators Toronto | 0 | n/a | no change |
+| micro influencers Toronto | 0 | n/a | no change |
+| creators near me | 0 | n/a | no change |
+| influencers near me | 0 | n/a | no change |
+| how to do influencer marketing | 0 | n/a | no change |
+| how to do creator marketing | 0 | n/a | no change |
+| influencer marketing for small business | 0 | n/a | no change |
+| creator marketing | 0 | n/a | no change |
+
+Still zero impressions on every standing target keyword, ninth straight
+entry. Query-dimension data site-wide is five rows this window (down one
+from last entry's six): "sixth degree" (21 impressions, avg position 12.29,
+was 24/12.08, a small drop, within normal window-shift noise at this
+volume), "sixthdegree" (1 impression, position 8, unchanged), "6 degree" (1
+impression, position 39, unchanged), "is 5 engagement rate good" (1
+impression, position 71, unchanged) and "what is bad engagement rate" (2
+impressions, position 95, unchanged), both still landing on
+`blog/engagement-rate-explained/`. "ugc creator management" (1 impression,
+position 87 last entry) dropped out of this window; consistent with the
+in-and-out noise pattern already noted for low-volume rows, not a new
+concern.
+
+Page-level signal (`dimensions: ["page"]`, same window):
+
+| Page | Impressions | Clicks | Avg position |
+|---|---|---|---|
+| sixthdegree.app/ | 41 | 13 | 8.71 |
+| app.sixthdegree.app/ | 27 | 1 | 10.67 |
+| blog/engagement-rate-explained/ | 18 | 0 | 79.17 |
+| sixthdegree.app/blog/ | 8 | 1 | 16.0 |
+| seeding-vs-paid-influencer-marketing/ | 8 | 0 | 50.38 |
+| ad-rights-rider-ugc-usage-rights/ | 5 | 0 | 39.4 |
+| how-to-do-creator-marketing-ugc/ | 5 | 0 | 49.2 |
+| brand-deals-1000-10000-followers-canada/ | 3 | 0 | 4.67 |
+| find-micro-influencers-ugc-toronto/ | 3 | 0 | 6.33 |
+| how-to-brief-an-influencer/ | 2 | 0 | 5.0 |
+| how-to-do-influencer-marketing/ | 2 | 0 | 5.5 |
+| toronto-creator-rates/ | 2 | 0 | 31.5 |
+| influencers-in-toronto/ | 1 | 0 | 11.0 |
+| app.sixthdegree.app/privacy | 1 | 0 | 2.0 |
+
+Fourteen page rows, up two from last entry's twelve. `influencers-in-toronto/`
+cycled back in at 1 impression (consistent with the noise pattern already
+noted); `how-to-brief-an-influencer/` shows up for the first time (2
+impressions, position 5.0, a strong position for a page this new).
+`micro-vs-nano-creators/` remains absent for a seventh straight entry;
+nothing new to act on beyond its three existing internal links.
+`sixthdegree.app/` continues an upward click trend for a third straight
+entry (10, 11, 13) at a slightly better position each time (9.6, 9.19,
+8.71); still a small sample, but consistent enough now to name as a trend
+rather than pure noise. `ad-rights-rider-ugc-usage-rights/` moved from
+position 59.33 to 39.4 on slightly more impressions (3 to 5); worth watching
+next entry, no action yet at this volume. `how-to-do-influencer-marketing/`
+shows a large position swing (49.25 to 5.5) on only 2 impressions; too small
+a sample to trust, flagged for continuity rather than as a finding.
+
+URL Inspection API status (required check, homepage / blog index / two most
+recent live posts):
+
+| URL | Verdict | Coverage | Last crawl |
+|---|---|---|---|
+| sixthdegree.app/ | PASS | Submitted and indexed | 2026-09-17 |
+| sixthdegree.app/blog/ | PASS | Submitted and indexed | 2026-09-13 |
+| blog/how-to-brief-an-influencer/ | PASS | Submitted and indexed | 2026-09-13 |
+| blog/creator-marketing-kpis-what-to-track/ | PASS | Submitted and indexed | 2026-09-13 |
+
+All four green, unchanged since last entry (checked the same two most
+recent LIVE posts; `affiliate-vs-flat-fee-influencer-payment.md` isn't
+inspected here since it isn't live on sixthdegree.app yet, still stuck in
+unmerged PR #22).
+
+Sitemap coverage: `sixthdegree.app/sitemap.xml` (live, fetched at audit
+time) has 16 URLs (14 posts + home + blog index), matching the 14 posts
+actually merged to main; parity confirmed. The local working tree (this
+branch, unmerged) now builds 17 URLs (15 posts, including the still-unmerged
+affiliate post, + home + blog index) after this run's pillar edit; that
+count reaches prod once PR #22 merges.
+
+Cannibalization / CTR analysis: still too thin for either (5 total
+query-dimension rows this window). No new keyword gap surfaced; every query
+with impressions lands on a topically relevant published post. Biggest CTR
+watch item remains `engagement-rate-explained/` (18 impressions, position
+79.17, 0 clicks): already addressed by PR #22's unmerged direct-answer
+section, which is why this run didn't duplicate it; merging that PR is the
+actual fix available, not further content work this run.

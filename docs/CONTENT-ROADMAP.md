@@ -168,7 +168,37 @@ commission-only launch-week deal, worked out in the new post's numbers), not
 a rewording of the seeding question. See
 `affiliate-vs-flat-fee-influencer-payment.md` in the list above.
 
-## Next, in priority order (updated 2026-09-17)
+## 2026-09-21 run: expanded the pillar's near-me section, did not ship a new post
+
+Drafted a full new spoke this run ("How to find influencers near you") aimed
+at mission bucket (b), near-me intent, before checking this file. Caught the
+mistake before committing: the **"Near-me: landing page, not a blog post"**
+section below is a standing decision from an earlier run, and a dedicated
+post whose `target_query` is "influencers near me" is exactly the thing it
+says not to build. Discarded that draft rather than ship something that
+overrides prior reasoning without new information or a founder call.
+
+Instead, expanded `influencers-in-toronto.md`'s existing "Creators near me"
+section with two genuinely new tactics that respect the standing decision
+(support via internal content on an existing page, not a competing URL):
+checking your own Google Business Profile photo tab and Instagram location
+page for people who already tagged your business (the highest-signal list
+available, since these people showed up in person, not a stranger's tag
+search having to guess who's nearby). `modified` bumped to 2026-09-21. This
+follows the 2026-09-14 run's precedent (improve an existing page rather than
+force a new one) for the same underlying reason: GSC surfaced no new keyword
+gap this run either (same 5-6 query-dimension rows pattern as every prior
+entry; see `docs/GSC-LOG.md`), and the one queued idea (TikTok rates) is
+still blocked on a citable source.
+
+**Also found this run: PR #22 (`claude/seo-content-drafts`, opened
+2026-09-14) is still open and unmerged, now three runs and a week later**
+(09-14, 09-17, 09-21 all landed on it). This is the second entry flagging
+this exact PR as stalled (see the 09-14 note above); it's now a genuine
+pattern, not a one-off. Flagged again, more strongly, as a founder action in
+this run's report.
+
+## Next, in priority order (updated 2026-09-21)
 
 1. **"Instagram vs TikTok for Toronto creator campaigns: where to put your
    budget first."** Still held back on the TikTok-rate half. Re-checked
@@ -181,8 +211,11 @@ a rewording of the seeding question. See
 2. New GSC-driven or founder-requested topics as they surface. Query volume
    is still thin (see `docs/GSC-LOG.md`); once real gaps appear, let them
    override this list instead of continuing to guess. No genuine keyword
-   gap has surfaced yet as of 2026-09-17; every long-tail query with
+   gap has surfaced yet as of 2026-09-21; every long-tail query with
    impressions already lands on a topically relevant published post.
+3. If the founder green-lights the near-me landing page proposed below,
+   that becomes the top priority the run after it's approved: it's the only
+   queued item that isn't blocked on a missing source or waiting on GSC.
 
 ## Near-me: landing page, not a blog post
 

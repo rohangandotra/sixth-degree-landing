@@ -3,7 +3,7 @@ title: "Influencers in Toronto: How to Find and Hire Them"
 description: "A practical guide to finding, vetting, and hiring influencers in Toronto: where to look, what they cost, and how to avoid a bad fit."
 target_query: "influencers in toronto"
 date: 2026-08-06
-modified: 2026-08-31
+modified: 2026-09-21
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -44,6 +44,8 @@ The longer checklist, plus how to read past brand work in a creator's grid, is i
 ## "Creators near me" and the local advantage
 
 A lot of this search happens as "influencers near me" or "creators near me," which resolves by the searcher's own location rather than a typed city name. There's no content trick that wins that search on its own. What actually helps: staying specific about Toronto and its neighbourhoods rather than writing generically about "influencer marketing," since that's the same local signal Google is trying to match searchers against. If you're a Toronto business with a physical location, claiming and filling out your Google Business Profile is worth doing before you spend a dollar on creators, since local search results pull from it directly.
+
+Your own Google Business Profile also does something more direct: check its photo tab. Anyone who's visited and posted about your business has already told you two things at once, that they're physically local and that they liked the place enough to shoot it unpaid, which is a stronger signal than anything a stranger's location-tag search can guess at. Instagram's location page for your own address does the same job from the other platform. Both cost nothing and take five minutes, and they're worth checking before you start the broader search described above.
 
 ## Usage rights, decided upfront
 

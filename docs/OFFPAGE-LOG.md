@@ -162,3 +162,36 @@ See the current run's report for the ready-to-send text for each.
   actually pay creators.
 
 See the current run's report for the ready-to-send text for each.
+
+## Suggested 2026-09-21
+
+- **Clutch.co** (clutch.co/get-listed) — B2B service marketplace with a free
+  company profile and client-review system, over $2 billion in services
+  sourced through it annually per their own site; has a standing
+  "Influencer Marketing Agency" category. Distinct from every prior
+  directory suggestion (Built In Toronto and TorontoStarts are tech/startup
+  networks, Toronto Directory and Digital Main Street are local-business
+  listings): Clutch is a higher-authority, review-driven B2B marketplace
+  specifically for finding service providers, closer in shape to how a
+  brand would actually search for a creator marketplace to hire through.
+  Well-documented signup flow (clutch.co/get-listed), confirmed by direct
+  page content this run rather than a search snippet only.
+- **Creator Economy Live podcast** (creatoreconomylive.com) — biweekly
+  podcast hosted by Brendan Gahan (Mekanism) and Keith Bendes (Linqia)
+  covering influencer marketing and creator-economy trends. A pitch for a
+  founder interview slot is a genuinely different channel from every prior
+  suggestion (all directories, guest-post pages, or written press so far);
+  this is the first podcast pitch logged. Contact path found via podcast
+  directories rather than a confirmed page on their own site, so a founder
+  should verify the actual pitch email/contact form on creatoreconomylive.com
+  before sending anything.
+- **TechTO Spotlights** (blog.techto.org, via techto.org/community) —
+  Canada's largest tech community (70,000+ members) runs a recurring
+  founder-story spotlight distributed to 60,000+ newsletter subscribers.
+  Distinct from MaRS E101 (2026-09-07, a Slack community for connections,
+  not a publishing channel): this is an actual content placement with real
+  distribution. No standalone submission form found this run; the
+  community page is the entry point and a founder would need to confirm
+  the current process.
+
+See the current run's report for the ready-to-send text for each.
