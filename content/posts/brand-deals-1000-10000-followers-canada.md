@@ -3,7 +3,7 @@ title: "How to Get Brand Deals With 1,000 to 10,000 Followers"
 description: "A practical guide for Canadian nano creators (1,000 to 10,000 followers): what to charge, how to pitch brands, and the mistakes that cost first deals."
 target_query: "how to get brand deals with 1000 followers"
 date: 2026-08-17
-modified: 2026-08-17
+modified: 2026-09-24
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -39,7 +39,7 @@ The deal you agree to is rarely just "post this." Ask, before you quote a price,
 
 ## Getting paid without chasing an invoice
 
-The most common bad experience nano creators report isn't a low rate, it's a brand that goes quiet after the content is posted. Protect yourself with two habits regardless of who you're working with: get the deliverable, deadline, and price in writing before you shoot anything, even if it's just a confirmed email or DM thread, and ask for payment to move through something that holds funds until delivery is confirmed, rather than a promise to e-transfer "once it goes up." Escrow exists for exactly this reason, and it protects a brand just as much as it protects you: neither side has to trust the other's word alone.
+The most common bad experience nano creators report isn't a low rate, it's a brand that goes quiet after the content is posted. Protect yourself with two habits regardless of who you're working with: get the deliverable, deadline, and price in writing before you shoot anything, even if it's just a confirmed email or DM thread, and ask for payment to move through something that holds funds until delivery is confirmed, rather than a promise to e-transfer "once it goes up." Escrow exists for exactly this reason, and it protects a brand just as much as it protects you: neither side has to trust the other's word alone. Send an invoice once the post is up, every time: it's what a brand needs on their end to pay you correctly, and [what a brand should be asking for](https://sixthdegree.app/blog/paying-influencers-canada-contracts-tax-basics/) covers the paperwork from their side of the transaction.
 
 ## Where Sixth Degree fits
 
