@@ -115,6 +115,22 @@ All three brand-side pillars are now published.
   question. `seeding-vs-paid-influencer-marketing.md` and
   `how-to-do-influencer-marketing.md` (the pillar) both got reciprocal
   linking sentences; both `modified` bumped to 2026-09-17.
+- `paying-influencers-canada-contracts-tax-basics.md` (2026-09-24) — the
+  paperwork side of paying a creator that no published post covered: what
+  needs to be in writing before money moves (pointing to the brief and ad
+  rights rider posts rather than repeating them), the contractor-not-employee
+  distinction, getting an invoice every time, when the CRA's commonly cited
+  $500 T4A threshold applies, and when the $30,000 GST/HST small-supplier
+  threshold means a creator's invoice should carry tax. Framed explicitly as
+  not tax or legal advice, with an accountant-first disclaimer, since this is
+  the first post to touch CRA mechanics at all. `how-to-do-influencer-marketing.md`'s
+  payment section and `brand-deals-1000-10000-followers-canada.md`'s
+  invoice-chasing section both got reciprocal linking sentences; both
+  `modified` bumped to 2026-09-24.
+
+**Also found this run: PR #22 (`claude/seo-content-drafts`) merged
+2026-09-21**, closing out the pattern flagged for three straight prior
+entries. No PR was open at the start of this run.
 
 **Also found this run: PR #21 (`claude/seo-content-drafts`, opened
 2026-08-31) was still open and unmerged at data-pull time, ten days and
@@ -198,21 +214,21 @@ this exact PR as stalled (see the 09-14 note above); it's now a genuine
 pattern, not a one-off. Flagged again, more strongly, as a founder action in
 this run's report.
 
-## Next, in priority order (updated 2026-09-21)
+## Next, in priority order (updated 2026-09-24)
 
 1. **"Instagram vs TikTok for Toronto creator campaigns: where to put your
    budget first."** Still held back on the TikTok-rate half. Re-checked
-   again this run for a citable TikTok Canada/Toronto creator-rate source
-   and found nothing beyond the same content-mill "2026 pricing guide"
-   pages flagged 2026-09-07 (Hootsuite, Launchpoint, InfluenceFlow,
-   InfluencerFee, Nowadays, usesnippet.app), still disagreeing widely with
-   no primary research. Not a citable source by the `lib/deliverables.ts`
-   bar. Keep checking each run; don't lower the bar.
+   again this run: the same content-mill "2026 pricing guide" pages
+   (Hootsuite, Launchpoint, InfluenceFlow, InfluencerFee, Nowadays,
+   usesnippet.app, Gigapay, Topmate, plus a new canspace.ca guide this run)
+   still disagree with each other by 3 to 8x on the same tier, sometimes
+   within a single source's own summary. Not a citable source by the
+   `lib/deliverables.ts` bar. Keep checking each run; don't lower the bar.
 2. New GSC-driven or founder-requested topics as they surface. Query volume
    is still thin (see `docs/GSC-LOG.md`); once real gaps appear, let them
    override this list instead of continuing to guess. No genuine keyword
-   gap has surfaced yet as of 2026-09-21; every long-tail query with
-   impressions already lands on a topically relevant published post.
+   gap has surfaced yet as of 2026-09-24; every query with impressions
+   already lands on a topically relevant published post.
 3. If the founder green-lights the near-me landing page proposed below,
    that becomes the top priority the run after it's approved: it's the only
    queued item that isn't blocked on a missing source or waiting on GSC.
