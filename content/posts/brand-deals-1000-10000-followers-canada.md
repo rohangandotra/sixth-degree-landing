@@ -3,7 +3,7 @@ title: "How to Get Brand Deals With 1,000 to 10,000 Followers"
 description: "A practical guide for Canadian nano creators (1,000 to 10,000 followers): what to charge, how to pitch brands, and the mistakes that cost first deals."
 target_query: "how to get brand deals with 1000 followers"
 date: 2026-08-17
-modified: 2026-09-24
+modified: 2026-09-28
 author: "Rohan Gandotra, co-founder of Sixth Degree"
 ---
 
@@ -21,7 +21,7 @@ Toronto is the market we have hard numbers for, and they're a reasonable startin
 
 Two things cost first-time creators real money. First, quoting a flat "whatever you think is fair," which hands a brand every incentive to lowball and no anchor to push back against. Second, treating "exposure" as a form of payment. A follower count is not currency, and a brand that offers only exposure for a full production job is telling you, honestly, what it thinks the work is worth.
 
-Product-for-post trades aren't a scam by default. A $120 product plus $80 cash is a fair nano offer where $200 cash was the original ask, as long as you'd genuinely buy the product yourself. Product with no cash at all, for anything beyond a single quick post, usually isn't.
+Product-for-post trades aren't a scam by default. A $120 product plus $80 cash is a fair nano offer where $200 cash was the original ask, as long as you'd genuinely buy the product yourself. Product with no cash at all, for anything beyond a single quick post, usually isn't. A different problem entirely is the offer that was never real to begin with: [brand deal scams: red flags every creator should know](https://sixthdegree.app/blog/brand-deal-scam-red-flags/) covers the patterns that separate a lowball offer from a message designed to take your money or your account.
 
 ## Building the media kit that gets you taken seriously
 
