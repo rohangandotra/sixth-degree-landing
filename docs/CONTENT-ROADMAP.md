@@ -214,20 +214,59 @@ this exact PR as stalled (see the 09-14 note above); it's now a genuine
 pattern, not a one-off. Flagged again, more strongly, as a founder action in
 this run's report.
 
-## Next, in priority order (updated 2026-09-24)
+## 2026-09-28 run: a new creator-safety spoke, not from this queue
+
+All three pillars and the ten spokes above are still published; the
+TikTok-rate spoke below is still blocked (re-checked again this run via
+web search, same content-mill sources disagreeing widely on the same
+tier, nothing new); GSC still shows no genuine keyword gap (7 total
+query-dimension rows this window, up slightly from 5, but the two new
+rows, "toronto influencer agency" and "ugc agency toronto," both already
+land on `influencer-marketing-agency-vs-marketplace-toronto/`; see
+`docs/GSC-LOG.md`). Rather than force an eleventh spoke onto an
+architecture that already covers goal-setting, tiers, rates, finding
+creators, briefing, usage rights, payment structure, contracts/tax,
+measurement, and KPIs, this run re-read the creator-side content
+specifically (thinner than the brand side: one spoke,
+`brand-deals-1000-10000-followers-canada.md`) and found a gap that isn't a
+pricing or process question at all: nothing on the platform addresses
+fraud. `brand-deals-1000-10000-followers-canada.md` has one paragraph on
+"exposure isn't payment" and fair product-for-post trades, but nothing on
+the actual scam patterns (upfront shipping fees, credential/account-access
+requests, mass-blast "you've been selected" messages) that a growing
+creator audience runs into. This ties authentically to the escrow value
+proposition without being a rewrite of the pricing/negotiation ground
+already covered. See `brand-deal-scam-red-flags.md` (2026-09-28) below.
+`brand-deals-1000-10000-followers-canada.md` got a reciprocal linking
+sentence in its product-for-post paragraph; `modified` bumped to
+2026-09-28.
+
+## Spokes (published), continued
+
+- `brand-deal-scam-red-flags.md` (2026-09-28) — the concrete red flags in a
+  fake brand-collaboration DM: upfront "shipping" fee requests, gift-card
+  or crypto payment, pressure to post before terms are confirmed, requests
+  for login credentials or one-time codes, unverifiable senders, and
+  mass-blast "you've been selected" messages, contrasted with what a real
+  offer looks like. Links to `brand-deals-1000-10000-followers-canada.md`,
+  `paying-influencers-canada-contracts-tax-basics.md`,
+  `ad-rights-rider-ugc-usage-rights.md`, and the Creator Agreement legal
+  page.
+
+## Next, in priority order (updated 2026-09-28)
 
 1. **"Instagram vs TikTok for Toronto creator campaigns: where to put your
    budget first."** Still held back on the TikTok-rate half. Re-checked
-   again this run: the same content-mill "2026 pricing guide" pages
-   (Hootsuite, Launchpoint, InfluenceFlow, InfluencerFee, Nowadays,
-   usesnippet.app, Gigapay, Topmate, plus a new canspace.ca guide this run)
-   still disagree with each other by 3 to 8x on the same tier, sometimes
-   within a single source's own summary. Not a citable source by the
-   `lib/deliverables.ts` bar. Keep checking each run; don't lower the bar.
+   again this run: the same content-mill "2026 pricing guide" pages still
+   disagree with each other by wide multiples on the same tier (nano rates
+   quoted anywhere from $10 to $1,000 across sources checked this run,
+   sometimes within a single source's own summary). Not a citable source by
+   the `lib/deliverables.ts` bar. Keep checking each run; don't lower the
+   bar.
 2. New GSC-driven or founder-requested topics as they surface. Query volume
    is still thin (see `docs/GSC-LOG.md`); once real gaps appear, let them
    override this list instead of continuing to guess. No genuine keyword
-   gap has surfaced yet as of 2026-09-24; every query with impressions
+   gap has surfaced yet as of 2026-09-28; every query with impressions
    already lands on a topically relevant published post.
 3. If the founder green-lights the near-me landing page proposed below,
    that becomes the top priority the run after it's approved: it's the only

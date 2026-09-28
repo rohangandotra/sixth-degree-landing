@@ -195,3 +195,35 @@ See the current run's report for the ready-to-send text for each.
   the current process.
 
 See the current run's report for the ready-to-send text for each.
+
+## Suggested 2026-09-28
+
+Direct page fetches to all three domains below were blocked by this
+session's network egress policy (same recurring limitation as every prior
+run's off-page section, most recently 2026-09-17), so these are based on
+search-result snippets only; a founder should confirm the live submission
+flow before sending.
+
+- **Crunchbase** (crunchbase.com/add-new) — free company profile on the
+  highest-authority general startup/company database, distinct from every
+  prior suggestion (none of which cover this specific, very standard
+  directory). Create a free account, use the "Contribute Data" tool to add
+  a company profile with the standard fields (description, location,
+  category, website, founding date).
+- **StartupBlink** (startupblink.com/startups/add) — the Toronto Area
+  ecosystem currently lists 3,332 startups and over $3.02B in tracked
+  funding on StartupBlink's own ranking page. Distinct from Built In
+  Toronto (2026-09-03), TorontoStarts (2026-09-14), and Toronto Directory
+  (2026-09-07): this is a global ecosystem-ranking index rather than a
+  profile network, startup-community list, or local-business directory,
+  and a listing here also feeds the city's own aggregate ranking.
+- **F6S** (f6s.com) — international founder community and startup
+  directory with a free profile (company name, description, team, stage,
+  sector) and access to a deals/perks marketplace and accelerator program
+  matching. Distinct from every directory suggested so far: F6S is
+  founder-facing (perks, programs, cofounder/community matching) rather
+  than a company database (Crunchbase), an ecosystem ranking
+  (StartupBlink), or a local listing (Toronto Directory, Digital Main
+  Street).
+
+See the current run's report for the ready-to-send text for each.
