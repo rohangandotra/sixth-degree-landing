@@ -1,0 +1,333 @@
+<!doctype html>
+<!-- The Sixth Degree hero film, as a deterministic HTML animation.
+     render(t) sets every style from the time t alone (no CSS animations), so
+     render.cjs can capture frame N exactly. Every cut sits on a 150 BPM grid
+     (beat 0.4s, bar 1.6s) that music.py scores against: move one, move both.
+     Copy obeys the app's honesty rules: no performance figures, the sample
+     creator carries "Sample profile", and every product claim matches main. -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=block" rel="stylesheet">
+<style>
+:root{--ink:#1c302e;--pine:#142220;--brand:#0D9488;--mint:#5eead4;--cream:#faf8f5;--sand:#f4efe9;}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#000}
+body{font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+.disp{font-family:'Playfair Display',serif;font-weight:600}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden}
+.scene{position:absolute;inset:0;overflow:hidden;display:none}
+.abs{position:absolute;will-change:transform,opacity}
+.blob{position:absolute;border-radius:50%;filter:blur(120px)}
+#grain{position:absolute;inset:-100px;pointer-events:none;opacity:.07;z-index:99;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.center{left:0;right:0;text-align:center}
+.pill{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:10px 22px;font-weight:600;font-size:24px}
+.card{background:#fff;border-radius:32px;box-shadow:0 40px 90px -30px rgba(20,34,32,.35),0 0 0 1px rgba(20,34,32,.06);padding:48px}
+.tile{width:200px;height:200px;border-radius:52px;background:var(--pine);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 1px rgba(94,234,212,.15)}
+.tile span{font-family:'Playfair Display';font-weight:600;color:var(--brand);font-size:150px;line-height:1;transform:translateY(-6px)}
+</style></head>
+<body><div id="stage">
+
+<!-- S1: countdown hook -->
+<div class="scene" id="s1" style="background:var(--pine)">
+  <div class="blob" id="s1b" style="width:900px;height:900px;left:510px;top:90px;background:rgba(13,148,136,.35)"></div>
+  <div class="abs center" id="s1top" style="top:150px;font-size:58px;color:rgba(250,248,245,.75);font-weight:500;letter-spacing:-.5px">The right creator is</div>
+  <div class="abs center disp" id="s1num" style="top:190px;font-size:560px;line-height:1;color:var(--brand)">6</div>
+  <div class="abs center" id="s1bot" style="top:850px;font-size:58px;color:rgba(250,248,245,.75);font-weight:500;letter-spacing:-.5px">degrees away.</div>
+</div>
+
+<!-- S2: problem -->
+<div class="scene" id="s2" style="background:var(--cream)">
+  <div class="abs" id="s2k" style="left:200px;top:170px;font-size:26px;font-weight:700;letter-spacing:6px;color:var(--brand);text-transform:uppercase">Creator marketing, today</div>
+  <div class="abs disp s2l" style="left:200px;top:250px;font-size:150px;color:var(--ink);white-space:nowrap"><span>Fake followers.</span><i class="abs strike"></i></div>
+  <div class="abs disp s2l" style="left:200px;top:470px;font-size:150px;color:var(--ink);white-space:nowrap"><span>Ghosted DMs.</span><i class="abs strike"></i></div>
+  <div class="abs disp s2l" style="left:200px;top:690px;font-size:150px;color:var(--ink);white-space:nowrap"><span>Payments in limbo.</span><i class="abs strike"></i></div>
+</div>
+
+<!-- S3: logo -->
+<div class="scene" id="s3" style="background:var(--ink)">
+  <div class="blob" id="s3b1" style="width:800px;height:800px;background:rgba(13,148,136,.45)"></div>
+  <div class="blob" id="s3b2" style="width:600px;height:600px;background:rgba(94,234,212,.18)"></div>
+  <div class="abs" id="s3tile" style="left:860px;top:210px"><div class="tile"><span>6</span></div></div>
+  <div class="abs center disp" id="s3word" style="top:450px;font-size:150px;color:var(--cream);letter-spacing:-2px;line-height:1.1"></div>
+  <div class="abs center" id="s3tag" style="top:680px;font-size:44px;color:rgba(250,248,245,.78);font-weight:400">The creator marketplace built on <span id="s3trust" style="position:relative;color:var(--mint);font-weight:600">trust<i id="s3ul" class="abs" style="left:0;bottom:-8px;height:5px;background:var(--mint);border-radius:3px"></i></span>.</div>
+</div>
+
+<!-- S4: features -->
+<div class="scene" id="s4" style="background:var(--cream)">
+  <div class="blob" id="s4b" style="width:900px;height:900px;left:1000px;top:100px;background:rgba(94,234,212,.28)"></div>
+  <div id="ftexts"></div>
+  <div class="abs" id="fprog" style="left:160px;top:930px;display:flex;gap:14px"></div>
+
+  <!-- C1 creator -->
+  <div class="abs card fcard" style="left:1010px;top:190px;width:760px">
+    <div style="display:flex;gap:30px;align-items:center">
+      <div style="width:132px;height:132px;border-radius:50%;background:linear-gradient(135deg,#0D9488,#1c302e);display:flex;align-items:center;justify-content:center;flex:none"><span class="disp" style="color:var(--cream);font-size:68px">M</span></div>
+      <div style="flex:1">
+        <div style="font-size:46px;font-weight:700;color:var(--ink);letter-spacing:-1px">Maya R.</div>
+        <div style="font-size:26px;color:rgba(28,48,46,.6);margin-top:6px">Food &amp; Drink · Toronto</div>
+      </div>
+      <div class="pill" style="align-self:flex-start;background:var(--sand);color:rgba(28,48,46,.6);font-size:18px;padding:8px 16px">Sample profile</div>
+    </div>
+    <div style="display:flex;gap:14px;margin-top:34px;height:56px">
+      <div class="pill c1p" style="background:var(--brand);color:#fff"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Verified</div>
+      <div class="pill c1p" style="background:var(--ink);color:var(--mint)">Founding Member</div>
+    </div>
+    <div style="height:1px;background:rgba(28,48,46,.1);margin:36px 0 20px"></div>
+    <div id="c1checks"></div>
+  </div>
+
+  <!-- C2 wizard -->
+  <div class="abs card fcard" style="left:1010px;top:150px;width:760px;padding:40px 44px">
+    <div id="c2steps" style="display:flex;gap:10px;margin-bottom:34px"></div>
+    <div style="border:2px solid rgba(13,148,136,.25);border-radius:22px;padding:26px 28px;background:rgba(94,234,212,.08)">
+      <div style="font-size:18px;font-weight:700;letter-spacing:3px;color:var(--brand);text-transform:uppercase">Play · Food &amp; Drink</div>
+      <div style="font-size:36px;font-weight:700;color:var(--ink);margin-top:10px;letter-spacing:-.5px">Behind-the-counter Reel</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:20px">
+        <div style="font-size:22px;color:rgba(28,48,46,.6)">Cited from real posts, each with its read date</div>
+        <div id="c2btn" class="pill" style="white-space:nowrap;flex:none;background:var(--ink);color:#fff;font-size:22px">Use this play</div>
+      </div>
+    </div>
+    <div style="margin-top:28px;font-size:20px;font-weight:600;color:rgba(28,48,46,.5)" id="c2drafted">Drafted from Behind-the-counter Reel. Edit anything.</div>
+    <div style="margin-top:12px;min-height:180px;border-radius:18px;background:var(--cream);padding:24px 26px;font-size:28px;line-height:1.45;color:var(--ink)"><span id="c2type"></span><i id="c2caret" style="display:inline-block;width:3px;height:30px;background:var(--brand);vertical-align:-5px;margin-left:2px"></i></div>
+  </div>
+
+  <!-- C3 escrow -->
+  <div class="abs card fcard" style="left:1010px;top:220px;width:760px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div style="font-size:22px;font-weight:600;color:rgba(28,48,46,.55)">Collab fee</div>
+        <div class="disp" style="font-size:96px;color:var(--ink);line-height:1.1">$450</div>
+      </div>
+      <div style="position:relative;width:260px;height:56px">
+        <div class="pill abs" id="c3held" style="right:0;background:var(--sand);color:var(--ink)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>Held in escrow</div>
+        <div class="pill abs" id="c3rel" style="right:0;background:var(--brand);color:#fff">Released</div>
+      </div>
+    </div>
+    <div style="position:relative;height:150px;margin-top:50px">
+      <div class="abs" style="left:30px;right:30px;top:28px;height:6px;border-radius:3px;background:rgba(28,48,46,.1)"></div>
+      <div class="abs" id="c3bar" style="left:30px;top:28px;height:6px;border-radius:3px;background:var(--brand)"></div>
+      <div id="c3nodes"></div>
+    </div>
+    <div id="c3foot" style="margin-top:6px;border-radius:18px;background:var(--ink);color:var(--mint);font-size:26px;font-weight:600;padding:22px 26px;display:flex;align-items:center;gap:14px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5eead4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Paid to the creator in full</div>
+  </div>
+
+  <!-- C4 recap -->
+  <div class="abs card fcard" style="left:1010px;top:170px;width:760px;padding:44px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:26px">
+      <div style="font-size:34px;font-weight:700;color:var(--ink);letter-spacing:-.5px">Campaign recap</div>
+      <div class="pill" style="background:var(--sand);color:rgba(28,48,46,.6);font-size:18px;padding:8px 16px">Three ledgers</div>
+    </div>
+    <div id="c4rows"></div>
+    <div id="c4foot" style="margin-top:18px;font-size:22px;color:rgba(28,48,46,.55)">Not tracking something? It says <b style="color:var(--ink)">n/a</b>, never 0.</div>
+  </div>
+</div>
+
+<!-- S8: slam words -->
+<div class="scene" id="s8" style="background:var(--brand)">
+  <div class="abs center disp s8w" style="top:330px;font-size:290px;color:var(--cream);line-height:1">Verified.</div>
+  <div class="abs center disp s8w" style="top:330px;font-size:290px;color:var(--cream);line-height:1">Escrowed.</div>
+  <div class="abs center disp s8w" style="top:330px;font-size:290px;color:var(--ink);line-height:1">Measured.</div>
+</div>
+
+<!-- S9: end card -->
+<div class="scene" id="s9" style="background:var(--ink)">
+  <div class="blob" id="s9b1" style="width:900px;height:900px;background:rgba(13,148,136,.4)"></div>
+  <div class="blob" id="s9b2" style="width:700px;height:700px;background:rgba(94,234,212,.16)"></div>
+  <div class="abs" id="s9lock" style="left:0;right:0;top:300px;display:flex;justify-content:center;align-items:center;gap:44px">
+    <div class="tile" style="width:170px;height:170px;border-radius:44px"><span style="font-size:126px">6</span></div>
+    <div class="disp" style="font-size:150px;color:var(--cream);letter-spacing:-2px">Sixth Degree</div>
+  </div>
+  <div class="abs center" id="s9tag" style="top:540px;font-size:44px;color:rgba(250,248,245,.78)">Verified creators. Escrowed pay. Honest results.</div>
+  <div class="abs center" id="s9cta" style="top:680px"><div class="pill" style="background:var(--mint);color:var(--pine);font-size:34px;padding:22px 44px;font-weight:700">Get started · sixthdegree.app</div></div>
+  <div class="abs center" id="s9to" style="top:850px;font-size:24px;font-weight:600;letter-spacing:8px;color:rgba(94,234,212,.7);text-transform:uppercase">Toronto first</div>
+</div>
+
+<div id="grain"></div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+const p=(t,a,b)=>clamp((t-a)/(b-a),0,1);
+const lerp=(a,b,x)=>a+(b-a)*x;
+const E={
+  outExpo:x=>x>=1?1:1-Math.pow(2,-10*x),
+  inExpo:x=>x<=0?0:Math.pow(2,10*x-10),
+  outBack:x=>{const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)},
+  inOut:x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2,
+  outCubic:x=>1-Math.pow(1-x,3),
+};
+// b (blur) is only written when passed, so elements styled with a CSS filter
+// (the blobs) keep it.
+function set(el,{o=1,x=0,y=0,s=1,r=0,b}={}){
+  el.style.opacity=o;
+  el.style.transform=`translate(${x}px,${y}px) scale(${s}) rotate(${r}deg)`;
+  if(b!==undefined) el.style.filter=b>0.05?`blur(${b}px)`:'none';
+}
+
+// ---- build dynamic bits ----
+$('#s3word').innerHTML=[...'Sixth Degree'].map(c=>`<span style="display:inline-block;white-space:pre">${c}</span>`).join('');
+
+const FEAT=[
+  {k:'01 · Verified',h:'Every creator,<br>checked by a human.',sub:'AI assists. A person checks every account is real and theirs.',t:[9.6,14.4]},
+  {k:'02 · Campaign intelligence',h:'Start from what<br>stands out.',sub:'Plays built from real posts in your niche. AI drafts the brief. You make the call.',t:[14.4,19.2]},
+  {k:'03 · Escrow',h:'Pay once.<br>Paid when it\'s live.',sub:'Funds are held while the work is made and posted. Then the creator is paid in full.',t:[19.2,24.0]},
+  {k:'04 · Recap',h:'Every number,<br>labelled by its source.',sub:'Platform-tracked, creator-reported, brand-reported. Never blurred together.',t:[24.0,28.8]},
+];
+$('#ftexts').innerHTML=FEAT.map(f=>`
+  <div class="abs ft" style="left:160px;top:250px;width:800px">
+    <div class="fk" style="font-size:24px;font-weight:700;letter-spacing:5px;color:var(--brand);text-transform:uppercase">${f.k}</div>
+    <div class="fh disp" style="font-size:96px;line-height:1.05;color:var(--ink);margin-top:26px;letter-spacing:-1.5px">${f.h}</div>
+    <div class="fs" style="font-size:32px;line-height:1.45;color:rgba(28,48,46,.65);margin-top:36px;width:700px">${f.sub}</div>
+  </div>`).join('');
+$('#fprog').innerHTML=FEAT.map(()=>`<div style="width:90px;height:6px;border-radius:3px;background:rgba(28,48,46,.12);overflow:hidden"><i style="display:block;height:100%;width:0;background:var(--brand)"></i></div>`).join('');
+
+// The quick review's own checks (app lib/verification/quick-review.ts).
+const CHECKS=['Account is real and theirs','Photo is them','Based in the GTA'];
+$('#c1checks').innerHTML=CHECKS.map(c=>`<div class="ck" style="display:flex;align-items:center;gap:18px;padding:12px 0;font-size:28px;color:var(--ink);font-weight:500">
+  <div style="width:40px;height:40px;border-radius:50%;border:2.5px solid rgba(28,48,46,.18);position:relative;flex:none"><div class="ckf abs" style="inset:-2.5px;border-radius:50%;background:var(--brand);display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div></div>${c}<span style="margin-left:auto;font-size:20px;color:rgba(28,48,46,.45)">by a human</span></div>`).join('');
+
+const STEPS=['Goal','Strategy','Brief','Terms','Review'];
+$('#c2steps').innerHTML=STEPS.map(s=>`<div class="st" style="flex:1"><div class="stb" style="height:6px;border-radius:3px;background:rgba(28,48,46,.12);overflow:hidden"><i style="display:block;height:100%;width:0;background:var(--brand)"></i></div><div class="stl" style="margin-top:10px;font-size:19px;font-weight:600;color:rgba(28,48,46,.4)">${s}</div></div>`).join('');
+const BRIEF='Show us the five minutes before doors open. One Reel, natural light, your own voice. Open on the first pour.';
+
+// Collab states in order: approved, then posted, then released.
+const NODES=['Funded','Approved','Posted','Released'];
+$('#c3nodes').innerHTML=NODES.map((n,i)=>`<div class="nd abs" style="left:${30+i*(700-60)/3-31}px;top:0;width:62px;text-align:center">
+  <div style="width:62px;height:62px;border-radius:50%;background:#fff;border:3px solid rgba(28,48,46,.15);position:relative"><div class="ndf abs" style="inset:-3px;border-radius:50%;background:var(--brand);display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div><div class="ndr abs" style="inset:-3px;border-radius:50%;border:3px solid var(--mint)"></div></div>
+  <div class="ndl" style="position:absolute;left:50%;transform:translateX(-50%);top:80px;font-size:22px;font-weight:600;white-space:nowrap;color:rgba(28,48,46,.4)">${n}</div></div>`).join('');
+
+const LEDG=[
+  {c:'#0D9488',l:'Platform-tracked',m:'Cost · Clicks'},
+  {c:'#e0a458',l:'Creator-reported',m:'Reach · Engagements'},
+  {c:'#1c302e',l:'Brand-reported',m:'Orders · Revenue'},
+];
+$('#c4rows').innerHTML=LEDG.map((r,i)=>`<div class="lr" style="display:flex;align-items:center;gap:22px;padding:22px 24px;border-radius:20px;background:var(--cream);margin-bottom:14px">
+  <div style="width:14px;height:64px;border-radius:7px;background:${r.c}"></div>
+  <div style="flex:1"><div style="font-size:20px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:${r.c}">${r.l}</div><div style="font-size:30px;font-weight:600;color:var(--ink);margin-top:6px">${r.m}</div></div>
+  <div style="display:flex;align-items:flex-end;gap:8px;height:64px">${[0,1,2,3,4].map(j=>`<i class="lb" data-h="${[.45,.7,.55,.85,1][(j+i*2)%5]}" style="display:block;width:14px;border-radius:4px;background:${r.c};opacity:.75"></i>`).join('')}</div></div>`).join('');
+
+// Strike widths are measured with the scene displayed: a display:none scene
+// measures 0 and the strikes render as dots.
+let strikes=[];
+function measure(){
+  $('#s2').style.display='block';
+  $$('.s2l').forEach(l=>{const sp=l.querySelector('span');const st=l.querySelector('.strike');
+    st.style.left='-10px';st.style.top=(sp.offsetHeight*0.56)+'px';st.style.height='14px';st.style.background='var(--brand)';st.style.borderRadius='7px';
+    strikes.push(sp.offsetWidth+20);});
+  $('#s2').style.display='none';
+}
+
+// ---- scenes: [enter-transition start, end) ----
+const SC={s1:[0,3.2],s2:[2.8,6.4],s3:[6.0,9.6],s4:[9.25,28.8],s8:[28.45,32.0],s9:[31.6,99]};
+
+function render(t){
+  for(const [id,[a,b]] of Object.entries(SC)){ $('#'+id).style.display=(t>=a&&t<b)?'block':'none'; }
+  const fi=Math.floor(t*24); $('#grain').style.transform=`translate(${(fi*37)%100}px,${(fi*61)%100}px)`;
+
+  // S1: 6 holds, then 5..1 on eighth notes from 0.8; "1" lands on the bar at 1.6
+  if(t<3.2){
+    const idx=t<0.8?0:Math.min(5,1+Math.floor((t-0.8)/0.2));
+    const tc=t<0.8?-9:0.8+(idx-1)*0.2; const kick=1-E.outExpo(p(t,tc,tc+0.22));
+    const n=$('#s1num'); n.textContent=6-idx;
+    const fin=idx===5;
+    const enter=E.outExpo(p(t,0,0.5));
+    const exit=E.inExpo(p(t,2.6,3.2));
+    n.style.color=fin?'#5eead4':'#0D9488';
+    set(n,{o:enter,y:(1-enter)*80 - kick*24,s:(0.9+0.1*enter)*(1+kick*(fin?0.25:0.08))*(1+exit*0.6)});
+    set($('#s1top'),{o:E.outExpo(p(t,0.1,0.6))*(1-exit),y:(1-E.outExpo(p(t,0.1,0.6)))*30});
+    const bot=$('#s1bot'); bot.textContent=fin?'degree away.':'degrees away.';
+    set(bot,{o:E.outExpo(p(t,0.2,0.7))*(1-exit),y:(1-E.outExpo(p(t,0.2,0.7)))*30,s:fin?1+0.06*kick:1});
+    set($('#s1b'),{o:.6+.4*Math.sin(t*3),s:1+0.15*E.outExpo(p(t,1.9,2.4))});
+  }
+  // S2: lines land on 3.2 / 4.0 / 4.8, strikes on the beat after each
+  if(t>=2.8&&t<6.4){
+    const r=E.inOut(p(t,2.8,3.2))*1150; $('#s2').style.clipPath=`circle(${r}px at 50% 50%)`;
+    const exit=E.inExpo(p(t,6.0,6.4));
+    set($('#s2k'),{o:E.outExpo(p(t,3.1,3.5))*(1-exit),x:(1-E.outExpo(p(t,3.1,3.5)))*-40});
+    $$('.s2l').forEach((l,i)=>{
+      const t0=3.2+i*0.8; const a=E.outExpo(p(t,t0,t0+0.35));
+      const sk=E.inOut(p(t,t0+0.42,t0+0.66));
+      l.querySelector('span').style.opacity=1-0.65*sk;
+      set(l,{o:a,s:lerp(1.25,1,a),x:(1-a)*-60,y:-exit*120,b:(1-a)*12});
+      l.style.transformOrigin='left center';
+      const st=l.querySelector('.strike');st.style.width=(strikes[i]*sk)+'px';st.style.opacity=sk>0.01?1:0;
+    });
+  }
+  // S3: logo
+  if(t>=6.0&&t<9.6){
+    const w=E.inOut(p(t,6.0,6.4)); $('#s3').style.clipPath=`inset(${(1-w)*100}% 0 0 0)`;
+    const exit=E.inExpo(p(t,9.15,9.6));
+    set($('#s3b1'),{x:500+Math.sin(t*0.9)*120,y:-100+Math.cos(t*0.7)*80});
+    set($('#s3b2'),{x:1000+Math.cos(t*0.8)*140,y:400+Math.sin(t*1.1)*90});
+    const tl=E.outBack(p(t,6.45,6.95));
+    set($('#s3tile'),{o:clamp(tl*2,0,1)*(1-exit),s:tl*(1-exit*0.1),r:(1-tl)*-20,y:-exit*30});
+    $$('#s3word span').forEach((c,i)=>{const a=E.outExpo(p(t,6.7+i*0.035,6.7+i*0.035+0.5));set(c,{o:a*(1-exit),y:(1-a)*90-exit*30,b:(1-a)*8+exit*10});});
+    const tg=E.outExpo(p(t,7.5,8.0));
+    set($('#s3tag'),{o:tg*(1-exit),y:(1-tg)*30-exit*30});
+    $('#s3ul').style.width=(E.inOut(p(t,8.05,8.45))*100)+'%';
+  }
+  // S4: four features, 4.8s (three bars) each
+  if(t>=9.25&&t<28.8){
+    const w=E.inOut(p(t,9.25,9.6)); $('#s4').style.clipPath=`inset(0 ${(1-w)*100}% 0 0)`;
+    set($('#s4b'),{x:Math.sin(t*0.6)*100,y:Math.cos(t*0.5)*80});
+    const fts=$$('.ft'), cards=$$('.fcard'), prog=$$('#fprog i');
+    FEAT.forEach((f,i)=>{
+      const [a,b]=f.t; const last=i===FEAT.length-1;
+      const out=last?0:E.inExpo(p(t,b-0.3,b));
+      const el=fts[i]; const parts=[el.querySelector('.fk'),el.querySelector('.fh'),el.querySelector('.fs')];
+      el.style.display=(t>=a-0.05&&t<b)?'block':'none';
+      parts.forEach((pt,j)=>{const k=E.outExpo(p(t,a+0.08+j*0.09,a+0.7+j*0.09));set(pt,{o:k*(1-out),y:(1-k)*70-out*50,b:(1-k)*6});});
+      const c=cards[i]; c.style.display=(t>=a-0.05&&t<b)?'block':'none';
+      const ci=E.outExpo(p(t,a+0.12,a+0.85));
+      set(c,{o:ci*(1-out),x:(1-ci)*260-out*160,y:(1-ci)*30,r:(1-ci)*5,s:1-out*0.06});
+      prog[i].style.width=(p(t,a,b)*100)+'%';
+    });
+    // C1
+    $$('.c1p').forEach((pl,i)=>{const t0=[10.8,11.2][i];const k=E.outBack(p(t,t0,t0+0.4));set(pl,{o:clamp(k*3,0,1),s:i===0?lerp(2.4,1,k):lerp(0.4,1,k)});});
+    $$('#c1checks .ck').forEach((ck,i)=>{const t0=12.0+i*0.4;const k=E.outBack(p(t,t0,t0+0.35));set(ck.querySelector('.ckf'),{o:clamp(k*3,0,1),s:k});set(ck,{o:0.35+0.65*clamp(k,0,1)});});
+    // C2
+    $$('#c2steps .st').forEach((st,i)=>{const t0=14.8+i*0.4;const k=E.inOut(p(t,t0,t0+0.3));
+      st.querySelector('i').style.width=(i<3?k*100:0)+'%';st.querySelector('.stl').style.color=(i<3&&k>0.5)?'#1c302e':'rgba(28,48,46,.4)';});
+    const press=p(t,15.85,16.0)-p(t,16.0,16.2);
+    set($('#c2btn'),{s:1-0.08*press});
+    $('#c2btn').style.background=t>16?'#0D9488':'#1c302e';
+    const dr=E.outExpo(p(t,16.15,16.5)); set($('#c2drafted'),{o:dr,y:(1-dr)*10});
+    const n=Math.floor(BRIEF.length*p(t,16.3,18.4)); $('#c2type').textContent=BRIEF.slice(0,n);
+    $('#c2caret').style.opacity=(t<16.2)?0:(Math.floor(t*3)%2===0?1:0.15);
+    // C3
+    const nodeT=[20.0,20.8,21.6,22.4];
+    $$('#c3nodes .nd').forEach((nd,i)=>{const k=E.outBack(p(t,nodeT[i],nodeT[i]+0.35));set(nd.querySelector('.ndf'),{o:clamp(k*3,0,1),s:k});
+      const rk=p(t,nodeT[i]+0.05,nodeT[i]+0.6);set(nd.querySelector('.ndr'),{o:(1-rk)*(rk>0?1:0),s:1+rk*0.8});
+      nd.querySelector('.ndl').style.color=k>0.5?'#1c302e':'rgba(28,48,46,.4)';});
+    let bw=0; for(let i=0;i<3;i++){bw+=E.inOut(p(t,nodeT[i]+0.1,nodeT[i+1]))*(640/3);} $('#c3bar').style.width=bw+'px';
+    const rel=E.outBack(p(t,22.45,22.8));
+    set($('#c3held'),{o:1-clamp(rel*2,0,1),s:1-rel*0.3});set($('#c3rel'),{o:clamp(rel*2,0,1),s:lerp(0.5,1,rel)});
+    const ft=E.outExpo(p(t,22.6,23.0)); set($('#c3foot'),{o:ft,y:(1-ft)*24});
+    // C4
+    $$('#c4rows .lr').forEach((r,i)=>{const t0=24.8+i*0.4;const k=E.outExpo(p(t,t0,t0+0.6));set(r,{o:k,x:(1-k)*80});
+      r.querySelectorAll('.lb').forEach((b,j)=>{const bk=E.outBack(p(t,t0+0.2+j*0.06,t0+0.6+j*0.06));b.style.height=(64*parseFloat(b.dataset.h)*clamp(bk,0,1.1))+'px';});});
+    const cf=E.outExpo(p(t,26.4,26.8)); set($('#c4foot'),{o:cf,y:(1-cf)*14});
+  }
+  // S8: slam words on 28.8 / 29.6 / 30.4
+  if(t>=28.45&&t<32.0){
+    const w=E.inOut(p(t,28.45,28.8)); $('#s8').style.clipPath=`inset(0 0 0 ${(1-w)*100}%)`;
+    $$('.s8w').forEach((wd,i)=>{const t0=28.8+i*0.8;const a=E.outExpo(p(t,t0,t0+0.3));const o=i<2?E.inExpo(p(t,t0+0.62,t0+0.8)):0;
+      set(wd,{o:a*(1-o),s:lerp(1.6,1,a)*(1-o*0.3),b:(1-a)*20+o*16,y:o*-40});});
+    $('#s8').style.background=t>=30.4?'#5eead4':'#0D9488';
+  }
+  // S9: end card
+  if(t>=31.6){
+    const r=E.inOut(p(t,31.6,32.0))*1150; $('#s9').style.clipPath=`circle(${r}px at 50% 50%)`;
+    set($('#s9b1'),{x:300+Math.sin(t*0.7)*160,y:-50+Math.cos(t*0.6)*90});
+    set($('#s9b2'),{x:1100+Math.cos(t*0.8)*150,y:450+Math.sin(t*0.9)*90});
+    const l=E.outExpo(p(t,32.0,32.7)); set($('#s9lock'),{o:l,s:lerp(0.85,1,l),b:(1-l)*14});
+    const tg=E.outExpo(p(t,32.4,32.9)); set($('#s9tag'),{o:tg,y:(1-tg)*30});
+    const c=E.outBack(p(t,32.8,33.3)); set($('#s9cta'),{o:clamp(c*2,0,1),s:lerp(0.7,1,c)});
+    const to=E.outExpo(p(t,33.6,34.1)); set($('#s9to'),{o:to});
+    const fade=p(t,37.4,38.4); $('#stage').style.opacity=1-fade;
+  } else $('#stage').style.opacity=1;
+}
+window.ready=document.fonts.ready.then(()=>{measure();render(0);return true;});
+</script>
+</body></html>

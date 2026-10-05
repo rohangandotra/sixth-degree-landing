@@ -1,10 +1,15 @@
 # Sixth Degree
 
 Sixth Degree is a creator-to-brand marketplace built in Toronto, Canada. Brands
-hire verified nano and micro creators (fashion, food, fitness, beauty, travel,
-tech, lifestyle, gaming). Payments are held in escrow, verification is decided
-by humans and re-checked every 90 days, and traced links and promo codes give
-brands a verifiable floor on results.
+hire verified nano and micro creators (food and drink, cafes, beauty, fashion,
+fitness, home, arts and culture, nightlife, and more). Verification is decided
+by a person (the account is real and the creator's own, the photo is them, they
+are based in the Greater Toronto Area, and their content is brand-safe), with a
+fresh review due every 60 days. Campaign ideas start from public posts by
+Toronto accounts in the niches Sixth Degree covers, each ranked against that
+account's own typical post and cited with the date it was read; AI drafts the
+brief and the brand edits it. Payments are held in escrow, and a trackable link per collaboration (plus an optional promo code) gives
+brands a verifiable floor on results, with every number labelled by its source.
 
 Who it's for:
 - Toronto (and Canadian) brands that want to hire real, verified local creators
@@ -16,12 +21,13 @@ Key facts:
   the post is live, or automatically after 3 business days
 - Brands pay a platform fee on top, shown before funding a collaboration
 - Canadian-first; Toronto first, with Brazil and Colombia planned next
-- Private beta opens Fall 2026
+- Creators can sign up now; brands join by invite from the waitlist
 
 Key URLs:
 - Landing page: https://sixthdegree.app/
-- Join the waitlist (the current call to action for both creators and brands
-  until the private beta opens): https://sixthdegree.app/#contact
+- Creator sign-up: https://app.sixthdegree.app/login?role=creator
+- Brand waitlist (brands join by invite): https://sixthdegree.app/#contact
+- 38-second product film: https://sixthdegree.app/assets/video/sixth-degree-film-1080-v1.mp4
 - Blog index: https://sixthdegree.app/blog/
 - https://sixthdegree.app/blog/how-to-do-influencer-marketing/ : a step-by-step
   small business guide to running a first influencer marketing campaign, from

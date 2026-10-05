@@ -9,35 +9,12 @@
     if (form) form.style.display = 'none';
   }
 
-  // Waitlist: submit to /api/waitlist (sends the role-specific welcome email).
+  // Brand waitlist: submit to /api/waitlist (stores the lead, sends the brand
+  // welcome email). Creators no longer use this form: they sign up in the app.
   // On any failure, fall back to the form's native FormSubmit action so the
   // signup is never lost. form.submit() skips this listener, so no loop.
   const waitlistForm = document.querySelector('.waitlist');
   if (waitlistForm) {
-    // Role-specific fields: creators give a platform + handle, brands a website.
-    // disabled and hidden always move together (see the note in index.html);
-    // disabled also keeps the inactive fields out of the FormSubmit fallback.
-    const roleSelect = waitlistForm.elements.role;
-    const extras = waitlistForm.querySelectorAll('[data-for]');
-    const syncExtras = () => {
-      extras.forEach((el) => {
-        const active = el.dataset.for === roleSelect.value;
-        el.disabled = !active;
-        el.hidden = !active;
-      });
-    };
-    roleSelect.addEventListener('change', syncExtras);
-    syncExtras();
-
-    // Pasting a profile link tells us the platform; keep the picker in sync.
-    const handleInput = waitlistForm.elements.handle;
-    const platformSelect = waitlistForm.elements.platform;
-    handleInput.addEventListener('input', () => {
-      const v = handleInput.value.toLowerCase();
-      if (v.includes('instagram.com/')) platformSelect.value = 'instagram';
-      else if (v.includes('tiktok.com/')) platformSelect.value = 'tiktok';
-    });
-
     waitlistForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = waitlistForm.querySelector('button[type="submit"]');
@@ -49,12 +26,10 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            email: waitlistForm.email.value.trim(),
-            role: waitlistForm.role.value,
-            platform: roleSelect.value === 'creator' ? platformSelect.value : undefined,
-            handle: roleSelect.value === 'creator' ? handleInput.value.trim() : undefined,
-            website: roleSelect.value === 'brand' ? waitlistForm.elements.website.value.trim() : undefined,
-            _honey: waitlistForm._honey.value
+            email: waitlistForm.elements.email.value.trim(),
+            role: 'brand',
+            website: waitlistForm.elements.website.value.trim(),
+            _honey: waitlistForm.elements._honey.value
           })
         });
         if (!res.ok) throw new Error('waitlist api ' + res.status);
@@ -67,6 +42,48 @@
         waitlistForm.submit();
       }
     });
+  }
+
+  // Hero film: the button plays it with sound and hands over to native
+  // controls. Nothing loads until this click (preload="none").
+  const film = document.querySelector('.film');
+  if (film) {
+    const video = film.querySelector('video');
+    const play = film.querySelector('.film__play');
+    // The markup carries native controls for no-JS visitors; with JS the
+    // poster button takes over until the first click.
+    video.controls = false;
+    play.addEventListener('click', () => {
+      film.classList.add('is-playing');
+      video.controls = true;
+      const p = video.play();
+      if (p && p.catch) p.catch(() => {}); // native controls remain if play is refused
+      video.focus();
+    });
+  }
+
+  // Sticky mobile CTA: visible after the hero scrolls away, hidden while the
+  // get-started section is on screen (it points there; showing both is
+  // noise). CSS keeps it display:none above the phone breakpoint.
+  const stickyJoin = document.getElementById('sticky-join');
+  const hero = document.querySelector('.hero');
+  const ctaSection = document.getElementById('contact');
+  if (stickyJoin && hero && ctaSection && 'IntersectionObserver' in window) {
+    let heroGone = false;
+    let ctaVisible = false;
+    const applyStickyState = () => {
+      stickyJoin.hidden = !(heroGone && !ctaVisible);
+    };
+    new IntersectionObserver(([entry]) => {
+      heroGone = !entry.isIntersecting;
+      applyStickyState();
+    }).observe(hero);
+    // "Reached" = on screen OR already scrolled past (top above the fold), so
+    // the button stays hidden over the footer too.
+    new IntersectionObserver(([entry]) => {
+      ctaVisible = entry.isIntersecting || entry.boundingClientRect.top < 0;
+      applyStickyState();
+    }).observe(ctaSection);
   }
 
   // Mobile nav: hamburger toggles the menu (must run before the reduced-motion early return)
