@@ -51,11 +51,11 @@ sixthdegree.app`,
 
 Thanks for joining the waitlist as a brand. Here's what that gets you:
 
-- First access when the private beta opens in Fall 2026.
-- A pool of Toronto nano and micro creators where every account is checked by a human for bots and bought followers, and re-checked every 90 days.
-- Campaigns with terms settled up front and payment held in escrow until the work is live, plus trackable links and promo codes so you can see what a creator actually drove.
+- An invite as we open to more brands. We're onboarding brands a few at a time, and we'll email you when there's room.
+- A pool of Toronto nano and micro creators where a person checks that every account is real and theirs, the photo is them, and they're based in the Greater Toronto Area, with a fresh review due every 60 days.
+- Campaigns with terms settled up front and payment held in escrow until the post is live, plus a trackable link for every collaboration (and a promo code if you set one up), with every number labelled by where it came from.
 
-Between now and the beta we're talking to brands about the campaigns they want to run, so we build the thing you actually need. If you want to talk sooner, reply to this email. It comes straight to the two of us and we reply to everything.
+Between now and your invite we're talking to brands about the campaigns they want to run, so we build the thing you actually need. If you want to talk sooner, reply to this email. It comes straight to the two of us and we reply to everything.
 
 Aaryan and Rohan
 Sixth Degree, Toronto

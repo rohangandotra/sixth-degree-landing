@@ -20,3 +20,7 @@ content/
 node_modules/
 package.json
 package-lock.json
+
+# Source for the hero film (HTML animation + score). Rendered output lives in
+# assets/video/; the source never ships.
+video-src/
