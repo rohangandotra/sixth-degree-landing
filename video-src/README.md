@@ -6,6 +6,10 @@ The 38-second film on the landing hero, built as code so it can be re-cut.
 - `music.py`: the score, cued to the same 150 BPM grid as the cuts.
 - `render.cjs`: captures frames with Playwright and encodes with ffmpeg.
 - `build.sh`: full rebuild into `../assets/video/`.
+- `build-instagram.sh`: the 1080x1920 Reel cut (`film.html?format=vertical`)
+  plus its cover, into `out/` for upload. The vertical layout keeps text and
+  cards out of the areas Instagram's own UI covers (top 220px, bottom 420px,
+  and the button column on the right).
 
 Needs Node with Playwright (`PLAYWRIGHT_PATH=/path/to/app/node_modules/playwright`
 works), Python 3 with numpy and scipy, and ffmpeg.

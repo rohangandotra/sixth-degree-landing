@@ -24,6 +24,38 @@ body{font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
 .card{background:#fff;border-radius:32px;box-shadow:0 40px 90px -30px rgba(20,34,32,.35),0 0 0 1px rgba(20,34,32,.06);padding:48px}
 .tile{width:200px;height:200px;border-radius:52px;background:var(--pine);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 1px rgba(94,234,212,.15)}
 .tile span{font-family:'Playfair Display';font-weight:600;color:var(--brand);font-size:150px;line-height:1;transform:translateY(-6px)}
+
+/* ===== Vertical (Reels) layout, 1080x1920 =====
+   Instagram covers roughly the top 220px (header) and the bottom 420px
+   (caption, audio row) of a Reel, plus a column of buttons on the right from
+   about y=1100 down. Everything that matters sits between y=260 and y=1480
+   and left of x=940 in the lower half. */
+html.v,html.v body,.v #stage{width:1080px!important;height:1920px!important}
+.v #s1b{left:90px!important;top:560px!important}
+.v #s1top{top:470px!important;font-size:62px!important}
+.v #s1num{top:540px!important;font-size:620px!important}
+.v #s1bot{top:1210px!important;font-size:62px!important}
+.v #s2k{left:80px!important;top:420px!important}
+.v .s2l{left:80px!important;font-size:104px!important}
+.v .s2l:nth-child(2){top:500px!important}
+.v .s2l:nth-child(3){top:690px!important}
+.v .s2l:nth-child(4){top:880px!important}
+.v #s3tile{left:440px!important;top:540px!important}
+.v #s3word{top:780px!important;font-size:132px!important}
+.v #s3tag{top:990px!important;font-size:40px!important}
+.v #s4b{left:90px!important;top:760px!important}
+.v #fprog{left:80px!important;top:300px!important}
+.v .ft{left:80px!important;top:350px!important;width:920px!important}
+.v .fh{font-size:88px!important;margin-top:20px!important}
+.v .fs{font-size:30px!important;margin-top:26px!important;width:880px!important}
+.v .fcard{zoom:1.15;left:61px!important;top:640px!important}
+.v .s8w{top:800px!important;font-size:200px!important}
+.v #s9lock{top:520px!important;flex-direction:column!important;gap:36px!important}
+.v #s9lock .disp{font-size:132px!important}
+.v #s9tag{top:1010px!important;font-size:38px!important;padding:0 90px}
+.v #s9cta{top:1150px!important}
+.v #s9cta .pill{font-size:32px!important}
+.v #s9to{top:1320px!important}
 </style></head>
 <body><div id="stage">
 
@@ -147,6 +179,11 @@ body{font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
 
 <script>
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+// ?format=vertical is the 1080x1920 Reel cut: same timeline and copy, laid
+// out by the .v rules above. Blob drift is scaled into the taller frame.
+const V=new URLSearchParams(location.search).get('format')==='vertical';
+if(V) document.documentElement.classList.add('v');
+const bx=x=>V?x*1080/1920:x, by=y=>V?y*1920/1080:y;
 const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
 const p=(t,a,b)=>clamp((t-a)/(b-a),0,1);
 const lerp=(a,b,x)=>a+(b-a)*x;
@@ -169,7 +206,7 @@ function set(el,{o=1,x=0,y=0,s=1,r=0,b}={}){
 $('#s3word').innerHTML=[...'Sixth Degree'].map(c=>`<span style="display:inline-block;white-space:pre">${c}</span>`).join('');
 
 const FEAT=[
-  {k:'01 · Verified',h:'Every creator,<br>checked by a human.',sub:'AI assists. A person checks every account is real and theirs.',t:[9.6,14.4]},
+  {k:'01 · Verified',h:'Every creator,<br>checked by a human.',sub:'A human verifies every creator. Real accounts, real faces, all in the GTA.',t:[9.6,14.4]},
   {k:'02 · Campaign intelligence',h:'Start from what<br>stands out.',sub:'Plays built from real posts in your niche. AI drafts the brief. You make the call.',t:[14.4,19.2]},
   {k:'03 · Escrow',h:'Pay once.<br>Paid when it\'s live.',sub:'Funds are held while the work is made and posted. Then the creator is paid in full.',t:[19.2,24.0]},
   {k:'04 · Recap',h:'Every number,<br>labelled by its source.',sub:'Platform-tracked, creator-reported, brand-reported. Never blurred together.',t:[24.0,28.8]},
@@ -258,8 +295,8 @@ function render(t){
   if(t>=6.0&&t<9.6){
     const w=E.inOut(p(t,6.0,6.4)); $('#s3').style.clipPath=`inset(${(1-w)*100}% 0 0 0)`;
     const exit=E.inExpo(p(t,9.15,9.6));
-    set($('#s3b1'),{x:500+Math.sin(t*0.9)*120,y:-100+Math.cos(t*0.7)*80});
-    set($('#s3b2'),{x:1000+Math.cos(t*0.8)*140,y:400+Math.sin(t*1.1)*90});
+    set($('#s3b1'),{x:bx(500+Math.sin(t*0.9)*120),y:by(-100+Math.cos(t*0.7)*80)});
+    set($('#s3b2'),{x:bx(1000+Math.cos(t*0.8)*140),y:by(400+Math.sin(t*1.1)*90)});
     const tl=E.outBack(p(t,6.45,6.95));
     set($('#s3tile'),{o:clamp(tl*2,0,1)*(1-exit),s:tl*(1-exit*0.1),r:(1-tl)*-20,y:-exit*30});
     $$('#s3word span').forEach((c,i)=>{const a=E.outExpo(p(t,6.7+i*0.035,6.7+i*0.035+0.5));set(c,{o:a*(1-exit),y:(1-a)*90-exit*30,b:(1-a)*8+exit*10});});
@@ -319,8 +356,8 @@ function render(t){
   // S9: end card
   if(t>=31.6){
     const r=E.inOut(p(t,31.6,32.0))*1150; $('#s9').style.clipPath=`circle(${r}px at 50% 50%)`;
-    set($('#s9b1'),{x:300+Math.sin(t*0.7)*160,y:-50+Math.cos(t*0.6)*90});
-    set($('#s9b2'),{x:1100+Math.cos(t*0.8)*150,y:450+Math.sin(t*0.9)*90});
+    set($('#s9b1'),{x:bx(300+Math.sin(t*0.7)*160),y:by(-50+Math.cos(t*0.6)*90)});
+    set($('#s9b2'),{x:bx(1100+Math.cos(t*0.8)*150),y:by(450+Math.sin(t*0.9)*90)});
     const l=E.outExpo(p(t,32.0,32.7)); set($('#s9lock'),{o:l,s:lerp(0.85,1,l),b:(1-l)*14});
     const tg=E.outExpo(p(t,32.4,32.9)); set($('#s9tag'),{o:tg,y:(1-tg)*30});
     const c=E.outBack(p(t,32.8,33.3)); set($('#s9cta'),{o:clamp(c*2,0,1),s:lerp(0.7,1,c)});
