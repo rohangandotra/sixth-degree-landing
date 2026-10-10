@@ -4,7 +4,7 @@
 # changes after it has shipped: /assets/ is served immutable for a year.
 set -e
 cd "$(dirname "$0")"
-V=v1
+V=v2
 node render.cjs full
 python3 music.py
 ffmpeg -loglevel error -y -i out/film-silent.mp4 -i out/music.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest -movflags +faststart out/film-master.mp4

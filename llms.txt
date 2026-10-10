@@ -27,7 +27,7 @@ Key URLs:
 - Landing page: https://sixthdegree.app/
 - Creator sign-up: https://app.sixthdegree.app/login?role=creator
 - Brand waitlist (brands join by invite): https://sixthdegree.app/#contact
-- 38-second product film: https://sixthdegree.app/assets/video/sixth-degree-film-1080-v1.mp4
+- 38-second product film: https://sixthdegree.app/assets/video/sixth-degree-film-1080-v2.mp4
 - Blog index: https://sixthdegree.app/blog/
 - https://sixthdegree.app/blog/how-to-do-influencer-marketing/ : a step-by-step
   small business guide to running a first influencer marketing campaign, from
