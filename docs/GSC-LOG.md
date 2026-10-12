@@ -1061,3 +1061,28 @@ pre-launch state had removed. Not reverted (founder's own change); flagged.
 Content decision: no new post this run. Impressions are too sparse to pick a
 GSC-driven topic, and PR #24 has sat unmerged for 10 days; stacking more
 unmerged posts adds nothing.
+
+## 2026-10-12 (window: 2026-09-14 to 2026-10-10)
+
+Still thin. Queries: "sixth degree" 23 impressions / 7 clicks / position 6
+(brand); "toronto influencer agency" 2 / 0 / 18; "ugc agency toronto" 1 / 0 / 18;
+"6th degree" 2 / 0 / 34.5; two other brand-name variants and one unrelated
+foreign-language query. No (a), (b) or (c) target phrase has impressions;
+rows stay at zero and visible.
+
+Pages (impressions / clicks / position): `/` 62 / 16 / 6.8; `/blog/` 9 / 0 / 15.6;
+`paying-influencers-canada-contracts-tax-basics/` 6 / 1 / 8.7;
+`ad-rights-rider-ugc-usage-rights/` 6 / 0 / 8.5; `influencers-in-toronto/` 4 / 0 / 13.8;
+`seeding-vs-paid-influencer-marketing/` 4 / 0 / 8.5; two each for affiliate,
+brief and agency-vs-marketplace; one for find-micro-influencers.
+
+URL Inspection: `/` and `/blog/` PASS, apex canonical. Both newest posts
+(paying-influencers, affiliate) PASS (see run report).
+
+Audit: 200s on all fetched URLs; www and app `/blog/*` 308 correctly; live
+sitemap 18 URLs, parity with main; JSON-LD parses everywhere. Drift unchanged:
+homepage still carries `app.sixthdegree.app/login` links (founder's PR #25).
+`brand-deal-scam-red-flags` (PR #24) still unmerged.
+
+Content decision: no new post. Too little query data to pick a GSC-driven
+topic, and an unmerged post is still waiting.
