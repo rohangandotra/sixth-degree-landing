@@ -1086,3 +1086,23 @@ homepage still carries `app.sixthdegree.app/login` links (founder's PR #25).
 
 Content decision: no new post. Too little query data to pick a GSC-driven
 topic, and an unmerged post is still waiting.
+
+## 2026-10-15 (window: 2026-09-16 to 2026-10-13)
+
+Unchanged from 10-12. Queries: "sixth degree" 23 impressions / 7 clicks /
+position 6 (brand); "toronto influencer agency" 2 / 0 / 18; "ugc agency toronto"
+1 / 0 / 18; "6th degree" 2 / 0 / 34.5; two unrelated variants. No (a), (b) or (c)
+target phrase has impressions; rows stay at zero and visible.
+
+Pages (impressions / clicks / position): `/` 60 / 16 / 6.2; `/blog/` 9 / 0 / 7.7;
+`paying-influencers-canada-contracts-tax-basics/` 8 / 1 / 8.1;
+`ad-rights-rider-ugc-usage-rights/` 6 / 0 / 8.5; `influencers-in-toronto/` 4 / 0 / 13.8;
+`seeding-vs-paid-influencer-marketing/` 4 / 0 / 8.5; others 1 to 2.
+
+URL Inspection: `/`, `/blog/`, paying-influencers, affiliate-vs-flat-fee all PASS,
+apex canonical. Audit: all fetched URLs 200; www 308s to apex; app `/blog/*` 308s
+to the apex blog; sitemap 18 URLs; homepage JSON-LD parses. Drift unchanged:
+homepage carries 6 `app.sixthdegree.app/login` links (founder PR #25); /blog/ has none.
+PR #24 still open.
+
+Content decision: no new post (too little query data; PR #24 unmerged 17 days).
