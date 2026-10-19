@@ -227,3 +227,11 @@ flow before sending.
   Street).
 
 See the current run's report for the ready-to-send text for each.
+
+## Suggested 2026-10-19
+
+Search-snippet based; a founder should confirm each before sending.
+
+- **Riptidings** (riptidings.substack.com) - Canadian newsletter on content marketing and the creator economy.
+- **IAB Canada Creator Committee** (iabcanada.com) - industry body with a creator committee and a published piece on Canada's creator economy.
+- **Creator Diaries** (tally.so/r/wvVB0Q) - takes founder and creator profile submissions.

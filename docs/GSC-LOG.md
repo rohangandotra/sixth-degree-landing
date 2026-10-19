@@ -1106,3 +1106,25 @@ homepage carries 6 `app.sixthdegree.app/login` links (founder PR #25); /blog/ ha
 PR #24 still open.
 
 Content decision: no new post (too little query data; PR #24 unmerged 17 days).
+
+## 2026-10-19 (window: 2026-09-20 to 2026-10-17)
+
+Unchanged in kind. Queries: "sixth degree" 25 impressions / 7 clicks / position 5.6
+(brand); "toronto influencer agency" 2 / 0 / 18; "ugc agency toronto" 1 / 0 / 18;
+"degree 6" 1 / 0 / 4; one unrelated foreign-language query. No (a), (b) or (c)
+target phrase has impressions; rows stay at zero and visible.
+
+Pages (impressions / clicks / position): `/` 64 / 15 / 5.2; `/blog/` 9 / 0 / 6.8;
+`paying-influencers-canada-contracts-tax-basics/` 10 / 1 / 7.3;
+`ad-rights-rider-ugc-usage-rights/` 5 / 0 / 7.8; `influencers-in-toronto/` 5 / 0 / 17.4;
+`seeding-vs-paid-influencer-marketing/` 4 / 0 / 8.5; others 1 to 3.
+`app.sixthdegree.app/terms` 5 impressions (app legal pages are indexed, fine).
+
+URL Inspection: `/`, `/blog/`, influencers-in-toronto, how-to-brief-an-influencer all
+PASS, apex canonical. Audit: all fetched URLs 200; www 308s to apex (home, /blog/,
+a post); app `/blog/<slug>/` 308s (via /blog/<slug>) to the apex blog; sitemap 18
+URLs, parity with blog dirs; all JSON-LD parses; one canonical per page. Drift
+unchanged: live homepage carries 6 `app.sixthdegree.app/login` links (founder PR #25).
+PR #24 still open (21 days).
+
+Content decision: no new post. Pillars and named spokes all exist; no query gap.
