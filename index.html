@@ -27,8 +27,8 @@
   <meta name="twitter:description" content="Hire verified nano and micro creators in Toronto. Human verification, briefs drafted from what stands out in your niche, escrow-held payments, and results labelled by their source.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,400;1,500&display=swap">
+  <link rel="stylesheet" href="styles-v2.css">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -73,10 +73,26 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How does escrow protect brands and creators?",
+        "name": "What does Sixth Degree cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Brands fund the full fee to escrow before work starts, so creators never chase invoices. Creators keep 100% of their quoted fee. Funds are released when the brand confirms the post is live, or automatically after 3 business days if the brand takes no action. If there's a dispute, release pauses until it's resolved."
+          "text": "Creators keep 100% of their quoted fee. Brands pay a 10% platform fee on top when they fund by pre-authorized debit from a Canadian bank account, or 12.4% by card. The fee is shown before you fund a collaboration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if the creator never posts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nothing is paid out until the post is live. If no content has been submitted by the end of the campaign's posting window, the full amount, platform fee included, is refunded to you automatically. Anything else goes through a dispute, and a dispute pauses release until it's resolved."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if the post doesn't perform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The fee pays for the work, not for a result, so we never promise numbers. What you get is a recap that shows what the post did, with every figure labelled by who measured it, so you can decide whether to hire that creator again."
         }
       },
       {
@@ -84,23 +100,7 @@
         "name": "How are creators verified?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Verification is a human decision, not an algorithm's guess. A person checks that the account is real and belongs to the creator, that their photo is them, that they're based in the Greater Toronto Area, and that their content is something a brand would be happy with. Every creator is due for a fresh review every 60 days. Brands can only hire creators who pass. The platform enforces it."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where do the campaign ideas come from?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "From public posts by Toronto accounts in the niches we cover. Each post is ranked against what that account usually gets, so a big account doesn't win just for being big, and every idea cites the posts it came from, each with the date we read it. AI drafts a brief from the idea you pick, and you edit it before anything goes out. Nothing in it is a promise of results."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What does Sixth Degree cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Creators keep 100% of their quoted fee. Brands pay a platform fee on top, shown before you fund a collaboration. We haven't published standard pricing yet. Email hello@sixthdegree.app and we'll walk you through it."
+          "text": "Verification is a human decision, not an algorithm's guess. A person checks that the account is real and belongs to the creator, that their photo is them, that they're based in the Greater Toronto Area, and that their content is something a brand would be happy with. Every creator is due for a fresh review every 60 days. Brands can only hire creators who pass."
         }
       },
       {
@@ -109,6 +109,14 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Follower band. Nano creators usually have a few thousand followers; micro creators reach into the tens of thousands. Both trade raw reach for trust: smaller audiences that actually know them. On Sixth Degree you can filter by follower band, niche, neighbourhood, and rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do the campaign ideas come from?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "From public posts by Toronto accounts in the niches we cover. Each post is ranked against what that account usually gets, so a big account doesn't win just for being big, and every idea cites the posts it came from, each with the date we read it. Nothing in it is a promise of results."
         }
       },
       {
@@ -124,15 +132,7 @@
         "name": "Do you only work with Toronto brands?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Toronto is where we're starting, on purpose. The creators live here and so do their audiences. That local context is not something a US platform can fake. We're Canadian-first, and once Canada is won, Brazil and Colombia are next."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do brands know a campaign actually worked?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Every collaboration gets a trackable link, plus a promo code if you set one up. What they trace is a verifiable floor, not a complete count. Some customers see a post and just walk in. Every number is labeled with its source, so you always know what's measured and what isn't."
+          "text": "Toronto is where we're starting, on purpose. The creators live here and so do their audiences. We're Canadian-first, and once Canada is won, Brazil and Colombia are next."
         }
       }
     ]
@@ -143,18 +143,17 @@
 
   <!-- ===== HEADER / NAV ===== -->
   <header class="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">Sixth Degree<span class="logo-degree">°</span></a>
+    <nav class="nav">
+      <a href="#" class="nav__logo"><span class="nav__mark" aria-hidden="true">6</span>Sixth Degree</a>
       <ul class="nav__links">
         <li><a href="#how">How it works</a></li>
-        <li><a href="#for-brands">For Brands</a></li>
-        <li><a href="#for-creators">For Creators</a></li>
+        <li><a href="#who">Who it's for</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="https://app.sixthdegree.app/login">Sign in</a></li>
       </ul>
-      <a href="#contact" class="nav__cta">Get started</a>
+      <a href="#contact" class="btn btn--ink btn--sm nav__cta">Get started</a>
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
         <span></span>
         <span></span>
       </button>
@@ -163,38 +162,83 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <svg class="hero__constellation" viewBox="0 0 1200 600" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
-      <g class="constellation__lines" stroke="rgba(94,234,212,0.18)" stroke-width="1" fill="none">
-        <path d="M150 120 L340 220" />
-        <path d="M340 220 L520 140" />
-        <path d="M520 140 L760 250" />
-        <path d="M760 250 L950 160" />
-        <path d="M950 160 L1080 300" />
-      </g>
-      <g class="constellation__dots" fill="#5eead4">
-        <circle cx="150" cy="120" r="3" opacity="0.5"/>
-        <circle cx="340" cy="220" r="2.5" opacity="0.4"/>
-        <circle cx="520" cy="140" r="3.5" opacity="0.6"/>
-        <circle cx="760" cy="250" r="2.5" opacity="0.4"/>
-        <circle cx="950" cy="160" r="3" opacity="0.5"/>
-        <circle cx="1080" cy="300" r="2.5" opacity="0.4"/>
-      </g>
-    </svg>
-    <div class="container">
-      <span class="hero__badge">Open to Toronto creators · Brands by invite</span>
-      <h1 class="hero__headline">The right creator is <em>one degree away.</em></h1>
-      <p class="hero__sub">Sixth Degree connects Toronto brands with creators a human has verified. Briefs start from what stands out in your niche, the fee sits in escrow until the post is live, and every result says where it came from.</p>
-      <div class="hero__ctas">
-        <a href="#contact" class="btn btn--primary">I'm a brand<span class="btn__arrow">→</span></a>
-        <a href="https://app.sixthdegree.app/login?role=creator" class="btn btn--outline">I'm a creator<span class="btn__arrow">→</span></a>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <span class="badge reveal"><span class="badge__dot"></span>Open to Toronto creators · Brands by invite</span>
+      <h1 class="hero__headline reveal">
+        The right
+        <span class="chips" aria-hidden="true">
+          <span class="chip chip--ig"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="#fff"/></svg></span>
+          <span class="chip chip--tt"><svg viewBox="0 0 24 24"><path fill="#fff" d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg></span>
+          <span class="chip chip--ok"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </span>
+        creator is <em>one degree away.</em>
+      </h1>
+      <p class="hero__sub reveal">Hire Toronto creators a person has checked. Your fee waits in escrow and releases only when the post is live.</p>
+      <div class="hero__ctas reveal">
+        <a href="#contact" class="btn btn--ink">I'm a brand</a>
+        <a href="https://app.sixthdegree.app/login?role=creator" class="btn btn--white">I'm a creator</a>
       </div>
 
-      <figure class="film">
+      <div class="hero__stage" aria-hidden="true">
+        <p class="hero__wordmark">SIXTH DEGREE</p>
+
+        <div class="float float--left">
+          <span class="float__icon"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><strong>Checked by a human</strong><small>Account, photo, location</small></span>
+        </div>
+        <div class="float float--right">
+          <span class="float__icon float__icon--lock"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+          <span><strong>Fee held in escrow</strong><small>Released when it's live</small></span>
+        </div>
+
+        <div class="phone">
+          <div class="phone__notch"></div>
+          <div class="phone__screen">
+            <div class="phone__status"><span>9:41</span><span class="phone__bars"><i></i><i></i><i></i></span></div>
+            <div class="phone__head">
+              <p>Verified creators</p>
+              <span class="tag">Sample profiles</span>
+            </div>
+            <div class="stories">
+              <span class="story"><span class="story__ring"><span class="story__av av--1">M</span></span>Food</span>
+              <span class="story"><span class="story__ring"><span class="story__av av--2">J</span></span>Coffee</span>
+              <span class="story"><span class="story__ring"><span class="story__av av--3">P</span></span>Beauty</span>
+              <span class="story"><span class="story__ring"><span class="story__av av--4">L</span></span>Fitness</span>
+              <span class="story"><span class="story__ring"><span class="story__av av--5">A</span></span>Pets</span>
+            </div>
+            <div class="pcard">
+              <div class="pcard__row">
+                <span class="story__av av--1">M</span>
+                <div><p class="pcard__name">Maya R.</p><p class="pcard__meta">Food &amp; Drink · Toronto</p></div>
+                <span class="pill pill--teal">Verified</span>
+              </div>
+              <div class="pcard__checks">
+                <span>Account is theirs</span><span>Photo is them</span><span>Based in the GTA</span>
+              </div>
+            </div>
+            <div class="pcard">
+              <div class="pcard__row">
+                <div><p class="pcard__meta">Collab fee</p><p class="pcard__amount">$450</p></div>
+                <span class="pill pill--ink">In escrow</span>
+              </div>
+              <div class="track"><i class="is-on"></i><i class="is-on"></i><i></i><i></i></div>
+              <div class="track__labels"><span>Funded</span><span>Submitted</span><span>Approved</span><span>Released</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FILM ===== -->
+  <section class="section section--tight film-section">
+    <div class="container">
+      <figure class="film reveal">
         <div class="film__frame">
           <!-- Click to play with sound. Never autoplays: browsers only autoplay
-               muted, which throws the score away, and a video on load would
-               cost the hero its first paint. preload="none" keeps it off the
-               wire until asked for. -->
+               muted, which throws the score away. preload="none" keeps it off
+               the wire until asked for. -->
           <video class="film__video" preload="none" playsinline controls poster="/assets/video/sixth-degree-film-poster-v2.jpg" aria-label="Sixth Degree in 38 seconds">
             <source src="/assets/video/sixth-degree-film-720-v2.mp4" type="video/mp4" media="(max-width: 768px)">
             <source src="/assets/video/sixth-degree-film-1080-v2.mp4" type="video/mp4">
@@ -202,7 +246,7 @@
           </video>
           <button class="film__play" type="button" aria-label="Play the 38 second film, with sound">
             <span class="film__pill">
-              <span class="film__play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+              <span class="film__play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
               <span class="film__play-label">Watch the film <span class="film__len">0:38</span></span>
             </span>
           </button>
@@ -211,249 +255,229 @@
     </div>
   </section>
 
-  <!-- ===== MARQUEE ===== -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <span>Food &amp; Drink</span><span>°</span><span>Coffee &amp; Cafés</span><span>°</span><span>Beauty &amp; Skincare</span><span>°</span><span>Fashion &amp; Style</span><span>°</span><span>Fitness &amp; Wellness</span><span>°</span><span>Home &amp; Living</span><span>°</span><span>Arts &amp; Culture</span><span>°</span><span>Nightlife &amp; Events</span><span>°</span><span>Pets</span><span>°</span><span>Family &amp; Parenting</span><span>°</span>
-      <span>Food &amp; Drink</span><span>°</span><span>Coffee &amp; Cafés</span><span>°</span><span>Beauty &amp; Skincare</span><span>°</span><span>Fashion &amp; Style</span><span>°</span><span>Fitness &amp; Wellness</span><span>°</span><span>Home &amp; Living</span><span>°</span><span>Arts &amp; Culture</span><span>°</span><span>Nightlife &amp; Events</span><span>°</span><span>Pets</span><span>°</span><span>Family &amp; Parenting</span><span>°</span>
-    </div>
-  </div>
-
-  <!-- ===== THE PROBLEM ===== -->
-  <section class="section section--light problem">
-    <div class="container">
-      <span class="section__number reveal">01°</span>
-      <h2 class="problem__kicker reveal">Creator marketing, today</h2>
-      <ul class="problem__list">
-        <li class="problem__line reveal"><span>Fake followers.</span></li>
-        <li class="problem__line reveal"><span>Ghosted DMs.</span></li>
-        <li class="problem__line reveal"><span>Payments in limbo.</span></li>
+  <!-- ===== WHO IT'S FOR ===== -->
+  <section id="who" class="section">
+    <div class="container who">
+      <div class="who__text reveal">
+        <p class="kicker">Who it's for</p>
+        <h2 class="h2">Toronto businesses that sell <em>to Toronto.</em></h2>
+        <p class="lede">Local creators reach the people who can actually walk in. Their audiences live where your customers do.</p>
+      </div>
+      <ul class="who__list reveal-group" aria-label="Kinds of businesses">
+        <li class="reveal">Restaurants &amp; bars</li>
+        <li class="reveal">Cafés &amp; bakeries</li>
+        <li class="reveal">Beauty &amp; skincare</li>
+        <li class="reveal">Fashion &amp; retail</li>
+        <li class="reveal">Fitness &amp; wellness</li>
+        <li class="reveal">Home &amp; living</li>
+        <li class="reveal">Arts &amp; events</li>
+        <li class="reveal">Pets</li>
       </ul>
-      <p class="problem__coda reveal">Most creator platforms were built for Los Angeles and shipped here unchanged. Toronto's small businesses pay for the gap. <em>We built the fix here.</em></p>
     </div>
   </section>
 
-  <!-- ===== HOW IT WORKS ===== -->
-  <section id="how" class="section section--gray how">
+  <!-- ===== SERVICES ===== -->
+  <section id="how" class="section section--soft">
     <div class="container">
-      <div class="section__header reveal">
-        <span class="section__number">02°</span>
-        <h2 class="section__headline">Four things we do so you don't <em>gamble.</em></h2>
-        <p class="section__sub">From the first search to the final recap, in one place.</p>
+      <div class="section__head reveal">
+        <p class="kicker">How it works</p>
+        <h2 class="h2">Less guessing, <em>no chasing.</em></h2>
       </div>
-
-      <!-- 1. Verified -->
-      <article class="step">
-        <div class="step__text reveal">
-          <p class="step__kicker">Verified</p>
-          <h3 class="step__title">Every creator, checked by a human.</h3>
-          <p class="step__lead">AI helps us look. A person decides. We check that the account is real and theirs, the photo is them, they're based in the GTA, and their content is something a brand would be happy with.</p>
-          <ul class="checklist">
-            <li>Due for a fresh review every 60 days, not once at signup</li>
-            <li>Brands can only hire creators who passed</li>
-            <li>Search by niche, neighbourhood, follower band, and rate</li>
-          </ul>
-        </div>
-        <div class="step__visual reveal" aria-hidden="true">
-          <div class="mock">
-            <div class="mock-creator__head">
-              <div class="mock-creator__avatar">M</div>
-              <div>
-                <p class="mock-creator__name">Maya R.</p>
-                <p class="mock-creator__meta">Food &amp; Drink · Toronto</p>
-              </div>
-              <span class="mock__tag">Sample profile</span>
-            </div>
-            <div class="mock-creator__pills">
-              <span class="pill pill--brand"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Verified</span>
-              <span class="pill pill--ink">Founding Member</span>
-            </div>
-            <ul class="mock-checks">
-              <li><span class="mock-checks__dot"></span>Account is real and theirs<small>by a human</small></li>
-              <li><span class="mock-checks__dot"></span>Photo is them<small>by a human</small></li>
-              <li><span class="mock-checks__dot"></span>Based in the GTA<small>by a human</small></li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <!-- 2. Campaign intelligence -->
-      <article class="step step--flip">
-        <div class="step__text reveal">
-          <p class="step__kicker">Campaign intelligence</p>
-          <h3 class="step__title">Start from what stands out.</h3>
-          <p class="step__lead">We read public posts from Toronto accounts in the niches we cover and rank each one against that account's own typical post. The ones that stand out become plays you can build on.</p>
-          <ul class="checklist">
-            <li>Every play cites its posts, each with the date we read it</li>
-            <li>Pick one and AI drafts the brief. You edit it and decide</li>
-            <li>Messages, submissions, and approvals stay in one place per collaboration</li>
-          </ul>
-        </div>
-        <div class="step__visual reveal" aria-hidden="true">
-          <div class="mock">
-            <div class="mock-steps">
-              <span class="is-done">Goal</span><span class="is-done">Strategy</span><span class="is-done">Brief</span><span>Terms</span><span>Review</span>
-            </div>
-            <div class="mock-play">
-              <p class="mock-play__kicker">Play · Food &amp; Drink</p>
-              <p class="mock-play__title">Behind-the-counter Reel</p>
-              <div class="mock-play__row">
-                <span>Cited from real posts, each with its read date</span>
-                <span class="mock-play__btn">Use this play</span>
-              </div>
-            </div>
-            <p class="mock-brief__label">Drafted from Behind-the-counter Reel. Edit anything.</p>
-            <p class="mock-brief">Show us the five minutes before doors open. One Reel, natural light, your own voice. Open on the first pour.<i class="mock-brief__caret"></i></p>
-          </div>
-        </div>
-      </article>
-
-      <!-- 3. Escrow -->
-      <article class="step">
-        <div class="step__text reveal">
-          <p class="step__kicker">Escrow</p>
-          <h3 class="step__title">Pay once. Release when it's live.</h3>
-          <p class="step__lead">The brand funds the fee before filming starts. It sits in escrow while the work is made, reviewed, and posted, then goes to the creator in full.</p>
-          <ul class="checklist">
-            <li>Creators keep 100% of their quoted fee</li>
-            <li>Releases when the brand confirms the post is live, or automatically 3 business days after posting</li>
-            <li>A dispute pauses release until it's resolved</li>
-          </ul>
-        </div>
-        <div class="step__visual reveal" aria-hidden="true">
-          <div class="mock">
-            <div class="mock-escrow__head">
-              <div>
-                <p class="mock-escrow__label">Collab fee</p>
-                <p class="mock-escrow__amount">$450</p>
-              </div>
-              <span class="pill pill--brand">Released</span>
-            </div>
-            <ol class="mock-track">
-              <li>Funded</li><li>Submitted</li><li>Approved</li><li>Released</li>
-            </ol>
-            <p class="mock-escrow__foot"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Paid to the creator in full</p>
-          </div>
-        </div>
-      </article>
-
-      <!-- 4. Recap -->
-      <article class="step step--flip">
-        <div class="step__text reveal">
-          <p class="step__kicker">Recap</p>
-          <h3 class="step__title">Every number, labelled by its source.</h3>
-          <p class="step__lead">Every collaboration gets a trackable link, plus a promo code if you set one up. What they trace is a verifiable floor, not a complete count: some customers see a post and just walk in.</p>
-          <ul class="checklist">
-            <li>What we tracked, what the creator reported, and what you reported, never blurred together</li>
-            <li>A number we can't measure says n/a, never 0</li>
-          </ul>
-        </div>
-        <div class="step__visual reveal" aria-hidden="true">
-          <div class="mock">
-            <div class="mock-recap__head">
-              <p>Campaign recap</p>
-              <span class="mock__tag">Three ledgers</span>
-            </div>
-            <div class="mock-ledger mock-ledger--teal"><span class="mock-ledger__bar"></span><div><p class="mock-ledger__src">Platform-tracked</p><p class="mock-ledger__what">Cost · Clicks</p></div></div>
-            <div class="mock-ledger mock-ledger--amber"><span class="mock-ledger__bar"></span><div><p class="mock-ledger__src">Creator-reported</p><p class="mock-ledger__what">Reach · Engagements</p></div></div>
-            <div class="mock-ledger mock-ledger--ink"><span class="mock-ledger__bar"></span><div><p class="mock-ledger__src">Brand-reported</p><p class="mock-ledger__what">Orders · Revenue</p></div></div>
-          </div>
-        </div>
-      </article>
+      <div class="services services--four reveal-group">
+        <article class="service reveal">
+          <span class="service__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+          <h3>Creators worth hiring</h3>
+          <p>A person checks every account: it's real, it's theirs, they're in the GTA, and the content is brand-safe. Checked again every 60 days, not just at signup.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__icon"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg></span>
+          <h3>A brief you don't start from scratch</h3>
+          <p>Pick an idea drawn from what stands out for Toronto accounts in your niche, and AI drafts the brief. You edit it before anything goes out.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__icon"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+          <h3>Pay only for work that goes live</h3>
+          <p>You fund the fee up front and it waits in escrow. It releases when the post is live. If nothing is submitted by the end of the posting window, it comes back to you.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__icon"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></span>
+          <h3>Results you can trust</h3>
+          <p>Every collab gets a tracked link, plus a promo code if you want one. Each number says who measured it: us, the creator, or you.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- ===== FOR BRANDS / FOR CREATORS ===== -->
-  <section class="section section--light audiences">
+  <!-- ===== INSIDE THE PRODUCT ===== -->
+  <section class="section section--soft">
     <div class="container">
-      <div class="section__header reveal">
-        <span class="section__number">03°</span>
-        <h2 class="section__headline">Two sides, <em>one deal.</em></h2>
-      </div>
-      <div class="audiences__grid reveal-group">
-        <div id="for-brands" class="audience audience--brand reveal">
-          <p class="audience__kicker">For brands</p>
-          <h3 class="audience__title">Built for brands that want <em>the receipts.</em></h3>
-          <ul class="checklist checklist--light">
-            <li>Hire only creators a person has verified</li>
-            <li>Start from plays drawn from your niche, not a blank page</li>
-            <li>Fund once and see the platform fee before you pay</li>
-            <li>A recap that says where every number came from</li>
-          </ul>
-          <div class="audience__foot">
-            <a href="#contact" class="btn btn--primary">Join the brand waitlist<span class="btn__arrow">→</span></a>
-            <p class="audience__note">Brands join by invite while we onboard our first campaigns.</p>
-          </div>
+      <div class="section__head section__head--split reveal">
+        <div>
+          <p class="kicker">Inside the product</p>
+          <h2 class="h2">What a collab <em>looks like.</em></h2>
         </div>
-        <div id="for-creators" class="audience audience--creator reveal">
-          <p class="audience__kicker">For creators</p>
-          <h3 class="audience__title">For creators done <em>chasing invoices.</em></h3>
-          <ul class="checklist">
-            <li>Set your rate and keep 100% of it</li>
-            <li>The brand funds the fee before you film</li>
-            <li>Choose the briefs you take. Paid-ad use needs your sign-off</li>
-            <li>A verified profile is how Toronto brands find you</li>
-          </ul>
-          <div class="audience__foot">
-            <a href="https://app.sixthdegree.app/login?role=creator" class="btn btn--dark">Create your profile<span class="btn__arrow">→</span></a>
-            <p class="audience__note">Free to join. A person verifies every account.</p>
+        <p class="lede">Sample screens. Names and figures are illustrative.</p>
+      </div>
+    </div>
+    <div class="rail reveal-group">
+      <div class="rail__card reveal">
+        <p class="rail__step">01 · Verified</p>
+        <div class="mock">
+          <div class="pcard__row">
+            <span class="story__av av--1">M</span>
+            <div><p class="pcard__name">Maya R.</p><p class="pcard__meta">Food &amp; Drink · Toronto</p></div>
           </div>
+          <div class="mock__pills"><span class="pill pill--teal">Verified</span><span class="tag">Sample profile</span></div>
+          <ul class="mock__checks">
+            <li>Account is real and theirs<small>by a human</small></li>
+            <li>Photo is them<small>by a human</small></li>
+            <li>Based in the GTA<small>by a human</small></li>
+          </ul>
+        </div>
+        <h3>Every creator, checked by a human.</h3>
+      </div>
+      <div class="rail__card reveal">
+        <p class="rail__step">02 · Strategy</p>
+        <div class="mock">
+          <div class="mock__steps"><span class="is-done">Goal</span><span class="is-done">Strategy</span><span class="is-done">Brief</span><span>Terms</span><span>Review</span></div>
+          <div class="mock__play">
+            <p class="pcard__meta">Play · Food &amp; Drink</p>
+            <p class="pcard__name">Behind-the-counter Reel</p>
+            <p class="mock__cite">Cited from real posts, each with its read date</p>
+          </div>
+          <p class="mock__brief">Show us the five minutes before doors open. One Reel, natural light, your own voice. Open on the first pour.</p>
+        </div>
+        <h3>Start from what stands out.</h3>
+      </div>
+      <div class="rail__card reveal">
+        <p class="rail__step">03 · Escrow</p>
+        <div class="mock">
+          <div class="pcard__row">
+            <div><p class="pcard__meta">Collab fee</p><p class="pcard__amount">$450</p></div>
+            <span class="pill pill--teal">Released</span>
+          </div>
+          <div class="track"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i></div>
+          <div class="track__labels"><span>Funded</span><span>Submitted</span><span>Approved</span><span>Released</span></div>
+          <p class="mock__foot">Paid to the creator in full</p>
+        </div>
+        <h3>Pay once. Release when it's live.</h3>
+      </div>
+      <div class="rail__card reveal">
+        <p class="rail__step">04 · Recap</p>
+        <div class="mock">
+          <p class="pcard__name">Campaign recap</p>
+          <div class="ledger ledger--teal"><p>Clicks</p><small>Tracked by us</small></div>
+          <div class="ledger ledger--amber"><p>Reach</p><small>Reported by the creator</small></div>
+          <div class="ledger ledger--ink"><p>Sales</p><small>Reported by you</small></div>
+        </div>
+        <h3>See what it did, and who says so.</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TWO SIDES ===== -->
+  <section id="sides" class="section">
+    <div class="container">
+      <div class="section__head section__head--center reveal">
+        <p class="kicker">Two sides, one deal</p>
+        <h2 class="h2">Pick the side <em>you're on.</em></h2>
+      </div>
+      <div class="plans reveal-group">
+        <div id="for-brands" class="plan plan--ink reveal">
+          <p class="plan__name">For brands · by invite</p>
+          <p class="plan__price">10%<span class="plan__star" aria-hidden="true">*</span></p>
+          <p class="plan__note">Platform fee on top of the creator's rate, shown before you fund anything.</p>
+          <a href="#contact" class="btn btn--mint btn--block">Join the brand waitlist</a>
+          <ul class="checks checks--light">
+            <li>Hire only creators a person has checked</li>
+            <li>Start from a drafted brief, not a blank page</li>
+            <li>Your money moves only when the post is live</li>
+          </ul>
+          <p class="plan__fine"><span aria-hidden="true">*</span>12.4% if you pay by card. Pay by pre-authorized debit from a Canadian bank account for 10%.</p>
+        </div>
+        <div id="for-creators" class="plan reveal">
+          <p class="plan__name">For creators</p>
+          <p class="plan__price">Free</p>
+          <p class="plan__note">Set your rate and keep all of it. The brand pays the platform fee on top.</p>
+          <a href="https://app.sixthdegree.app/login?role=creator" class="btn btn--white btn--block">Create your profile</a>
+          <ul class="checks">
+            <li>The brand funds your fee before you film</li>
+            <li>Released when your post is live, or automatically 3 business days after, unless there's a dispute</li>
+            <li>You choose the briefs. Paid-ad use needs your sign-off</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOUNDER NOTE ===== -->
-  <section id="about" class="founder-note">
+  <!-- ===== TEAM ===== -->
+  <section id="about" class="section section--soft">
     <div class="container">
-      <div class="founder-note__inner reveal">
-        <span class="section__number">A note from us°</span>
-        <p class="founder-note__text">We started Sixth Degree because we watched Canadian brands settle for US platforms that treat Toronto like a rounding error, and watched real creators lose deals to accounts with purchased followers. The people building culture here should get tools built here.</p>
-        <p class="founder-note__sign">Aaryan &amp; Rohan, Toronto</p>
-        <p class="founder-note__next">Toronto first. Once Canada is won, Brazil and Colombia are next.</p>
+      <div class="section__head section__head--center reveal">
+        <p class="kicker">The team</p>
+        <h2 class="h2">Built in Toronto, <em>for Toronto.</em></h2>
       </div>
+      <div class="team reveal-group">
+        <blockquote class="team__note reveal">
+          <p>We started Sixth Degree because we watched Canadian brands settle for US platforms that treat Toronto like a rounding error, and watched real creators lose deals to accounts with purchased followers. The people building culture here should get tools built here.</p>
+          <footer>Aaryan &amp; Rohan, Toronto</footer>
+        </blockquote>
+        <div class="person reveal">
+          <span class="person__av av--3">A</span>
+          <p class="person__name">Aaryan Juneja</p>
+          <p class="person__role">Co-founder</p>
+        </div>
+        <div class="person reveal">
+          <span class="person__av av--1">R</span>
+          <p class="person__name">Rohan Gandotra</p>
+          <p class="person__role">Co-founder</p>
+        </div>
+      </div>
+      <p class="team__next reveal">Toronto first. Once Canada is won, Brazil and Colombia are next.</p>
     </div>
   </section>
 
   <!-- ===== FAQ ===== -->
-  <section id="faq" class="section section--light faq">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__number">04°</span>
-        <h2 class="section__headline">Questions, <em>answered.</em></h2>
+  <section id="faq" class="section">
+    <div class="container faq">
+      <div class="faq__side reveal">
+        <p class="kicker">FAQ</p>
+        <h2 class="h2">Questions, <em>answered.</em></h2>
+        <p class="lede">Still unsure? Email Aaryan and Rohan. We answer everything.</p>
+        <a href="mailto:hello@sixthdegree.app" class="btn btn--ink">hello@sixthdegree.app</a>
       </div>
       <div class="faq__list reveal-group">
         <details class="faq__item reveal">
-          <summary class="faq__question">How does escrow protect brands and creators?<span class="faq__icon" aria-hidden="true">+</span></summary>
-          <p class="faq__answer">Brands fund the full fee to escrow before work starts, so creators never chase invoices. Creators keep 100% of their quoted fee. Funds are released when the brand confirms the post is live, or automatically after 3 business days if the brand takes no action. If there's a dispute, release pauses until it's resolved.</p>
+          <summary class="faq__question">What does Sixth Degree cost?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p class="faq__answer">Creators keep 100% of their quoted fee. Brands pay a 10% platform fee on top when they fund by pre-authorized debit from a Canadian bank account, or 12.4% by card. The fee is shown before you fund a collaboration.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">How are creators verified?<span class="faq__icon" aria-hidden="true">+</span></summary>
-          <p class="faq__answer">Verification is a human decision, not an algorithm's guess. A person checks that the account is real and belongs to the creator, that their photo is them, that they're based in the Greater Toronto Area, and that their content is something a brand would be happy with. Every creator is due for a fresh review every 60 days. Brands can only hire creators who pass. The platform enforces it.</p>
+          <summary class="faq__question">What if the creator never posts?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p class="faq__answer">Nothing is paid out until the post is live. If no content has been submitted by the end of the campaign's posting window, the full amount, platform fee included, is refunded to you automatically. Anything else goes through a dispute, and a dispute pauses release until it's resolved.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">Where do the campaign ideas come from?<span class="faq__icon" aria-hidden="true">+</span></summary>
-          <p class="faq__answer">From public posts by Toronto accounts in the niches we cover. Each post is ranked against what that account usually gets, so a big account doesn't win just for being big, and every idea cites the posts it came from, each with the date we read it. AI drafts a brief from the idea you pick, and you edit it before anything goes out. Nothing in it is a promise of results.</p>
+          <summary class="faq__question">What if the post doesn't perform?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p class="faq__answer">The fee pays for the work, not for a result, so we never promise numbers. What you get is a recap that shows what the post did, with every figure labelled by who measured it, so you can decide whether to hire that creator again.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">What does Sixth Degree cost?<span class="faq__icon" aria-hidden="true">+</span></summary>
-          <p class="faq__answer">Creators keep 100% of their quoted fee. Brands pay a platform fee on top, shown before you fund a collaboration. We haven't published standard pricing yet. Email hello@sixthdegree.app and we'll walk you through it.</p>
+          <summary class="faq__question">How are creators verified?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p class="faq__answer">Verification is a human decision, not an algorithm's guess. A person checks that the account is real and belongs to the creator, that their photo is them, that they're based in the Greater Toronto Area, and that their content is something a brand would be happy with. Every creator is due for a fresh review every 60 days. Brands can only hire creators who pass.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">What's the difference between nano and micro creators?<span class="faq__icon" aria-hidden="true">+</span></summary>
+          <summary class="faq__question">What's the difference between nano and micro creators?<span class="faq__icon" aria-hidden="true"></span></summary>
           <p class="faq__answer">Follower band. Nano creators usually have a few thousand followers; micro creators reach into the tens of thousands. Both trade raw reach for trust: smaller audiences that actually know them. On Sixth Degree you can filter by follower band, niche, neighbourhood, and rate.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">Can I sign up today?<span class="faq__icon" aria-hidden="true">+</span></summary>
+          <summary class="faq__question">Where do the campaign ideas come from?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p class="faq__answer">From public posts by Toronto accounts in the niches we cover. Each post is ranked against what that account usually gets, so a big account doesn't win just for being big, and every idea cites the posts it came from, each with the date we read it. Nothing in it is a promise of results.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__question">Can I sign up today?<span class="faq__icon" aria-hidden="true"></span></summary>
           <p class="faq__answer">Creators, yes: <a href="https://app.sixthdegree.app/login?role=creator">create your profile</a> and we'll verify your account. Brands join by invite while we onboard our first campaigns. Join the waitlist and we'll reach out.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">Do you only work with Toronto brands?<span class="faq__icon" aria-hidden="true">+</span></summary>
-          <p class="faq__answer">Toronto is where we're starting, on purpose. The creators live here and so do their audiences. That local context is not something a US platform can fake. We're Canadian-first, and once Canada is won, Brazil and Colombia are next.</p>
-        </details>
-        <details class="faq__item reveal">
-          <summary class="faq__question">How do brands know a campaign actually worked?<span class="faq__icon" aria-hidden="true">+</span></summary>
-          <p class="faq__answer">Every collaboration gets a trackable link, plus a promo code if you set one up. What they trace is a verifiable floor, not a complete count. Some customers see a post and just walk in. Every number is labeled with its source, so you always know what's measured and what isn't.</p>
+          <summary class="faq__question">Do you only work with Toronto brands?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p class="faq__answer">Toronto is where we're starting, on purpose. The creators live here and so do their audiences. We're Canadian-first, and once Canada is won, Brazil and Colombia are next.</p>
         </details>
       </div>
     </div>
@@ -461,46 +485,46 @@
 
   <!-- ===== GET STARTED ===== -->
   <!-- id="contact" is load-bearing: every blog post links to /#contact. -->
-  <section id="contact" class="cta-section">
+  <section id="contact" class="section section--tight">
     <div class="container">
-      <h2 class="cta-section__headline reveal">Pick your side. <em>We'll take it from there.</em></h2>
+      <div class="cta">
+        <div class="cta__glow" aria-hidden="true"></div>
+        <h2 class="h2 cta__headline reveal">Pick your side. <em>We'll take it from there.</em></h2>
+        <div class="join reveal-group">
+          <div class="join__card reveal">
+            <p class="kicker">Creators</p>
+            <h3 class="join__title">Start today.</h3>
+            <p class="join__body">Free to join. Here is how it works.</p>
+            <ol class="join__steps">
+              <li>Create your profile and set your rate</li>
+              <li>Add your Instagram or TikTok handle and a photo</li>
+              <li>Send a screenshot of your stats, and a person verifies you</li>
+            </ol>
+            <a href="https://app.sixthdegree.app/login?role=creator" class="btn btn--ink">Create your profile</a>
+          </div>
 
-      <div class="join reveal-group">
-        <div class="join__card reveal">
-          <p class="join__kicker">Creators</p>
-          <h3 class="join__title">Start today.</h3>
-          <p class="join__body">Free to join. Here is how it works.</p>
-          <ol class="join__steps">
-            <li>Create your profile and set your rate</li>
-            <li>Add your Instagram or TikTok handle and a photo</li>
-            <li>Send a screenshot of your stats, and a person verifies you</li>
-          </ol>
-          <a href="https://app.sixthdegree.app/login?role=creator" class="btn btn--mint">Create your profile<span class="btn__arrow">→</span></a>
-        </div>
-
-        <div class="join__card join__card--form reveal">
-          <p class="join__kicker">Brands</p>
-          <h3 class="join__title">Join the waitlist.</h3>
-          <p class="join__body">We're onboarding brands by invite. Tell us where to find you and we'll reach out.</p>
-          <form class="waitlist" action="https://formsubmit.co/hello@sixthdegree.app" method="POST">
-            <input type="hidden" name="_subject" value="Sixth Degree brand waitlist signup">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://sixthdegree.app/?joined=1#contact">
-            <input type="hidden" name="role" value="brand">
-            <!-- Honeypot: hidden from humans, bots fill it. FormSubmit and /api/waitlist both discard submissions where it has a value. -->
-            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;overflow:hidden;">
-            <div class="waitlist__fields">
-              <input class="waitlist__input" type="email" name="email" placeholder="you@yourbrand.com" aria-label="Work email" autocomplete="email" required>
-              <input class="waitlist__input" type="text" name="website" placeholder="yourbrand.com" aria-label="Brand website" maxlength="200" required>
-              <button type="submit" class="btn btn--primary">Join the waitlist</button>
-            </div>
-            <p class="waitlist__consent">By joining, you agree to our <a href="https://app.sixthdegree.app/privacy">Privacy Policy</a>. We only use this to contact you about Sixth Degree.</p>
-          </form>
-          <p id="waitlist-thanks" class="waitlist__thanks" hidden>You're on the list. We'll email you.</p>
+          <div class="join__card reveal">
+            <p class="kicker">Brands</p>
+            <h3 class="join__title">Join the waitlist.</h3>
+            <p class="join__body">We're onboarding brands by invite. Tell us where to find you and we'll reach out.</p>
+            <form class="waitlist" action="https://formsubmit.co/hello@sixthdegree.app" method="POST">
+              <input type="hidden" name="_subject" value="Sixth Degree brand waitlist signup">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://sixthdegree.app/?joined=1#contact">
+              <input type="hidden" name="role" value="brand">
+              <!-- Honeypot: hidden from humans, bots fill it. FormSubmit and /api/waitlist both discard submissions where it has a value. -->
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;overflow:hidden;">
+              <div class="waitlist__fields">
+                <input class="waitlist__input" type="email" name="email" placeholder="you@yourbrand.com" aria-label="Work email" autocomplete="email" required>
+                <input class="waitlist__input" type="text" name="website" placeholder="yourbrand.com" aria-label="Brand website" maxlength="200" required>
+                <button type="submit" class="btn btn--ink">Join the waitlist</button>
+              </div>
+              <p class="waitlist__consent">By joining, you agree to our <a href="https://app.sixthdegree.app/privacy">Privacy Policy</a>. We only use this to contact you about Sixth Degree.</p>
+            </form>
+            <p id="waitlist-thanks" class="waitlist__thanks" hidden>You're on the list. We'll email you.</p>
+          </div>
         </div>
       </div>
-
-      <p class="cta-section__note reveal">Questions first? Email Aaryan and Rohan at <a href="mailto:hello@sixthdegree.app">hello@sixthdegree.app</a>. We answer everything.</p>
     </div>
   </section>
 
@@ -512,19 +536,36 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
-      <p class="footer__wordmark" aria-hidden="true">Sixth Degree°</p>
-      <div class="footer__inner">
-        <span class="footer__logo">Sixth Degree<span class="logo-degree">°</span></span>
-        <div class="footer__info">
-          <span>Toronto, Canada</span>
-          <a href="/blog/">Blog</a>
-          <a href="https://www.instagram.com/sixthdegree.app/" rel="me">Instagram: @sixthdegree.app</a>
-          <a href="mailto:hello@sixthdegree.app">hello@sixthdegree.app</a>
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo nav__logo--light"><span class="nav__mark" aria-hidden="true">6</span>Sixth Degree</a>
+          <p>Sixth Degree connects Toronto brands with creators a human has verified, paid through escrow and measured honestly.</p>
+          <a href="#contact" class="btn btn--mint btn--sm">Get started</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__label">Product</p>
+          <a href="#how">How it works</a>
+          <a href="#who">Who it's for</a>
+          <a href="#faq">FAQ</a>
           <a href="https://app.sixthdegree.app/login">Sign in</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__label">Resources</p>
+          <a href="/blog/">Blog</a>
           <a href="https://app.sixthdegree.app/terms">Terms</a>
           <a href="https://app.sixthdegree.app/privacy">Privacy</a>
-          <span>&copy; 2026 Sixth Degree</span>
         </div>
+        <div class="footer__col">
+          <p class="footer__label">Get in touch</p>
+          <a href="mailto:hello@sixthdegree.app">hello@sixthdegree.app</a>
+          <a href="https://www.instagram.com/sixthdegree.app/" rel="me">Instagram</a>
+          <span>Toronto, Canada</span>
+        </div>
+      </div>
+      <p class="footer__wordmark" aria-hidden="true">Sixth Degree°</p>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Sixth Degree</span>
+        <span>Made in Toronto</span>
       </div>
     </div>
   </footer>
