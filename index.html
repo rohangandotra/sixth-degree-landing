@@ -73,30 +73,6 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How does escrow protect brands and creators?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Brands fund the full fee to escrow before work starts, so creators never chase invoices. Creators keep 100% of their quoted fee. Funds are released when the brand confirms the post is live, or automatically after 3 business days if the brand takes no action. If there's a dispute, release pauses until it's resolved."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How are creators verified?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Verification is a human decision, not an algorithm's guess. A person checks that the account is real and belongs to the creator, that their photo is them, that they're based in the Greater Toronto Area, and that their content is something a brand would be happy with. Every creator is due for a fresh review every 60 days. Brands can only hire creators who pass. The platform enforces it."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where do the campaign ideas come from?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "From public posts by Toronto accounts in the niches we cover. Each post is ranked against what that account usually gets, so a big account doesn't win just for being big, and every idea cites the posts it came from, each with the date we read it. AI drafts a brief from the idea you pick, and you edit it before anything goes out. Nothing in it is a promise of results."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "What does Sixth Degree cost?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -105,10 +81,42 @@
       },
       {
         "@type": "Question",
+        "name": "What if the creator never posts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nothing is paid out until the post is live. If no content has been submitted by the end of the campaign's posting window, the full amount, platform fee included, is refunded to you automatically. Anything else goes through a dispute, and a dispute pauses release until it's resolved."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if the post doesn't perform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The fee pays for the work, not for a result, so we never promise numbers. What you get is a recap that shows what the post did, with every figure labelled by who measured it, so you can decide whether to hire that creator again."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are creators verified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verification is a human decision, not an algorithm's guess. A person checks that the account is real and belongs to the creator, that their photo is them, that they're based in the Greater Toronto Area, and that their content is something a brand would be happy with. Every creator is due for a fresh review every 60 days. Brands can only hire creators who pass."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "What's the difference between nano and micro creators?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Follower band. Nano creators usually have a few thousand followers; micro creators reach into the tens of thousands. Both trade raw reach for trust: smaller audiences that actually know them. On Sixth Degree you can filter by follower band, niche, neighbourhood, and rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do the campaign ideas come from?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "From public posts by Toronto accounts in the niches we cover. Each post is ranked against what that account usually gets, so a big account doesn't win just for being big, and every idea cites the posts it came from, each with the date we read it. Nothing in it is a promise of results."
         }
       },
       {
@@ -124,15 +132,7 @@
         "name": "Do you only work with Toronto brands?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Toronto is where we're starting, on purpose. The creators live here and so do their audiences. That local context is not something a US platform can fake. We're Canadian-first, and once Canada is won, Brazil and Colombia are next."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do brands know a campaign actually worked?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Every collaboration gets a trackable link, plus a promo code if you set one up. What they trace is a verifiable floor, not a complete count. Some customers see a post and just walk in. Every number is labeled with its source, so you always know what's measured and what isn't."
+          "text": "Toronto is where we're starting, on purpose. The creators live here and so do their audiences. We're Canadian-first, and once Canada is won, Brazil and Colombia are next."
         }
       }
     ]
@@ -147,7 +147,7 @@
       <a href="#" class="nav__logo"><span class="nav__mark" aria-hidden="true">6</span>Sixth Degree</a>
       <ul class="nav__links">
         <li><a href="#how">How it works</a></li>
-        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#who">Who it's for</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="https://app.sixthdegree.app/login">Sign in</a></li>
@@ -174,7 +174,7 @@
         </span>
         creator is <em>one degree away.</em>
       </h1>
-      <p class="hero__sub reveal">Sixth Degree connects Toronto brands with creators a human has verified. Briefs start from what stands out in your niche, the fee sits in escrow until the post is live, and every result says where it came from.</p>
+      <p class="hero__sub reveal">Hire Toronto creators a person has checked. Your fee waits in escrow and releases only when the post is live.</p>
       <div class="hero__ctas reveal">
         <a href="#contact" class="btn btn--ink">I'm a brand</a>
         <a href="https://app.sixthdegree.app/login?role=creator" class="btn btn--white">I'm a creator</a>
@@ -231,47 +231,8 @@
     </div>
   </section>
 
-  <!-- ===== MARQUEE ===== -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <span>Food &amp; Drink</span><span>Coffee &amp; Cafés</span><span>Beauty &amp; Skincare</span><span>Fashion &amp; Style</span><span>Fitness &amp; Wellness</span><span>Home &amp; Living</span><span>Arts &amp; Culture</span><span>Nightlife &amp; Events</span><span>Pets</span><span>Family &amp; Parenting</span>
-      <span>Food &amp; Drink</span><span>Coffee &amp; Cafés</span><span>Beauty &amp; Skincare</span><span>Fashion &amp; Style</span><span>Fitness &amp; Wellness</span><span>Home &amp; Living</span><span>Arts &amp; Culture</span><span>Nightlife &amp; Events</span><span>Pets</span><span>Family &amp; Parenting</span>
-    </div>
-  </div>
-
-  <!-- ===== INTRODUCTION ===== -->
-  <section class="section intro">
-    <div class="container">
-      <p class="kicker reveal">Introduction</p>
-      <p class="intro__statement reveal">We check every creator by hand, <span>hold the fee until the post is live,</span> and label every number <span>by where it came from.</span></p>
-
-      <div class="bento reveal-group">
-        <div class="bento__card bento__card--ink reveal">
-          <p class="bento__big">100%</p>
-          <p class="bento__title">of the quoted fee goes to the creator</p>
-          <p class="bento__body">The platform fee is charged to the brand on top, and shown before anyone pays.</p>
-        </div>
-        <div class="bento__card reveal">
-          <p class="bento__big">60 days</p>
-          <p class="bento__title">between fresh reviews</p>
-          <p class="bento__body">Verification is not a one-time check at signup.</p>
-        </div>
-        <div class="bento__card bento__card--mint reveal">
-          <p class="bento__big">n/a</p>
-          <p class="bento__title">is what a number we can't measure says</p>
-          <p class="bento__body">Never 0. Zero because nothing was tracked must never look like zero because nothing happened.</p>
-        </div>
-        <div class="bento__card reveal">
-          <p class="bento__big">3 days</p>
-          <p class="bento__title">to auto-release after posting</p>
-          <p class="bento__body">Business days, if the brand takes no action. A dispute pauses release until it's resolved.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== FILM ===== -->
-  <section class="section section--tight">
+  <section class="section section--tight film-section">
     <div class="container">
       <figure class="film reveal">
         <div class="film__frame">
@@ -294,44 +255,54 @@
     </div>
   </section>
 
+  <!-- ===== WHO IT'S FOR ===== -->
+  <section id="who" class="section">
+    <div class="container who">
+      <div class="who__text reveal">
+        <p class="kicker">Who it's for</p>
+        <h2 class="h2">Toronto businesses that sell <em>to Toronto.</em></h2>
+        <p class="lede">Local creators reach the people who can actually walk in. Their audiences live where your customers do.</p>
+      </div>
+      <ul class="who__list reveal-group" aria-label="Kinds of businesses">
+        <li class="reveal">Restaurants &amp; bars</li>
+        <li class="reveal">Cafés &amp; bakeries</li>
+        <li class="reveal">Beauty &amp; skincare</li>
+        <li class="reveal">Fashion &amp; retail</li>
+        <li class="reveal">Fitness &amp; wellness</li>
+        <li class="reveal">Home &amp; living</li>
+        <li class="reveal">Arts &amp; events</li>
+        <li class="reveal">Pets</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- ===== SERVICES ===== -->
-  <section id="how" class="section">
+  <section id="how" class="section section--soft">
     <div class="container">
       <div class="section__head reveal">
-        <p class="kicker">What we do</p>
-        <h2 class="h2">Six things we do so you don't <em>gamble.</em></h2>
-        <p class="lede">From the first search to the final recap, in one place.</p>
+        <p class="kicker">How it works</p>
+        <h2 class="h2">Less guessing, <em>no chasing.</em></h2>
       </div>
-      <div class="services reveal-group">
+      <div class="services services--four reveal-group">
         <article class="service reveal">
           <span class="service__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
-          <h3>Human verification</h3>
-          <p>AI helps us look. A person decides: the account is real and theirs, the photo is them, they're based in the GTA, and their content is brand-safe.</p>
-        </article>
-        <article class="service reveal">
-          <span class="service__icon"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></span>
-          <h3>Plays from your niche</h3>
-          <p>We rank public posts from Toronto accounts against each account's own typical post. Every play cites its posts, each with the date we read it.</p>
+          <h3>Creators worth hiring</h3>
+          <p>A person checks every account: it's real, it's theirs, they're in the GTA, and the content is brand-safe. Checked again every 60 days, not just at signup.</p>
         </article>
         <article class="service reveal">
           <span class="service__icon"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg></span>
-          <h3>Briefs you edit</h3>
-          <p>Pick a play and AI drafts the brief. You edit it and decide before anything goes out. Nothing in it is a promise of results.</p>
+          <h3>A brief you don't start from scratch</h3>
+          <p>Pick an idea drawn from what stands out for Toronto accounts in your niche, and AI drafts the brief. You edit it before anything goes out.</p>
         </article>
         <article class="service reveal">
           <span class="service__icon"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
-          <h3>Escrow</h3>
-          <p>The brand funds the fee before filming starts. It sits in escrow while the work is made, reviewed and posted, then goes to the creator in full.</p>
+          <h3>Pay only for work that goes live</h3>
+          <p>You fund the fee up front and it waits in escrow. It releases when the post is live. If nothing is submitted by the end of the posting window, it comes back to you.</p>
         </article>
         <article class="service reveal">
-          <span class="service__icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
-          <h3>One thread per collab</h3>
-          <p>Messages, submissions and approvals stay in one place per collaboration. Paid-ad use needs the creator's sign-off.</p>
-        </article>
-        <article class="service reveal">
-          <span class="service__icon"><svg viewBox="0 0 24 24"><path d="M5 4v16M5 6h12l-2 4 2 4H5"/></svg></span>
-          <h3>Recap by source</h3>
-          <p>What we tracked, what the creator reported and what you reported, never blurred together. Every link traces a verifiable floor, not a complete count.</p>
+          <span class="service__icon"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></span>
+          <h3>Results you can trust</h3>
+          <p>Every collab gets a tracked link, plus a promo code if you want one. Each number says who measured it: us, the creator, or you.</p>
         </article>
       </div>
     </div>
@@ -345,7 +316,7 @@
           <p class="kicker">Inside the product</p>
           <h2 class="h2">What a collab <em>looks like.</em></h2>
         </div>
-        <p class="lede">Sample screens. Every name and figure here is illustrative.</p>
+        <p class="lede">Sample screens. Names and figures are illustrative.</p>
       </div>
     </div>
     <div class="rail reveal-group">
@@ -356,7 +327,7 @@
             <span class="story__av av--1">M</span>
             <div><p class="pcard__name">Maya R.</p><p class="pcard__meta">Food &amp; Drink · Toronto</p></div>
           </div>
-          <div class="mock__pills"><span class="pill pill--teal">Verified</span><span class="pill pill--ink">Founding Member</span><span class="tag">Sample profile</span></div>
+          <div class="mock__pills"><span class="pill pill--teal">Verified</span><span class="tag">Sample profile</span></div>
           <ul class="mock__checks">
             <li>Account is real and theirs<small>by a human</small></li>
             <li>Photo is them<small>by a human</small></li>
@@ -394,53 +365,47 @@
       <div class="rail__card reveal">
         <p class="rail__step">04 · Recap</p>
         <div class="mock">
-          <p class="pcard__name">Campaign recap · three ledgers</p>
-          <div class="ledger ledger--teal"><p>Platform-tracked</p><small>Cost · Clicks</small></div>
-          <div class="ledger ledger--amber"><p>Creator-reported</p><small>Reach · Engagements</small></div>
-          <div class="ledger ledger--ink"><p>Brand-reported</p><small>Orders · Revenue</small></div>
+          <p class="pcard__name">Campaign recap</p>
+          <div class="ledger ledger--teal"><p>Clicks</p><small>Tracked by us</small></div>
+          <div class="ledger ledger--amber"><p>Reach</p><small>Reported by the creator</small></div>
+          <div class="ledger ledger--ink"><p>Sales</p><small>Reported by you</small></div>
         </div>
-        <h3>Every number, labelled by its source.</h3>
+        <h3>See what it did, and who says so.</h3>
       </div>
     </div>
   </section>
 
-  <!-- ===== PRICING ===== -->
-  <section id="pricing" class="section">
+  <!-- ===== TWO SIDES ===== -->
+  <section id="sides" class="section">
     <div class="container">
       <div class="section__head section__head--center reveal">
-        <p class="kicker">Pricing</p>
-        <h2 class="h2">Simple, <em>upfront.</em></h2>
-        <p class="lede">Creators join free. Brands see the platform fee before they pay.</p>
+        <p class="kicker">Two sides, one deal</p>
+        <h2 class="h2">Pick the side <em>you're on.</em></h2>
       </div>
       <div class="plans reveal-group">
+        <div id="for-brands" class="plan plan--ink reveal">
+          <p class="plan__name">For brands</p>
+          <p class="plan__price">By invite</p>
+          <p class="plan__note">We're onboarding our first Toronto brands. You see the platform fee before you fund anything.</p>
+          <a href="#contact" class="btn btn--mint btn--block">Join the brand waitlist</a>
+          <ul class="checks checks--light">
+            <li>Hire only creators a person has checked</li>
+            <li>Start from a drafted brief, not a blank page</li>
+            <li>Your money moves only when the post is live</li>
+          </ul>
+        </div>
         <div id="for-creators" class="plan reveal">
           <p class="plan__name">For creators</p>
           <p class="plan__price">Free</p>
-          <p class="plan__note">Set your rate and keep 100% of it.</p>
+          <p class="plan__note">Set your rate and keep all of it. The brand pays the platform fee on top.</p>
           <a href="https://app.sixthdegree.app/login?role=creator" class="btn btn--white btn--block">Create your profile</a>
-          <p class="plan__included">What's included</p>
           <ul class="checks">
-            <li>The brand funds the fee before you film</li>
-            <li>Choose the briefs you take</li>
-            <li>Paid-ad use needs your sign-off</li>
-            <li>A verified profile is how Toronto brands find you</li>
-          </ul>
-        </div>
-        <div id="for-brands" class="plan plan--ink reveal">
-          <p class="plan__name">For brands</p>
-          <p class="plan__price">Fee on top</p>
-          <p class="plan__note">A platform fee on top of the creator's rate, shown before you fund. We haven't published standard pricing yet.</p>
-          <a href="#contact" class="btn btn--mint btn--block">Join the brand waitlist</a>
-          <p class="plan__included">What's included</p>
-          <ul class="checks checks--light">
-            <li>Hire only creators a person has verified</li>
-            <li>Start from plays drawn from your niche, not a blank page</li>
-            <li>Fund once, released only when the post is live</li>
-            <li>A recap that says where every number came from</li>
+            <li>The brand funds your fee before you film</li>
+            <li>Released when your post is live, or automatically 3 business days after, unless there's a dispute</li>
+            <li>You choose the briefs. Paid-ad use needs your sign-off</li>
           </ul>
         </div>
       </div>
-      <p class="plans__foot reveal">Brands join by invite while we onboard our first campaigns. Questions about pricing? Email <a href="mailto:hello@sixthdegree.app">hello@sixthdegree.app</a>.</p>
     </div>
   </section>
 
@@ -482,24 +447,28 @@
       </div>
       <div class="faq__list reveal-group">
         <details class="faq__item reveal">
-          <summary class="faq__question">How does escrow protect brands and creators?<span class="faq__icon" aria-hidden="true"></span></summary>
-          <p class="faq__answer">Brands fund the full fee to escrow before work starts, so creators never chase invoices. Creators keep 100% of their quoted fee. Funds are released when the brand confirms the post is live, or automatically after 3 business days if the brand takes no action. If there's a dispute, release pauses until it's resolved.</p>
-        </details>
-        <details class="faq__item reveal">
-          <summary class="faq__question">How are creators verified?<span class="faq__icon" aria-hidden="true"></span></summary>
-          <p class="faq__answer">Verification is a human decision, not an algorithm's guess. A person checks that the account is real and belongs to the creator, that their photo is them, that they're based in the Greater Toronto Area, and that their content is something a brand would be happy with. Every creator is due for a fresh review every 60 days. Brands can only hire creators who pass. The platform enforces it.</p>
-        </details>
-        <details class="faq__item reveal">
-          <summary class="faq__question">Where do the campaign ideas come from?<span class="faq__icon" aria-hidden="true"></span></summary>
-          <p class="faq__answer">From public posts by Toronto accounts in the niches we cover. Each post is ranked against what that account usually gets, so a big account doesn't win just for being big, and every idea cites the posts it came from, each with the date we read it. AI drafts a brief from the idea you pick, and you edit it before anything goes out. Nothing in it is a promise of results.</p>
-        </details>
-        <details class="faq__item reveal">
           <summary class="faq__question">What does Sixth Degree cost?<span class="faq__icon" aria-hidden="true"></span></summary>
           <p class="faq__answer">Creators keep 100% of their quoted fee. Brands pay a platform fee on top, shown before you fund a collaboration. We haven't published standard pricing yet. Email hello@sixthdegree.app and we'll walk you through it.</p>
         </details>
         <details class="faq__item reveal">
+          <summary class="faq__question">What if the creator never posts?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p class="faq__answer">Nothing is paid out until the post is live. If no content has been submitted by the end of the campaign's posting window, the full amount, platform fee included, is refunded to you automatically. Anything else goes through a dispute, and a dispute pauses release until it's resolved.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__question">What if the post doesn't perform?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p class="faq__answer">The fee pays for the work, not for a result, so we never promise numbers. What you get is a recap that shows what the post did, with every figure labelled by who measured it, so you can decide whether to hire that creator again.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__question">How are creators verified?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p class="faq__answer">Verification is a human decision, not an algorithm's guess. A person checks that the account is real and belongs to the creator, that their photo is them, that they're based in the Greater Toronto Area, and that their content is something a brand would be happy with. Every creator is due for a fresh review every 60 days. Brands can only hire creators who pass.</p>
+        </details>
+        <details class="faq__item reveal">
           <summary class="faq__question">What's the difference between nano and micro creators?<span class="faq__icon" aria-hidden="true"></span></summary>
           <p class="faq__answer">Follower band. Nano creators usually have a few thousand followers; micro creators reach into the tens of thousands. Both trade raw reach for trust: smaller audiences that actually know them. On Sixth Degree you can filter by follower band, niche, neighbourhood, and rate.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__question">Where do the campaign ideas come from?<span class="faq__icon" aria-hidden="true"></span></summary>
+          <p class="faq__answer">From public posts by Toronto accounts in the niches we cover. Each post is ranked against what that account usually gets, so a big account doesn't win just for being big, and every idea cites the posts it came from, each with the date we read it. Nothing in it is a promise of results.</p>
         </details>
         <details class="faq__item reveal">
           <summary class="faq__question">Can I sign up today?<span class="faq__icon" aria-hidden="true"></span></summary>
@@ -507,11 +476,7 @@
         </details>
         <details class="faq__item reveal">
           <summary class="faq__question">Do you only work with Toronto brands?<span class="faq__icon" aria-hidden="true"></span></summary>
-          <p class="faq__answer">Toronto is where we're starting, on purpose. The creators live here and so do their audiences. That local context is not something a US platform can fake. We're Canadian-first, and once Canada is won, Brazil and Colombia are next.</p>
-        </details>
-        <details class="faq__item reveal">
-          <summary class="faq__question">How do brands know a campaign actually worked?<span class="faq__icon" aria-hidden="true"></span></summary>
-          <p class="faq__answer">Every collaboration gets a trackable link, plus a promo code if you set one up. What they trace is a verifiable floor, not a complete count. Some customers see a post and just walk in. Every number is labeled with its source, so you always know what's measured and what isn't.</p>
+          <p class="faq__answer">Toronto is where we're starting, on purpose. The creators live here and so do their audiences. We're Canadian-first, and once Canada is won, Brazil and Colombia are next.</p>
         </details>
       </div>
     </div>
@@ -579,7 +544,7 @@
         <div class="footer__col">
           <p class="footer__label">Product</p>
           <a href="#how">How it works</a>
-          <a href="#pricing">Pricing</a>
+          <a href="#who">Who it's for</a>
           <a href="#faq">FAQ</a>
           <a href="https://app.sixthdegree.app/login">Sign in</a>
         </div>
