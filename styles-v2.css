@@ -332,6 +332,8 @@ em { font-family: var(--serif); font-style: italic; font-weight: 500; letter-spa
 }
 .checks--light li { color: rgba(255, 255, 255, 0.9); }
 .checks--light li::before { background-color: rgba(94, 234, 212, 0.18); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4L18 8' fill='none' stroke='%235eead4' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+.plan__star { font-size: 0.5em; vertical-align: super; margin-left: 2px; color: var(--mint); }
+.plan__fine { font-size: 13px; margin-top: 20px; color: rgba(255, 255, 255, 0.6); }
 .plans__foot { text-align: center; font-size: 14px; color: var(--muted); margin-top: 28px; }
 @media (max-width: 720px) { .plans { grid-template-columns: 1fr; } .plan__note { min-height: 0; } }
 
