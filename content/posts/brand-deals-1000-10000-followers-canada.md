@@ -43,6 +43,6 @@ The most common bad experience nano creators report isn't a low rate, it's a bra
 
 ## Where Sixth Degree fits
 
-We're building Sixth Degree as a marketplace where verified Canadian nano and micro creators get discovered by real local brands, with payment held in escrow until the work is confirmed and usage rights agreed in writing before anything is booked. We're in private beta, opening Fall 2026, so the directory isn't public yet, but creator applications aren't gated the way brand access is.
+We're building Sixth Degree as a marketplace where verified Canadian nano and micro creators get discovered by real local brands, with payment held in escrow until the work is confirmed and usage rights agreed in writing before anything is booked. We're in private beta, onboarding our first campaigns by invite, so the directory isn't public yet, but creator applications aren't gated the way brand access is.
 
 If you want first access when it opens, join the waitlist below, or email [hello@sixthdegree.app](mailto:hello@sixthdegree.app) and tell us your niche and follower count. We read every one.

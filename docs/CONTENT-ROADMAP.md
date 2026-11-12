@@ -293,3 +293,15 @@ piece's "how-to" section would substantially repeat a section that already
 exists in a published post, don't repeat it: cut to a pointer + link, the way
 the pillar links to the find-influencers post instead of re-listing its
 methods.
+
+## 2026-11-12 update
+
+- `influencers-in-toronto.md` expanded (the run's piece, not a new post): a
+  "What's different about hiring in Toronto" section (neighbourhood audiences,
+  the 416/905 split in Instagram's top cities, Canadian disclosure, the city's
+  content calendar) and a "From shortlist to posted" section linking the six
+  spokes it never linked (seeding vs paid, affiliate vs flat fee, brief,
+  paying in Canada, KPIs, measurement). Title and description rewritten for
+  CTR. Paying-influencers and brief posts got links back to the pillar.
+- Every post's "opening Fall 2026" became "onboarding our first campaigns by
+  invite". Do not put a launch date back in post copy unless the founders set one.

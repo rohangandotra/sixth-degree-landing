@@ -75,4 +75,4 @@ Be honest about what each source tells you, too. A creator's own screenshot of t
 
 We built Sixth Degree around this exact plan: every creator is verified by a human before they can take a paid collaboration, rates are visible upfront instead of negotiated blind, usage rights are explicit through the Ad Rights Rider, and payment sits in escrow until the work is confirmed live. Toronto first, expanding across Canada from there.
 
-We're in private beta, opening Fall 2026, so the marketplace isn't public yet. If you want to run your first campaign this way when it opens, join the waitlist below, or email [hello@sixthdegree.app](mailto:hello@sixthdegree.app) with what you're trying to sell and we'll tell you honestly whether a first campaign makes sense yet.
+We're in private beta, onboarding our first campaigns by invite, so the marketplace isn't public yet. If you want to run your first campaign this way when it opens, join the waitlist below, or email [hello@sixthdegree.app](mailto:hello@sixthdegree.app) with what you're trying to sell and we'll tell you honestly whether a first campaign makes sense yet.

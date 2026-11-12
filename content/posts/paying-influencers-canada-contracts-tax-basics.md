@@ -61,6 +61,6 @@ None of this takes more than a few minutes per creator if you do it at the time,
 
 ## Where Sixth Degree fits
 
-We built the platform around this exact gap: a brief and a price agreed upfront, usage rights spelled out before any content is made, and a fee held in escrow until the post is confirmed. That's the half of the paperwork problem a product can actually solve. The invoice and the T4A are still yours to handle the way this post describes.
+We built the platform around this exact gap: a brief and a price agreed upfront, usage rights spelled out before any content is made, and a fee held in escrow until the post is confirmed. That's the half of the paperwork problem a product can actually solve. The invoice and the T4A are still yours to handle the way this post describes. If you're still choosing who to hire, start with [how to find and hire influencers in Toronto](https://sixthdegree.app/blog/influencers-in-toronto/).
 
-We're in private beta, opening Fall 2026, so none of this is live yet. If you're setting up your first few creator payments in the meantime and want to sanity-check the paperwork, email [hello@sixthdegree.app](mailto:hello@sixthdegree.app). We're not accountants, but we've set up enough of these to know what a real invoice looks like.
+We're in private beta, onboarding our first campaigns by invite, so none of this is live yet. If you're setting up your first few creator payments in the meantime and want to sanity-check the paperwork, email [hello@sixthdegree.app](mailto:hello@sixthdegree.app). We're not accountants, but we've set up enough of these to know what a real invoice looks like.

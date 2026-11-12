@@ -235,3 +235,12 @@ Search-snippet based; a founder should confirm each before sending.
 - **Riptidings** (riptidings.substack.com) - Canadian newsletter on content marketing and the creator economy.
 - **IAB Canada Creator Committee** (iabcanada.com) - industry body with a creator committee and a published piece on Canada's creator economy.
 - **Creator Diaries** (tally.so/r/wvVB0Q) - takes founder and creator profile submissions.
+
+## Suggested 2026-11-12
+
+Found by web search; the session's network could not open the pages, so check
+each one before sending.
+
+- **Influence Weekly** (influenceweekly.beehiiv.com) - weekly influencer-marketing roundup that has covered Canadian campaigns. News tip once the first managed campaign wraps.
+- **StartupA.ge** (startupa.ge/startups/country/canada) - free startup profile, listed under Canada automatically.
+- **Made in CA** (madeinca.ca) - Canadian business and data site with a contributor page; pitch an expert quote on what Toronto creators charge.

@@ -47,4 +47,4 @@ Don't decide from inside the DM thread. Find the brand's actual website independ
 
 The underlying fix here isn't caution, it's structure. A payment method that holds funds until the work is confirmed protects a creator from a brand that goes quiet exactly as well as it protects a brand from a creator who never delivers. That's the reason we built Sixth Degree around escrow rather than a DM and a promise: neither side has to take the other's word for it, because neither side has to move first.
 
-We're in private beta, opening Fall 2026, so the directory isn't public yet. If you want first access when it opens, join the waitlist below, or email [hello@sixthdegree.app](mailto:hello@sixthdegree.app) if you've got a specific offer you're trying to size up before it opens. We'll tell you honestly what we think.
+We're in private beta, onboarding our first campaigns by invite, so the directory isn't public yet. If you want first access when it opens, join the waitlist below, or email [hello@sixthdegree.app](mailto:hello@sixthdegree.app) if you've got a specific offer you're trying to size up before it opens. We'll tell you honestly what we think.

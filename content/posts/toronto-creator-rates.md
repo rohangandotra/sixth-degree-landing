@@ -74,7 +74,7 @@ Total: $2,500. The reserve is the part most brands skip and shouldn't. You can't
 
 ## Where these numbers come from
 
-Honesty block: these are market-observation ranges. They come from rate conversations with Toronto brands and creators while building Sixth Degree: quotes we've seen asked, negotiated, and paid. They are not a statistical survey, and nobody currently publishes audited rate data for this market. Including us: Sixth Degree is in private beta, opening Fall 2026. Once real campaigns run through the platform, we'll publish anonymized rate data from funded collaborations and update this page. The modified date at the top will show when.
+Honesty block: these are market-observation ranges. They come from rate conversations with Toronto brands and creators while building Sixth Degree: quotes we've seen asked, negotiated, and paid. They are not a statistical survey, and nobody currently publishes audited rate data for this market. Including us: Sixth Degree is in private beta, onboarding our first campaigns by invite. Once real campaigns run through the platform, we'll publish anonymized rate data from funded collaborations and update this page. The modified date at the top will show when.
 
 If a quote you receive sits outside these ranges, that's not automatically a problem. It's a prompt to ask what's included: usage rights, revisions, exclusivity, a rush timeline. The range tells you when to ask questions, not when to walk away.
 

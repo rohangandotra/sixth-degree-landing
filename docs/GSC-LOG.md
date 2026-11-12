@@ -1128,3 +1128,43 @@ unchanged: live homepage carries 6 `app.sixthdegree.app/login` links (founder PR
 PR #24 still open (21 days).
 
 Content decision: no new post. Pillars and named spokes all exist; no query gap.
+
+## 2026-11-12 (window: 2026-10-13 to 2026-11-10)
+
+First run since 10-19 (three-week gap). Queries: "sixth degree" 20 impressions /
+1 click / position 7.5 (brand; was 25 / 7 / 5.6); "6th degree" 3 / 1 / 13.7;
+"6 degree" 2 / 0 / 5; "influencer programs canada" 1 / 0 / 95 (first non-brand
+Canada query, on `/blog/`); other brand variants. "toronto influencer agency"
+and "ugc agency toronto" dropped out of the window. No (a), (b) or (c) target
+phrase has impressions; rows stay at zero and visible.
+
+Pages (impressions / clicks / position): `/` 71 / 10 / 7.2; `/blog/` 16 / 1 / 11.6;
+`influencers-in-toronto/` 10 / 0 / 10.9; `paying-influencers-canada-contracts-tax-basics/`
+7 / 0 / 6.9; `micro-vs-nano-creators/` 5 / 0 / 8.6; `ad-rights-rider-ugc-usage-rights/`
+4 / 0 / 7.8; `toronto-creator-rates/` 4 / 0 / 6.8; `engagement-rate-explained/` 3 / 0 / 7;
+`find-micro-influencers-ugc-toronto/` 1 / 1 / 8; homepage `#fragment` URLs now
+show up separately (new landing nav, PR #27). App: `/terms` 9, `/privacy` 4,
+`/creator-agreement` 3, `/ad-rights-rider` 3, `/login` 2.
+
+Brand CTR fell: homepage clicks 15 to 10 and "sixth degree" clicks 7 to 1 since
+the redesign. The live meta description is 183 characters (cut off in results);
+a 150-character rewrite is proposed on `claude/seo-weekly-landing`.
+
+URL Inspection: `/` PASS (crawled 2026-10-28), `/blog/` PASS (2026-10-11),
+paying-influencers PASS (2026-09-27), affiliate-vs-flat-fee PASS (2026-09-22).
+All indexed, apex canonical.
+
+Audit: all fetched URLs 200; www 308s to apex (home, /blog/, a post); app
+`/blog` and `/blog/<slug>/` 308 to the apex blog; live sitemap 18 URLs, equal to
+main; every page has exactly one self canonical and all JSON-LD parses. App
+robots/sitemap match `app/sitemap.ts` (4 legal pages). Drift unchanged: live
+homepage carries 6 `app.sixthdegree.app/login` links (founder's PR #25/#27).
+PR #24 still open (45 days); main merged into it this run (sitemap conflict
+resolved by regenerating).
+
+Content decision: expanded the Toronto pillar (highest-impression post, sitting
+at position 10.9 with no clicks): new Toronto-specific section, a hiring-steps
+section linking the six newer spokes it never linked, a sharper title and
+description. Swept "opening Fall 2026" out of every post (it goes false in
+five weeks) for "onboarding our first campaigns by invite", matching the
+homepage FAQ.
