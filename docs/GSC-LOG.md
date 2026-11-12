@@ -1147,8 +1147,8 @@ show up separately (new landing nav, PR #27). App: `/terms` 9, `/privacy` 4,
 `/creator-agreement` 3, `/ad-rights-rider` 3, `/login` 2.
 
 Brand CTR fell: homepage clicks 15 to 10 and "sixth degree" clicks 7 to 1 since
-the redesign. The live meta description is 183 characters (cut off in results);
-a 150-character rewrite is proposed on `claude/seo-weekly-landing`.
+the redesign. The live meta description is 180 characters (cut off in results);
+a 155-character rewrite is proposed on `claude/seo-weekly-landing`.
 
 URL Inspection: `/` PASS (crawled 2026-10-28), `/blog/` PASS (2026-10-11),
 paying-influencers PASS (2026-09-27), affiliate-vs-flat-fee PASS (2026-09-22).
