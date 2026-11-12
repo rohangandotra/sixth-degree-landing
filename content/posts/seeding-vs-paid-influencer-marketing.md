@@ -49,4 +49,4 @@ One rule holds regardless of which side of the deal you're on: whatever gets agr
 
 If you're planning a first campaign and genuinely don't know where to start, a reasonable default is to put most of a small budget into a handful of paid posts you can actually plan around, and spend whatever's left on seeding a wider group to find creators worth paying next time. [How to do influencer marketing: a small business guide](https://sixthdegree.app/blog/how-to-do-influencer-marketing/) walks through the rest of that first campaign, from setting a goal through paying safely.
 
-We're building Sixth Degree around the paid side of this, with verified creators, visible rates, and escrow-held payment, because that's the half of the equation that actually needs structure. We're in private beta, opening Fall 2026. Join the waitlist below for first access.
+We're building Sixth Degree around the paid side of this, with verified creators, visible rates, and escrow-held payment, because that's the half of the equation that actually needs structure. We're in private beta, onboarding our first campaigns by invite. Join the waitlist below for first access.

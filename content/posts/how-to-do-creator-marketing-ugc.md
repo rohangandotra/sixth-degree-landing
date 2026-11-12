@@ -51,4 +51,4 @@ Hiring for follower count out of habit, when the entire point of UGC is that rea
 
 We're building Sixth Degree as one marketplace for both kinds of hire, influencer collaborations and UGC-only content, from the same pool of human-verified Toronto creators, with usage rights handled explicitly through the Ad Rights Rider and payment held in escrow until the work is delivered.
 
-We're in private beta, opening Fall 2026, so the directory isn't public yet. If you want first access when it opens, join the waitlist below, or email [hello@sixthdegree.app](mailto:hello@sixthdegree.app) with what you're trying to make, and we'll tell you honestly whether UGC or an influencer collab is the better first move.
+We're in private beta, onboarding our first campaigns by invite, so the directory isn't public yet. If you want first access when it opens, join the waitlist below, or email [hello@sixthdegree.app](mailto:hello@sixthdegree.app) with what you're trying to make, and we'll tell you honestly whether UGC or an influencer collab is the better first move.

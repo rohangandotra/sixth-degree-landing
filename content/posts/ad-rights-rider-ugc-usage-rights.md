@@ -53,4 +53,4 @@ If you're a creator: has the brand said anything about running this as an ad, an
 
 If you're building a campaign from scratch, [How to do influencer marketing: a small business guide](https://sixthdegree.app/blog/how-to-do-influencer-marketing/) covers usage rights as one step among several, alongside budget, sizing creators, and payment. If you're specifically buying UGC content rather than an influencer's own post, [How to do creator marketing: a UGC guide for brands](https://sixthdegree.app/blog/how-to-do-creator-marketing-ugc/) goes deeper on why usage rights are closer to the whole transaction there, not a line item.
 
-We're building Sixth Degree so usage rights are never the part of a deal that gets assumed. We're in private beta, opening Fall 2026, so the marketplace isn't public yet. If you want first access when it opens, join the waitlist below.
+We're building Sixth Degree so usage rights are never the part of a deal that gets assumed. We're in private beta, onboarding our first campaigns by invite, so the marketplace isn't public yet. If you want first access when it opens, join the waitlist below.

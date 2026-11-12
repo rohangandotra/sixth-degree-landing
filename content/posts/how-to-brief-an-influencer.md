@@ -62,4 +62,6 @@ Send the brief at least a week before you need the post, longer around a holiday
 
 We built the collaboration flow around exactly this shape: a structured brief up front, a defined revision process instead of open-ended back and forth, and usage rights handled explicitly through the [Ad Rights Rider](https://app.sixthdegree.app/ad-rights-rider) (see [what an ad rights rider actually covers](https://sixthdegree.app/blog/ad-rights-rider-ugc-usage-rights/)) rather than assumed. A single influencer post and [a first UGC batch](https://sixthdegree.app/blog/how-to-do-creator-marketing-ugc/) both run on the same discipline underneath.
 
-We're in private beta, opening Fall 2026, so the marketplace isn't public yet. If you want to run a campaign with a brief this tight when it opens, join the waitlist below, or email [hello@sixthdegree.app](mailto:hello@sixthdegree.app) with what you're briefing and we'll give you a straight read on it.
+If you haven't picked the creator yet, [how to find and hire influencers in Toronto](https://sixthdegree.app/blog/influencers-in-toronto/) covers the shortlist and the checks before the brief.
+
+We're in private beta, onboarding our first campaigns by invite, so the marketplace isn't public yet. If you want to run a campaign with a brief this tight when it opens, join the waitlist below, or email [hello@sixthdegree.app](mailto:hello@sixthdegree.app) with what you're briefing and we'll give you a straight read on it.

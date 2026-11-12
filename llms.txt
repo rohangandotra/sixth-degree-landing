@@ -36,8 +36,8 @@ Key URLs:
   marketing and UGC differ from influencer marketing, and how to hire, brief,
   and license content-only creators
 - https://sixthdegree.app/blog/influencers-in-toronto/ : the complete guide to
-  finding, vetting, and hiring influencers in Toronto, linking out to the
-  rate and tier posts below
+  finding, vetting, and hiring influencers in Toronto, with neighbourhood and
+  disclosure notes and the hiring steps, linking out to every Toronto post
 - https://sixthdegree.app/blog/find-micro-influencers-ugc-toronto/ : where
   Toronto brands find micro influencers and UGC creators, and how to vet an
   account before reaching out
@@ -76,6 +76,9 @@ Key URLs:
 - https://sixthdegree.app/blog/paying-influencers-canada-contracts-tax-basics/ :
   what a Canadian brand needs in writing before paying a creator, when a T4A
   applies, and when HST does too
+- https://sixthdegree.app/blog/brand-deal-scam-red-flags/ : the warning signs
+  in a fake brand collaboration DM, from upfront fees to credential requests,
+  and what a legitimate offer looks like instead
 - Terms of service: https://app.sixthdegree.app/terms
 - Privacy policy: https://app.sixthdegree.app/privacy
 - Creator Agreement: https://app.sixthdegree.app/creator-agreement

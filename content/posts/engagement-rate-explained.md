@@ -74,7 +74,7 @@ It's also not something you should expect a creator to hit on command. A creator
 
 ## Where Sixth Degree fits
 
-We're building toward verification that includes engagement, not just follower counts: a human check on the numbers a creator reports, alongside the identity and account checks every creator already goes through. Nothing here is live yet. Sixth Degree is in private beta, opening Fall 2026, and this describes where the product is headed, not a finished feature.
+We're building toward verification that includes engagement, not just follower counts: a human check on the numbers a creator reports, alongside the identity and account checks every creator already goes through. Nothing here is live yet. Sixth Degree is in private beta, onboarding our first campaigns by invite, and this describes where the product is headed, not a finished feature.
 
 What we won't do is claim we can tell you a creator's "true" engagement rate down to a decimal, or promise a rate translates directly into sales. It doesn't. It's a vetting signal, a good one, and the calculation above takes five minutes on any creator's last dozen posts. Run it before you reach out. It's the cheapest due diligence in influencer marketing.
 

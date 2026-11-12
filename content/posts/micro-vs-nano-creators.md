@@ -72,7 +72,7 @@ Creators amplify what's already working. They don't repair what isn't.
 
 ## Where Sixth Degree fits
 
-Sixth Degree is a Toronto marketplace for exactly these two tiers. One thing to know upfront: we're in private beta, opening Fall 2026. Where this post describes the product in the present tense, it's describing the beta build, not a finished public platform.
+Sixth Degree is a Toronto marketplace for exactly these two tiers. One thing to know upfront: we're in private beta, onboarding our first campaigns by invite. Where this post describes the product in the present tense, it's describing the beta build, not a finished public platform.
 
 Every creator on Sixth Degree is verified by a human before they can take campaigns. Follower counts and rates are checked, not self-declared and forgotten. Payment runs through escrow: you fund the collaboration up front, the creator sees it's funded before filming, and the fee releases when you confirm the post is live. Results reporting is deliberately conservative. Traced link clicks and promo-code redemptions are shown as a floor, and creator-reported screenshots are labeled as creator-reported.
 

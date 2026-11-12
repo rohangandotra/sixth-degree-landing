@@ -61,4 +61,4 @@ Usage rights are a separate conversation from either payment structure, and wort
 
 We built Sixth Degree around the flat-fee side of this: a creator sees the price before accepting, the fee sits in escrow, and it releases in full once the work is confirmed, whatever the post ends up doing afterward, the same protection the flat-fee case above depends on. Traced links and promo codes are there for measurement on top of that, not as a substitute for paying a creator for the work itself.
 
-We're in private beta, opening Fall 2026, so none of this is running yet. If you're deciding between these two structures for an upcoming campaign and want a second opinion in the meantime, email [hello@sixthdegree.app](mailto:hello@sixthdegree.app). We'll tell you honestly which one fits.
+We're in private beta, onboarding our first campaigns by invite, so none of this is running yet. If you're deciding between these two structures for an upcoming campaign and want a second opinion in the meantime, email [hello@sixthdegree.app](mailto:hello@sixthdegree.app). We'll tell you honestly which one fits.
