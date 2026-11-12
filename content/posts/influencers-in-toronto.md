@@ -61,7 +61,7 @@ Toronto is a set of neighbourhoods, not one market. A Leslieville creator whose 
 
 Disclosure follows Canadian rules. The Competition Bureau treats an undisclosed paid post as misleading advertising, and Ad Standards Canada's influencer guidelines expect the disclosure up front, not buried after the hashtags. Put it in the brief so nobody has to fix it after the post is live.
 
-Plan around the city's calendar. Patio season, TIFF in September and the December markets are when local content lands best. A patio post briefed in March is a post about a patio nobody is sitting on.
+Plan around the city's calendar. Patio season, TIFF in September and the December markets are when local content lands best. Brief early: a patio post that goes up in March shows a patio nobody is sitting on.
 
 ## From shortlist to posted: the hiring steps
 
